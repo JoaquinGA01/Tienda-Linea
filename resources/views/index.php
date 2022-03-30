@@ -160,7 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html" class="act">Inicio</a></li>	
+						<li class="active"><a href="index.php" class="act">Inicio</a></li>	
 						<!-- Mega Menu -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
@@ -172,7 +172,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<li><a href="dresses.php">Dresses<span>New</span></a></li>
 											<li><a href="sweaters.php">Sweaters</a></li>
 											<li><a href="skirts.php">Shorts & Skirts</a></li>
-											<li><a href="jeans.php">Jeans</a></li>
+											<li><a href="jeans.phpphp">Jeans</a></li>
 											<li><a href="shirts.php">Shirts & Tops<span>New</span></a></li>
 										</ul>
 									</div>
@@ -182,6 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<li><a href="salwars.php">Salwars</a></li>
 											<li><a href="sarees.php">Sarees<span>New</span></a></li>
 											<li><a href="products.php"><i>Summer Store</i></a></li>
+										
 										</ul>
 									</div>
 									<div class="col-sm-2">
@@ -485,7 +486,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Watch</a></h5>
+									<h5><a href="single.php">Watch</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$320</span> <i class="item_price">$250</i></p>
 										<p><a class="item_add" href="#">Add to cart</a></p>
@@ -514,7 +515,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Sandal</a></h5>
+									<h5><a href="single.php">Sandal</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$320</span> <i class="item_price">$250</i></p>
 										<p><a class="item_add" href="#">Add to cart</a></p>
@@ -538,7 +539,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Sandal</a></h5>
+									<h5><a href="single.php">Sandal</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$320</span> <i class="item_price">$250</i></p>
 										<p><a class="item_add" href="#">Add to cart</a></p>
@@ -562,7 +563,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Sandal</a></h5>
+									<h5><a href="single.php">Sandal</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$320</span> <i class="item_price">$250</i></p>
 										<p><a class="item_add" href="#">Add to cart</a></p>
@@ -591,7 +592,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Jewellery</a></h5>
+									<h5><a href="single.php">Jewellery</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$320</span> <i class="item_price">$250</i></p>
 										<p><a class="item_add" href="#">Add to cart</a></p>
@@ -615,7 +616,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Jewellery</a></h5>
+									<h5><a href="single.php">Jewellery</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$320</span> <i class="item_price">$250</i></p>
 										<p><a class="item_add" href="#">Add to cart</a></p>
@@ -639,7 +640,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 									</div>
-									<h5><a href="single.html">Jewellery</a></h5>
+									<h5><a href="single.php">Jewellery</a></h5>
 									<div class="simpleCart_shelfItem">
 										<p><span>$320</span> <i class="item_price">$250</i></p>
 										<p><a class="item_add" href="#">Add to cart</a></p>
@@ -1068,7 +1069,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="agileinfo_banner_bottom1_grids">
 			<div class="col-md-7 agileinfo_banner_bottom1_grid_left">
 				<h3>Grand Opening Event With flat<span>20% <i>Discount</i></span></h3>
-				<a href="products.html">Shop Now</a>
+				<a href="products.php">Shop Now</a>
 			</div>
 			<div class="col-md-5 agileinfo_banner_bottom1_grid_right">
 				<h4>hot deal</h4>
@@ -1176,7 +1177,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 						</div>
-						<h5><a href="single.html">Skirts</a></h5>
+						<h5><a href="single.php">Skirts</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
 							<p><a class="item_add" href="#">Add to cart</a></p>
@@ -1202,7 +1203,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 						</div>
-						<h5><a href="single.html">Jackets</a></h5>
+						<h5><a href="single.php">Jackets</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
 							<p><a class="item_add" href="#">Add to cart</a></p>
@@ -1228,7 +1229,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 						</div>
-						<h5><a href="single.html">Dresses</a></h5>
+						<h5><a href="single.php">Dresses</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
 							<p><a class="item_add" href="#">Add to cart</a></p>
@@ -1254,7 +1255,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 							</div>
 						</div>
-						<h5><a href="single.html">Jeans</a></h5>
+						<h5><a href="single.php">Jeans</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
 							<p><a class="item_add" href="#">Add to cart</a></p>
@@ -1353,28 +1354,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Information</h3>
 					<ul class="info"> 
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="mail.html">Contact Us</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-						<li><a href="products.html">Special Products</a></li>
+						<li><a href="about.php">About Us</a></li>
+						<li><a href="mail.php">Contact Us</a></li>
+						<li><a href="short-codes.php">Short Codes</a></li>
+						<li><a href="faq.php">FAQ's</a></li> 
+						<li><a href="products.php">Special Products</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Category</h3>
 					<ul class="info"> 
-						<li><a href="dresses.html">Dresses</a></li>
-						<li><a href="sweaters.html">Sweaters</a></li>
-						<li><a href="shirts.html">Shirts</a></li>
-						<li><a href="sarees.html">Sarees</a></li>
-						<li><a href="skirts.html">Shorts & Skirts</a></li>
+						<li><a href="dresses.php">Dresses</a></li>
+						<li><a href="sweaters.php">Sweaters</a></li>
+						<li><a href="shirts.php">Shirts</a></li>
+						<li><a href="sarees.php">Sarees</a></li>
+						<li><a href="skirts.php">Shorts & Skirts</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Profile</h3>
 					<ul class="info"> 
-						<li><a href="products.html">Summer Store</a></li>
-						<li><a href="checkout.html">My Cart</a></li>
+						<li><a href="products.php">Summer Store</a></li>
+						<li><a href="checkout.php">My Cart</a></li>
 					</ul>
 					<h4>Follow Us</h4>
 					<div class="agileits_social_button">
