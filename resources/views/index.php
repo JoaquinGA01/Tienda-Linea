@@ -1358,7 +1358,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="mail.php">Contact Us</a></li>
 						<li><a href="short-codes.php">Short Codes</a></li>
 						<li><a href="faq.php">FAQ's</a></li> 
-						<li><a href="products.php">Special Products</a></li>
+						<li><a href="products.php">Special Products</a></li> 
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
