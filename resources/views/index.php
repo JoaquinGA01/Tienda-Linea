@@ -132,7 +132,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="cart box_1">
 				<a href="checkout.php">
 					<div class="total">
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> artículos)</div>
 					<img src="../images/bag.png" alt="" />
 				</a>
 				<p><a href="javascript:;" class="simpleCart_empty">Carrito vacío</a></p>
@@ -166,8 +166,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h6>Caballeros</h6>
 											
 											 <li><a href="camisas">Camisas<span>New</span></a></li> 
-<!-- 											<li><a href="sweaters.php">Pantalones</a></li>
-											<li><a href="skirts.php">Casual</a></li> -->
+ 											<li><a href="sweaters.php">Pantalones</a></li>
+											<li><a href="skirts.php">Casual</a></li> 
+											<li><a href="skirts.php">Playeras</a></li> 
 <!-- 											<li><a href="jeans.phpphp">Jeans</a></li>
 											<li><a href="shirts.php">Shirts & Tops<span>New</span></a></li> --> 
 										</ul>
@@ -208,7 +209,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</ul>
 						</li>
-						<li><a href="about.php">Acerca de nosotros</a></li>
+						<li><a href="about">Acerca de nosotros</a></li>
 						<li><a href="short-codes.php">Short Codes</a></li>
 						<li><a href="mail.php">Contactanos</a></li>
 					</ul>
@@ -220,7 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 	<div class="banner" id="home1">
 		<div class="container">
-			<h3>fashions fade, <span>style is eternal</span></h3>
+			<h3>La principal diferencia entre estilo y moda, <span>es la calidad</span></h3>
 		</div>
 	</div>
 <!-- //banner -->
@@ -235,8 +236,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</a>
 				</div>
 				<!-- pop-up-box -->    
-						<link href="./css/popuo-box.css" rel="stylesheet" type="text/css" property="" media="all" />
-						<script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+						<link href="../css/popuo-box.css" rel="stylesheet" type="text/css" property="" media="all" />
+						<script src="../js/jquery.magnific-popup.js" type="text/javascript"></script>
 					<!--//pop-up-box -->
 					<div id="small-dialog" class="mfp-hide">
 						<iframe src="https://player.vimeo.com/video/23259282?title=0&byline=0&portrait=0"></iframe>
@@ -1069,7 +1070,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //banner-bottom -->
 
 <!-- banner-bottom1 -->
-	<div class="banner-bottom1">
+<!-- 	<div class="banner-bottom1">
 		<div class="agileinfo_banner_bottom1_grids">
 			<div class="col-md-7 agileinfo_banner_bottom1_grid_left">
 				<h3>Grand Opening Event With flat<span>20% <i>Discount</i></span></h3>
@@ -1085,11 +1086,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-	</div>
+	</div> -->
 <!-- //banner-bottom1 -->
 
 <!-- special-deals -->
-	<div class="special-deals">
+<!-- 	<div class="special-deals">
 		<div class="container">
 			<h2>Special Deals</h2>
 			<div class="w3agile_special_deals_grids">
@@ -1155,7 +1156,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 <!-- //special-deals -->
 <!-- new-products -->
 	<div class="new-products">
@@ -1326,7 +1327,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //top-brands -->
 <!-- newsletter -->
-	<div class="newsletter">
+<!-- 	<div class="newsletter">
 		<div class="container">
 			<div class="col-md-6 w3agile_newsletter_left">
 				<h3>Newsletter</h3>
@@ -1340,7 +1341,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-	</div>
+	</div> -->
 <!-- //newsletter -->
 <!-- footer -->
 	<div class="footer">

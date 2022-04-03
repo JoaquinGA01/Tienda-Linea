@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/camisas',function(){
     return view('dresses');    
 });
+
+Route::get('/about',function(){
+    return view('about');    
+});
