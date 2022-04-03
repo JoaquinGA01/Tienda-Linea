@@ -41,10 +41,11 @@ input[type="submit"],.panel-body ul li a,.checkout-right-basket a,.additional_in
 	float:left;
 	margin-left:22em;
 }
-.w3l_logo h1 a{
+.w3l_logo h1 a{	
 	font-size:1.1em;
 	color:#212121;
-	text-decoration:none;
+	text-decoration:none;	
+	margin-left: 2.5em;
 }
 .w3l_logo h1 a span{
 	display: block;
