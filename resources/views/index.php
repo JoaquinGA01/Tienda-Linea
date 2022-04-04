@@ -167,7 +167,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											
 											 <li><a href="camisas">Camisas<span>New</span></a></li> 
  											<li><a href="sweaters.php">Pantalones</a></li>
-											<li><a href="skirts.php">Casual</a></li> 
 											<li><a href="skirts.php">Playeras</a></li> 
 <!-- 											<li><a href="jeans.phpphp">Jeans</a></li>
 											<li><a href="shirts.php">Shirts & Tops<span>New</span></a></li> --> 
@@ -195,8 +194,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<ul class="multi-column-dropdown">
 											<h6>Niñas</h6>
 											<li><a href="sandals.php">Vestidos</a></li>
-											<li><a href="sandals.php">Faldas</a></li>
-											<li><a href="sandals.php">Blusas</a></li>
 										</ul>
 									</div>									
 <!-- 									<div class="col-sm-4">
