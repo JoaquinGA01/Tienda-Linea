@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,15 +13,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/','App\Http\Controllers\Inicio@iniciar');
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
 
 Route::get('/camisas',function(){
-    return view('dresses');    
+    return view('camisas');    
 });
+
+Route::get('/pantalones',function(){
+    return view('jeans');    
+});
+
 
 Route::get('/about',function(){
     return view('about');    
 });
+

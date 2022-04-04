@@ -1,13 +1,7 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Women's Fashion a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | About Us :: w3layouts</title>
+<title>Tienda en línea ropa para todos | Sobre nosotros :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -52,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 						&times;</button>
 					<h4 class="modal-title" id="myModalLabel">
-						Don't Wait, Login now!</h4>
+						¿Qué esperas?, ¡Registrate ahora!</h4>
 				</div>
 				<div class="modal-body modal-body-sub">
 					<div class="row">
@@ -60,8 +54,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="sap_tabs">	
 								<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 									<ul>
-										<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Sign in</span></li>
-										<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Sign up</span></li>
+										<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Iniciar sesión</span></li>
+										<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Registrarse</span></li>
 									</ul>		
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="facts">
@@ -111,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="row text-center sign-with">
 								<div class="col-md-12">
 									<h3 class="other-nw">
-										Sign in with</h3>
+										Iniciar sesión con</h3>
 								</div>
 								<div class="col-md-12">
 									<ul class="social">
@@ -134,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 			</div>
 			<div class="w3l_logo">
-				<h1><a href="index.html">Women's Fashion<span>For Fashion Lovers</span></a></h1>
+				<h1><a href="index.html">Moda encantadora<span>Moa para todoxs</span></a></h1>
 			</div>
 			<div class="search">
 				<input class="search_box" type="checkbox" id="search_box">
@@ -152,7 +146,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
 					<img src="images/bag.png" alt="" />
 				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+				<p><a href="javascript:;" class="simpleCart_empty">Carrito vacío</a></p>
 				<div class="clearfix"> </div>
 			</div>	
 			<div class="clearfix"> </div>
@@ -172,20 +166,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>	
+						<li class="active"><a href="index.html">Inicio</a></li>	
 						<!-- Mega Menu -->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
-											<h6>Clothing</h6>
-											<li><a href="dresses.html">Dresses<span>New</span></a></li>
-											<li><a href="sweaters.html">Sweaters</a></li>
-											<li><a href="skirts.html">Shorts & Skirts</a></li>
+											<h6>Ropa</h6>
+											<li><a href="dresses.html">Vestidos<span>Nuevo</span></a></li>
+											<li><a href="sweaters.html">Suéteres</a></li>
+											<li><a href="skirts.html">Shorts</a></li>
 											<li><a href="jeans.html">Jeans</a></li>
-											<li><a href="shirts.html">Shirts & Tops<span>New</span></a></li>
+											<li><a href="shirts.html">Playeras y tops<span>Nuevo</span></a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
@@ -198,10 +192,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="col-sm-2">
 										<ul class="multi-column-dropdown">
-											<h6>Foot Wear</h6>
+											<h6>Calzado</h6>
 											<li><a href="sandals.html">Flats</a></li>
-											<li><a href="sandals.html">Sandals</a></li>
-											<li><a href="sandals.html">Boots</a></li>
+											<li><a href="sandals.html">Sandalias</a></li>
+											<li><a href="sandals.html">Botas</a></li>
 											<li><a href="sandals.html">Heels</a></li>
 										</ul>
 									</div>
@@ -215,9 +209,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</ul>
 						</li>
-						<li><a href="about.html" class="act">About Us</a></li>
+						<li><a href="about.html" class="act">Sob</a></li>
 						<li><a href="short-codes.html">Short Codes</a></li>
-						<li><a href="mail.html">Mail Us</a></li>
+						<li><a href="mail.html">Contáctanos</a></li>
 					</ul>
 				</div>
 			</nav>
