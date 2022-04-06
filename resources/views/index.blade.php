@@ -85,7 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													@csrf
 													<input placeholder="Nombre" name="Name" type="text" required="">
 													<input placeholder="Email" name="Email" type="email" required="">	
-													<input placeholder="Contraseña" name="Password" type="password" required="">	
+													<input placeholder="Contraseña" name="	" type="password" required="">	
 													<input placeholder="Confirmar contraseña" name="Password" type="password" required="">
 													<div class="sign-up">
 														<input type="submit" value="Crear cuenta"/>
