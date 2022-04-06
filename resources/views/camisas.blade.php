@@ -1,13 +1,7 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Women's Fashion a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Sandals :: w3layouts</title>
+<title>CHEIN Tienda en línea | Home</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,17 +10,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
-<script src="js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 <!-- //js -->
 <!-- cart -->
-<script src="js/simpleCart.min.js"></script>
+<script src="../js/simpleCart.min.js"></script>
 <!-- cart -->
 <!-- for bootstrap working -->
-<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-3.1.1.min.js"></script>
 <!-- //for bootstrap working -->
 <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -44,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 <body>
 <!-- header -->
-	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 		aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
@@ -52,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 						&times;</button>
 					<h4 class="modal-title" id="myModalLabel">
-						Don't Wait, Login now!</h4>
+						¿Que esperas? ¡Registrate ahora!  </h4> 
 				</div>
 				<div class="modal-body modal-body-sub">
 					<div class="row">
@@ -60,17 +54,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="sap_tabs">	
 								<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 									<ul>
-										<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Sign in</span></li>
-										<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Sign up</span></li>
-									</ul>		
+										<li class="resp-tab-item" aria-controls="tab_item-0"><span>Iniciar sesión</span></li>
+										<li class="resp-tab-item" aria-controls="tab_item-1"><span>Registrarse</span></li>
+									</ul>
+									<!-- Pop up de iniciar sesión / registro --> 		
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="facts">
 											<div class="register">
 												<form action="#" method="post">			
-													<input name="Email" placeholder="Email Address" type="text" required="">						
-													<input name="Password" placeholder="Password" type="password" required="">										
+													<input name="Email" placeholder="Correo electronico" type="text" required="">						
+													<input name="Password" placeholder="Contraseña" type="password" required="">										
 													<div class="sign-up">
-														<input type="submit" value="Sign in"/>
+														<input type="submit"  value="Iniciar sesión" />
 													</div>
 												</form>
 											</div>
@@ -79,14 +74,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 									<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
 										<div class="facts">
+											
 											<div class="register">
-												<form action="#" method="post">			
-													<input placeholder="Name" name="Name" type="text" required="">
-													<input placeholder="Email Address" name="Email" type="email" required="">	
-													<input placeholder="Password" name="Password" type="password" required="">	
-													<input placeholder="Confirm Password" name="Password" type="password" required="">
+
+												<form action="/guardarUser" method="post">			
+													@csrf
+													<input placeholder="Nombre" name="Name" type="text" required="">
+													<input placeholder="Email" name="Email" type="email" required="">	
+													<input placeholder="Contraseña" name="Password" type="password" required="">	
+													<input placeholder="Confirmar contraseña" name="Password" type="password" required="">
 													<div class="sign-up">
-														<input type="submit" value="Create Account"/>
+														<input type="submit" value="Crear cuenta"/>
 													</div>
 												</form>
 											</div>
@@ -94,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div> 			        					            	      
 								</div>	
 							</div>
-							<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+							<script src="../js/easyResponsiveTabs.js" type="text/javascript"></script>
 							<script type="text/javascript">
 								$(document).ready(function () {
 									$('#horizontalTab').easyResponsiveTabs({
@@ -104,60 +102,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									});
 								});
 							</script>
-							<div id="OR" class="hidden-xs">
-								OR</div>
-						</div>
-						<div class="col-md-4 modal_body_right modal_body_right1">
-							<div class="row text-center sign-with">
-								<div class="col-md-12">
-									<h3 class="other-nw">
-										Sign in with</h3>
-								</div>
-								<div class="col-md-12">
-									<ul class="social">
-										<li class="social_facebook"><a href="#" class="entypo-facebook"></a></li>
-										<li class="social_dribbble"><a href="#" class="entypo-dribbble"></a></li>
-										<li class="social_twitter"><a href="#" class="entypo-twitter"></a></li>
-										<li class="social_behance"><a href="#" class="entypo-behance"></a></li>
-									</ul>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- HEADER -->
 	<div class="header">
 		<div class="container">
 			<div class="w3l_login">
-				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+				<a href="#" data-toggle="modal" data-target="#myModal88"><img src="../images/user.png"/></a>
 			</div>
 			<div class="w3l_logo">
-				<h1><a href="index.html">Women's Fashion<span>For Fashion Lovers</span></a></h1>
+				<h1><a href="index.php">CHEIN<span>Lo mejor en moda</span></a></h1>
 			</div>
 			<div class="search">
 				<input class="search_box" type="checkbox" id="search_box">
-				<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+				<label class="icon-search" for="search_box"><img src="../images/search.png"/></label>
 				<div class="search_form">
 					<form action="#" method="post">
-						<input type="text" name="Search" placeholder="Search...">
-						<input type="submit" value="Send">
+						<input type="text" name="Search" placeholder="Ingresa tu búsqueda...">
+						<input type="submit" value="Buscar">
 					</form>
 				</div>
 			</div>
 			<div class="cart box_1">
-				<a href="checkout.html">
+				<a href="checkout.php">
 					<div class="total">
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-					<img src="images/bag.png" alt="" />
+					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> artículos)</div>
+					<img src="../images/bag.png" alt="" />
 				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+				<p><a href="javascript:;" class="simpleCart_empty">Carrito vacío</a></p>
 				<div class="clearfix"> </div>
 			</div>	
 			<div class="clearfix"> </div>
 		</div>
-	</div>
+	</div>	
+
 	<div class="navigation">
 		<div class="container">
 			<nav class="navbar navbar-default">
@@ -172,57 +154,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div> 
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>	
+						<li class="active"><a href="index.php" class="act">Inicio</a></li>	
 						<!-- Mega Menu -->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle act" data-toggle="dropdown">Products <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
-											<h6>Clothing</h6>
-											<li><a href="dresses.html">Dresses<span>New</span></a></li>
-											<li><a href="sweaters.html">Sweaters</a></li>
-											<li><a href="skirts.html">Shorts & Skirts</a></li>
-											<li><a href="jeans.html">Jeans</a></li>
-											<li><a href="shirts.html">Shirts & Tops<span>New</span></a></li>
+											<h6>Caballeros</h6>
+											
+											 <li><a href="camisas">Camisas<span>New</span></a></li> 
+ 											<li><a href="sweaters.php">Pantalones</a></li>
+											<li><a href="skirts.php">Playeras</a></li> 
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
-											<h6>Ethnic Wear</h6>
-											<li><a href="salwars.html">Salwars</a></li>
-											<li><a href="sarees.html">Sarees<span>New</span></a></li>
-											<li><a href="products.html"><i>Summer Store</i></a></li>
+											<h6>Damas</h6>
+											<li><a href="salwars.php">Vestidos</a></li>
+											<li><a href="sarees.php">Blusas</a></li>
+											<li><a href="sarees.php">Pantalones</a></li>
+											<!-- <li><a href="products.php"><i>Summer Store</i></a></li> -->									
 										</ul>
 									</div>
-									<div class="col-sm-2">
+									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
-											<h6>Foot Wear</h6>
-											<li><a href="sandals.html">Flats</a></li>
-											<li><a href="sandals.html">Sandals</a></li>
-											<li><a href="sandals.html">Boots</a></li>
-											<li><a href="sandals.html">Heels</a></li>
+											<h6>Niños</h6>
+											<li><a href="sandals.php">Camisas</a></li>
+											<li><a href="sandals.php">Pantalones</a></li>
+											<li><a href="sandals.php">Playeras</a></li>
+											<li><a href="sandals.php">Shorts</a></li>
 										</ul>
 									</div>
-									<div class="col-sm-4">
-										<div class="w3ls_products_pos">
-											<h4>50%<i>Off/-</i></h4>
-											<img src="images/1.jpg" alt=" " class="img-responsive" />
-										</div>
-									</div>
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>Niñas</h6>
+											<li><a href="sandals.php">Vestidos</a></li>
+										</ul>
+									</div>									
 									<div class="clearfix"></div>
 								</div>
 							</ul>
 						</li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
-						<li><a href="mail.html">Mail Us</a></li>
+						<li><a href="about">Acerca de nosotros</a></li>						
+						<li><a href="mail.php">Contactanos</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
-	</div>
+	</div>	
 <!-- //header -->
 <!-- banner -->
 	<div class="banner9" id="home1">
@@ -684,7 +665,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>				
 				</div>
 				<section>
 					<div class="modal-body">
@@ -737,204 +718,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</section>
 			</div>
 		</div>
-	</div>
-	<div class="w3l_related_products">
-		<div class="container">
-			<h3>Related Products</h3>
-			<ul id="flexiselDemo2">			
-				<li>
-					<div class="w3l_related_products_grid">
-						<div class="agile_ecommerce_tab_left dresses_grid">
-							<div class="hs-wrapper hs-wrapper3">
-								<img src="images/51.jpg" alt=" " class="img-responsive" />
-								<img src="images/41.jpg" alt=" " class="img-responsive" />
-								<img src="images/27.jpg" alt=" " class="img-responsive" />
-								<img src="images/28.jpg" alt=" " class="img-responsive" />
-								<img src="images/37.jpg" alt=" " class="img-responsive" />
-								<img src="images/30.jpg" alt=" " class="img-responsive" />
-								<img src="images/36.jpg" alt=" " class="img-responsive" />
-								<img src="images/38.jpg" alt=" " class="img-responsive" />
-								<div class="w3_hs_bottom">
-									<div class="flex_ecommerce">
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-							<h5><a href="single.html">Long Purple Skirts</a></h5>
-							<div class="simpleCart_shelfItem">
-								<p class="flexisel_ecommerce_cart"><span>$312</span> <i class="item_price">$212</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3l_related_products_grid">
-						<div class="agile_ecommerce_tab_left dresses_grid">
-							<div class="hs-wrapper hs-wrapper3">
-								<img src="images/36.jpg" alt=" " class="img-responsive" />
-								<img src="images/41.jpg" alt=" " class="img-responsive" />
-								<img src="images/27.jpg" alt=" " class="img-responsive" />
-								<img src="images/28.jpg" alt=" " class="img-responsive" />
-								<img src="images/37.jpg" alt=" " class="img-responsive" />
-								<img src="images/30.jpg" alt=" " class="img-responsive" />
-								<img src="images/36.jpg" alt=" " class="img-responsive" />
-								<img src="images/38.jpg" alt=" " class="img-responsive" />
-								<div class="w3_hs_bottom">
-									<div class="flex_ecommerce">
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-							<h5><a href="single.html">Black Shorts</a></h5>
-							<div class="simpleCart_shelfItem">
-								<p class="flexisel_ecommerce_cart"><span>$432</span> <i class="item_price">$323</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3l_related_products_grid">
-						<div class="agile_ecommerce_tab_left dresses_grid">
-							<div class="hs-wrapper hs-wrapper3">
-								<img src="images/38.jpg" alt=" " class="img-responsive" />
-								<img src="images/37.jpg" alt=" " class="img-responsive" />
-								<img src="images/27.jpg" alt=" " class="img-responsive" />
-								<img src="images/28.jpg" alt=" " class="img-responsive" />
-								<img src="images/37.jpg" alt=" " class="img-responsive" />
-								<img src="images/30.jpg" alt=" " class="img-responsive" />
-								<img src="images/36.jpg" alt=" " class="img-responsive" />
-								<img src="images/38.jpg" alt=" " class="img-responsive" />
-								<div class="w3_hs_bottom">
-									<div class="flex_ecommerce">
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-							<h5><a href="single.html">White Skirts</a></h5>
-							<div class="simpleCart_shelfItem">
-								<p class="flexisel_ecommerce_cart"><span>$323</span> <i class="item_price">$310</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3l_related_products_grid">
-						<div class="agile_ecommerce_tab_left dresses_grid">
-							<div class="hs-wrapper hs-wrapper3">
-								<img src="images/37.jpg" alt=" " class="img-responsive" />
-								<img src="images/41.jpg" alt=" " class="img-responsive" />
-								<img src="images/27.jpg" alt=" " class="img-responsive" />
-								<img src="images/28.jpg" alt=" " class="img-responsive" />
-								<img src="images/37.jpg" alt=" " class="img-responsive" />
-								<img src="images/30.jpg" alt=" " class="img-responsive" />
-								<img src="images/36.jpg" alt=" " class="img-responsive" />
-								<img src="images/38.jpg" alt=" " class="img-responsive" />
-								<div class="w3_hs_bottom">
-									<div class="flex_ecommerce">
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-							<h5><a href="single.html">Long Skirts</a></h5>
-							<div class="simpleCart_shelfItem">
-								<p class="flexisel_ecommerce_cart"><span>$256</span> <i class="item_price">$200</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-				<script type="text/javascript">
-					$(window).load(function() {
-						$("#flexiselDemo2").flexisel({
-							visibleItems:4,
-							animationSpeed: 1000,
-							autoPlay: true,
-							autoPlaySpeed: 3000,    		
-							pauseOnHover: true,
-							enableResponsiveBreakpoints: true,
-							responsiveBreakpoints: { 
-								portrait: { 
-									changePoint:480,
-									visibleItems: 1
-								}, 
-								landscape: { 
-									changePoint:640,
-									visibleItems:2
-								},
-								tablet: { 
-									changePoint:768,
-									visibleItems: 3
-								}
-							}
-						});
-						
-					});
-				</script>
-				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-		</div>
-	</div>
+	</div>	
 <!-- //dresses -->
-<!-- newsletter -->
-	<div class="newsletter">
-		<div class="container">
-			<div class="col-md-6 w3agile_newsletter_left">
-				<h3>Newsletter</h3>
-				<p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
-			</div>
-			<div class="col-md-6 w3agile_newsletter_right">
-				<form action="#" method="post">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="submit" value="">
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-<!-- //newsletter -->
 <!-- footer -->
-	<div class="footer">
+<div class="footer">
 		<div class="container">
 			<div class="w3_footer_grids">
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Contact</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+					<h3>CONTACTO</h3>
+					<p>Puedes contactarnos a través de los siguientes medios.</p>
 					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+						<li><img src="../images/pin.png">Av. Xalapa #1 <span>Xalapa,Veracruz.</span></li>
+						<li><img src="../images/email.png"><a href="mailto:info@example.com">  chein@support.com</a></li>
+						<li><img src="../images/call.png">+52 228 123 4564</li> 
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Information</h3>
+					<h3>MI PERFIL</h3>
 					<ul class="info"> 
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="mail.html">Contact Us</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-						<li><a href="products.html">Special Products</a></li>
+						<li><a href="checkout.php">Mi carrito</a></li>
 					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Category</h3>
-					<ul class="info"> 
-						<li><a href="dresses.html">Dresses</a></li>
-						<li><a href="sweaters.html">Sweaters</a></li>
-						<li><a href="shirts.html">Shirts</a></li>
-						<li><a href="sarees.html">Sarees</a></li>
-						<li><a href="skirts.html">Shorts & Skirts</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Profile</h3>
-					<ul class="info"> 
-						<li><a href="products.html">Summer Store</a></li>
-						<li><a href="checkout.html">My Cart</a></li>
-					</ul>
-					<h4>Follow Us</h4>
+					<h4>Siguenos</h4>
 					<div class="agileits_social_button">
 						<ul>
 							<li><a href="#" class="facebook"> </a></li>
@@ -953,11 +757,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive" /></a>
 				</div>
 			</div>
-			<div class="container">
-				<p>&copy; 2016 Women's Fashion. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
 		</div>
-	</div>
+	</div>	
 <!-- //footer -->
 </body>
 </html>

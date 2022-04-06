@@ -118,18 +118,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header">
 		<div class="container">
 			<div class="w3l_login">
-				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+				<a href="#" data-toggle="modal" data-target="#myModal88"><img src="../images/user.png"/></a>
 			</div>
 			<div class="w3l_logo">
 				<h1><a href="index.php">CHEIN<span>Lo mejor en moda</span></a></h1>
 			</div>
 			<div class="search">
 				<input class="search_box" type="checkbox" id="search_box">
-				<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+				<label class="icon-search" for="search_box"><img src="../images/search.png"/></label>
 				<div class="search_form">
 					<form action="#" method="post">
-						<input type="text" name="Search" placeholder="Search...">
-						<input type="submit" value="Send">
+						<input type="text" name="Search" placeholder="Ingresa tu búsqueda...">
+						<input type="submit" value="Buscar">
 					</form>
 				</div>
 			</div>
@@ -221,7 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- new-products -->
 	<div class="new-products">
 		<div class="container">
-			<h3>New Products</h3>
+			<h3>Nuevos Productos</h3>
 			<div class="agileinfo_new_products_grids">
 				<div class="col-md-3 agileinfo_new_products_grid">
 					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
@@ -245,7 +245,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h5><a href="single.php">Skirts</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
-							<p><a class="item_add" href="#">Add to cart</a></p>
+							<p><a class="item_add" href="#">Añadir al carrito</a></p>
 						</div>
 					</div>
 				</div>
@@ -271,7 +271,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h5><a href="single.php">Jackets</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
-							<p><a class="item_add" href="#">Add to cart</a></p>
+							<p><a class="item_add" href="#">Añadir al carrito</a></p>
 						</div>
 					</div>
 				</div>
@@ -323,7 +323,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h5><a href="single.php">Jeans</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
-							<p><a class="item_add" href="#">Add to cart</a></p>
+							<p><a class="item_add" href="#">Añadir al carrito</a></p>
 						</div>
 					</div>
 				</div>
@@ -335,7 +335,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3>Top Brands</h3>
+			<h3>Nuestras Marcas</h3>
 			<div class="sliderfig">
 				<ul id="flexiselDemo1">			
 					<li>
@@ -392,41 +392,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="w3_footer_grids">
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Contact</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+					<h3>CONTACTO</h3>
+					<p>Puedes contactarnos a través de los siguientes medios.</p>
 					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+						<li><img src="../images/pin.png">Av. Xalapa #1 <span>Xalapa,Veracruz.</span></li>
+						<li><img src="../images/email.png"><a href="mailto:info@example.com">  chein@support.com</a></li>
+						<li><img src="../images/call.png">+52 228 123 4564</li> 
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Information</h3>
+					<h3>MI PERFIL</h3>
 					<ul class="info"> 
-						<li><a href="about.php">About Us</a></li>
-						<li><a href="mail.php">Contact Us</a></li>
-						<li><a href="short-codes.php">Short Codes</a></li>
-						<li><a href="faq.php">FAQ's</a></li> 
-						<li><a href="products.php">Special Products</a></li> 
+						<li><a href="checkout.php">Mi carrito</a></li>
 					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Category</h3>
-					<ul class="info"> 
-						<li><a href="dresses.php">Dresses</a></li>
-						<li><a href="sweaters.php">Sweaters</a></li>
-						<li><a href="shirts.php">Shirts</a></li>
-						<li><a href="sarees.php">Sarees</a></li>
-						<li><a href="skirts.php">Shorts & Skirts</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Profile</h3>
-					<ul class="info"> 
-						<li><a href="products.php">Summer Store</a></li>
-						<li><a href="checkout.php">My Cart</a></li>
-					</ul>
-					<h4>Follow Us</h4>
+					<h4>Siguenos</h4>
 					<div class="agileits_social_button">
 						<ul>
 							<li><a href="#" class="facebook"> </a></li>
@@ -444,9 +423,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="footer-copy-pos">
 					<a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive" /></a>
 				</div>
-			</div>
-			<div class="container">
-				<p>&copy; 2016 Women's Fashion. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
 		</div>
 	</div>

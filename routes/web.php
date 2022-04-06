@@ -17,9 +17,7 @@ Route::get('/','App\Http\Controllers\Inicio@iniciar');
 
 Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
 
-Route::get('/camisas',function(){
-    return view('camisas');    
-});
+Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
 
 Route::get('/pantalones',function(){
     return view('jeans');    
