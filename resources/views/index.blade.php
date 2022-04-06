@@ -118,7 +118,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header">
 		<div class="container">
 			<div class="w3l_login">
-				<!-- <a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a> -->
 				<a href="#" data-toggle="modal" data-target="#myModal88"><img src="../images/user.png"/></a>
 			</div>
 			<div class="w3l_logo">
