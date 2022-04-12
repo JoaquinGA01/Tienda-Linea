@@ -28,3 +28,5 @@ Route::get('/about',function(){
     return view('about');    
 });
 
+Route::get('/addProducto','App\Http\Controllers\Producto@iniciar');
+Route::post('/addProducto','App\Http\Controllers\Producto@addProducto');
