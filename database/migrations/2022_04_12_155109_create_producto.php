@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('descripcion');
             $table->string('precio');            
+            $table->string('ruta');            
         });
-        DB::statement("ALTER TABLE producto ADD imagen MEDIUMBLOB");
+        //DB::statement("ALTER TABLE producto ADD imagen MEDIUMBLOB");
     }
         
     /**

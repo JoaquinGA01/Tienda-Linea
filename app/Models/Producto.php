@@ -17,7 +17,7 @@ class Producto extends Model
         'nombre',
         'descripcion',
         'precio',
-        'imagen',
+        'ruta',
     ];
 
 }

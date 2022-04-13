@@ -357,8 +357,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 								<!-- <div class="hs-wrapper hs-wrapper2"> -->
 									<!-- imagen -->
-									<img src="images/c2.jpg" alt=" " class="img-responsive" />
-									<!-- <img src="{{ $producto-> imagen }}" alt=" " class="img-responsive" /> -->
+									<!-- <img src="images/c2.jpg" alt=" " class="img-responsive" /> -->
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
 								<!-- </div> -->
 								<!-- nombre -->
 								<!-- <h5><a href="#">Bronze Sandals</a></h5> -->
