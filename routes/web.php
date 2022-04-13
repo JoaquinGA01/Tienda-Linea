@@ -23,7 +23,6 @@ Route::get('/pantalones',function(){
     return view('jeans');    
 });
 
-
 Route::get('/about',function(){
     return view('about');    
 });
