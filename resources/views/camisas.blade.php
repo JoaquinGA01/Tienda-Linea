@@ -164,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<ul class="multi-column-dropdown">
 											<h6>Caballeros</h6>
 											
-											 <li><a href="camisas">Camisas<span>New</span></a></li> 
+											 <li><a href="camisas">Camisas<span>¡Nuevo!</span></a></li> 
  											<li><a href="sweaters.php">Pantalones</a></li>
 											<li><a href="skirts.php">Playeras</a></li> 
 										</ul>
@@ -312,36 +312,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="col-md-8 w3ls_dresses_grid_right">
-					<div class="col-md-6 w3ls_dresses_grid_right_left">
-						<div class="w3ls_dresses_grid_right_grid1">
-							<img src="images/75.jpg" alt=" " class="img-responsive" />
-							<div class="w3ls_dresses_grid_right_grid1_pos1">
-								<h3>Sandals <span>Up To</span> 10% Discount</h3>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 w3ls_dresses_grid_right_left">
-						<div class="w3ls_dresses_grid_right_grid1">
-							<img src="images/74.jpg" alt=" " class="img-responsive" />
-							<div class="w3ls_dresses_grid_right_grid1_pos">
-								<h3>Blue Color <span>Rubber</span> Sandals</h3>
-							</div>
-						</div>
-					</div>
+
 					<div class="clearfix"> </div>
 
 					<div class="w3ls_dresses_grid_right_grid2">
 						<div class="w3ls_dresses_grid_right_grid2_left">
-							<h3>Showing Results: 0-1</h3>
+							
+							<h3>Resultados:  </h3>
 						</div>
 						<div class="w3ls_dresses_grid_right_grid2_right">
 							<select name="select_item" class="select_item">
-								<option selected="selected">Default sorting</option>
-								<option>Sort by popularity</option>
-								<option>Sort by average rating</option>
-								<option>Sort by newness</option>
-								<option>Sort by price: low to high</option>
-								<option>Sort by price: high to low</option>
+								<option selected="selected">Predeterminado</option>
+								<option>Ordenar por nombre</option>
+								<option>Ordenar por precio Más bajo al más alto</option>
+								<option>Ordenar por precio más alto al más bajo</option>
 							</select>
 						</div>
 						<div class="clearfix"> </div>
@@ -350,18 +334,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="w3ls_dresses_grid_right_grid3">
 						
 						@foreach($productos as $producto)
-
+						
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
 
 							<div class="agile_ecommerce_tab_left dresses_grid">
-								
-								<!-- <div class="hs-wrapper hs-wrapper2"> -->
-									<!-- imagen -->
-									<!-- <img src="images/c2.jpg" alt=" " class="img-responsive" /> -->
+								<!-- imagen -->
+								<div class="hs-wrapper hs-wrapper2">
 									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
-								<!-- </div> -->
-								<!-- nombre -->
-								<!-- <h5><a href="#">Bronze Sandals</a></h5> -->
+
+									<div class="w3_hs_bottom w3_hs_bottom_sub1">
+										<ul>
+											<li>
+												<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+											</li>
+										</ul>
+									</div>								
+								</div>	
 								<h5><a href="#">{{ $producto-> nombre  }}</a></h5>
 								<div class="simpleCart_shelfItem">
 									<!-- precio -->
@@ -370,14 +358,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						@endforeach
-						<div class="clearfix"> </div>
 						
+																				
+
+					
+					
+					@endforeach
 						
+
+
 
 					</div>
 
+					<div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal6">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+								</div>
+								<section>
+									<div class="modal-body">
+										<div class="col-md-5 modal_body_left">
+											<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+										</div>
+										<div class="col-md-7 modal_body_right">
+											<h4>{{ $producto-> nombre  }}</h4>
+											<p>
+											{{ $producto-> descripcion  }}
+											</p>
 
+											<div class="modal_body_right_cart simpleCart_shelfItem">
+												<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
+												<p><a class="item_add" href="#">Agregar al carrito</a></p>
+											</div>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
 
 				</div>
 			</div>
