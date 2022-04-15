@@ -358,19 +358,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</div>
-						
-																				
-
-					
-					
-					@endforeach
-						
-
-
-
-					</div>
-
-					<div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal6">
+											
+						<div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal6">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
@@ -396,10 +385,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</section>
 							</div>
+							
 						</div>
+						
 					</div>
-
+					@endforeach
+																							
+					</div>
+									
 				</div>
+				
 			</div>
 		</div>
 	</div>
