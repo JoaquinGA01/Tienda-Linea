@@ -134,7 +134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 			<div class="cart box_1">
-				<a href="checkout.php">
+				<a href="/carrito">
 					<div class="total">
 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> artículos)</div>
 					<img src="../images/bag.png" alt="" />
@@ -246,6 +246,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
 							<p><a class="item_add" href="#">Añadir al carrito</a></p>
+							<p><a class="item_add" href="#">Apartar Producto</a></p>
 						</div>
 					</div>
 				</div>
@@ -272,6 +273,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
 							<p><a class="item_add" href="#">Añadir al carrito</a></p>
+							<p><a class="item_add" href="#">Apartar Producto</a></p>
 						</div>
 					</div>
 				</div>
@@ -297,7 +299,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h5><a href="single.php">Dresses</a></h5>
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
-							<p><a class="item_add" href="#">Add to cart</a></p>
+							<p><a class="item_add" href="#">Añadir al carrito</a></p>
+							<p><a class="item_add" href="#">Apartar Producto</a></p>
 						</div>
 					</div>
 				</div>
@@ -324,6 +327,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="simpleCart_shelfItem">
 							<p><span>$320</span> <i class="item_price">$250</i></p>
 							<p><a class="item_add" href="#">Añadir al carrito</a></p>
+							<p><a class="item_add" href="#">Apartar Producto</a></p>
 						</div>
 					</div>
 				</div>

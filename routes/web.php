@@ -19,6 +19,10 @@ Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
 
 Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
 
+Route::get("/carrito",function(){
+    return view("checkout");
+});
+
 Route::get('/pantalones',function(){
     return view('jeans');    
 });
