@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													@csrf
 													<input placeholder="Nombre" name="Name" type="text" required="">
 													<input placeholder="Email" name="Email" type="email" required="">	
-													<input placeholder="Contraseña" name="Password" type="password" required="">	
+													<input placeholder="Contraseña" name="Password" type="password" required="">
 													<input placeholder="Confirmar contraseña" name="Password" type="password" required="">
 													<div class="sign-up">
 														<input type="submit" value="Crear cuenta"/>
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</form>
 											</div>
 										</div>
-									</div> 			        					            	      
+									</div>
 								</div>	
 							</div>
 							<script src="../js/easyResponsiveTabs.js" type="text/javascript"></script>
@@ -216,8 +216,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<form action="/addProducto" method="post" enctype="multipart/form-data">			
 					@csrf
 					<input placeholder="Nombre del producto" name="nombre" type="text" required="">
+					<label>Selecciona la categoria de la prenda</label>
+					<select name="categoria" class="select_item">
+						<option selected="selected">Selecciona la categoría</option>
+						<option>Camisa</option>
+						<option>Playera</option>
+						<option>Pantalón</option>
+					</select>					
 					<input placeholder="Descripción del producto" name="descripcion" type="text" required="">
 					<input placeholder="Precio" name="precio" type="text" required="">	
+					<input placeholder="Stock" name="stock" type="text" required="">	
 					<input type="file" name="imagen" accept="image/png">
 
 					<div class="sign-up">

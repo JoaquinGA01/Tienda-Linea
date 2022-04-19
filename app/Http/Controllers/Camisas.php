@@ -7,8 +7,12 @@ use Illuminate\Http\Request;
 class Camisas extends Controller
 {
     public function iniciar(){
-        
-        $productos = \DB::table('producto')->select('producto.*')->orderBy('id','DESC')->get();
+        //https://laravel.com/docs/9.x/queries
+        $productos = \DB::table('producto')
+                    ->select('producto.*')
+                    ->where('categoria','camisa')
+                    ->orderBy('id','DESC')
+                    ->get();
         
         return view('camisas')->with('productos',$productos);
     }

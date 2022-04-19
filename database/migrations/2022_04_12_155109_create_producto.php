@@ -16,8 +16,10 @@ return new class extends Migration
         Schema::create('producto', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
+            $table->string('categoria');
             $table->string('descripcion');
             $table->string('precio');            
+            $table->string('stock');            
             $table->string('ruta');            
         });
         //DB::statement("ALTER TABLE producto ADD imagen MEDIUMBLOB");

@@ -17,7 +17,8 @@ class Producto extends Controller
         $nombre = $_POST['nombre'];
         $descripcion = $_POST['descripcion'];
         $precio = $_POST['precio'];
-        
+        $categoria = $_POST['categoria'];
+        $stock = $_POST['stock'];
 
 
         $entrada = $request->all();
@@ -28,9 +29,9 @@ class Producto extends Controller
         }
 
         if($conn){
-            $sql = "INSERT INTO producto(nombre,descripcion, precio,ruta) VALUES ('$nombre', '$descripcion', '$precio','$nombreA')";
+            $sql = "INSERT INTO producto(nombre,categoria,descripcion, precio,stock,ruta) VALUES ('$nombre','$categoria' ,'$descripcion', '$precio','$stock','$nombreA')";
             if (mysqli_query($conn, $sql)) {
-                echo "Registro guardado con exito";
+                echo "<h3>Registro guardado con exito</h3>";
             }else{                
                 echo "Error: " . $sql . "<br>" . $conn->error;                  
             }
