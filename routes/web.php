@@ -39,5 +39,10 @@ Route::get('head',function(){
     return view('head');    
 });
 
+Route::get('header',function(){
+    return view('header');    
+});
+
+
 Route::get('/addProducto','App\Http\Controllers\Producto@iniciar');
 Route::post('/addProducto','App\Http\Controllers\Producto@addProducto');
