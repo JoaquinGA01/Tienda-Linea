@@ -24,7 +24,7 @@
 						<option selected="selected">Selecciona la categoría</option>
 						<option>Camisa</option>
 						<option>Playera</option>
-						<option>Pantalón</option>
+						<option>Pantalon</option>
 					</select>					
 					<input placeholder="Descripción del producto" name="descripcion" type="text" required="">
 					<input placeholder="Precio" name="precio" type="text" required="">	

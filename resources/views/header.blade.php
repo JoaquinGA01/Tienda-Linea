@@ -126,7 +126,7 @@
 											<h6>Caballeros</h6>
 											
 											 <li><a href="camisas">Camisas<span>¡Nuevo!</span></a></li> 
- 											<li><a href="sweaters.php">Pantalones</a></li>
+ 											<li><a href="pantalones">Pantalones</a></li>
 											<li><a href="skirts.php">Playeras</a></li> 
 										</ul>
 									</div>

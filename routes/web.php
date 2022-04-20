@@ -23,9 +23,7 @@ Route::get("/carrito",function(){
     return view("checkout");
 });
 
-Route::get('/pantalones',function(){
-    return view('jeans');    
-});
+Route::get('/pantalones','App\Http\Controllers\Pantalones@iniciar');
 
 Route::get('/about',function(){
     return view('about');    
