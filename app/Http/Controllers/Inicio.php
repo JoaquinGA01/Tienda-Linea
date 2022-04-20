@@ -11,7 +11,12 @@ class Inicio extends Controller
     //
     public function iniciar()
     {
-        return view('index');
+        $productos = \DB::table('producto')
+                    ->select('producto.*')
+                    ->orderBy('id','DESC')
+                    ->get();
+        
+        return view('index')->with('productos',$productos);        
     }
 
     public function guardarUser(){

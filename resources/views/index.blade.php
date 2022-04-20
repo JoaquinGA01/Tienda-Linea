@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+<!-- head -->
 <head>
 <title>CHEIN Tienda en línea | Home</title>
 <!-- for-mobile-apps -->
@@ -39,10 +41,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- //end-smooth-scrolling -->
 </head>
-	
+<!-- //head -->
+
+
 <body>
 <!-- header -->
-	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+<!-- header -->
+<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 		aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
@@ -208,8 +213,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</nav>
 		</div>
-	</div>
-<!-- //header -->
+	</div><!-- //header -->
 <!-- banner -->
 	<div class="banner" id="home1">
 		<div class="container">
@@ -222,115 +226,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="new-products">
 		<div class="container">
 			<h3>Nuevos Productos</h3>
+			
 			<div class="agileinfo_new_products_grids">
+			@foreach($productos as $producto)
 				<div class="col-md-3 agileinfo_new_products_grid">
-					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-						<div class="hs-wrapper hs-wrapper1">
-							<img src="images/27.jpg" alt=" " class="img-responsive" />
-							<img src="images/28.jpg" alt=" " class="img-responsive" />
-							<img src="images/29.jpg" alt=" " class="img-responsive" />
-							<img src="images/30.jpg" alt=" " class="img-responsive" />
-							<img src="images/27.jpg" alt=" " class="img-responsive" />
-							<img src="images/28.jpg" alt=" " class="img-responsive" />
-							<img src="images/29.jpg" alt=" " class="img-responsive" />
-							<img src="images/30.jpg" alt=" " class="img-responsive" />
-							<div class="w3_hs_bottom w3_hs_bottom_sub">
-								<ul>
-									<li>
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</li>
-								</ul>
+				
+				
+						
+						<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
+				
+							<div class="hs-wrapper hs-wrapper1">
+								<!-- imagen -->
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+
+									<div class="w3_hs_bottom w3_hs_bottom_sub">
+										<ul>
+											<li>
+												<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+											</li>
+										</ul>
+									</div>								
+							</div>
+							<h5><a href="#">{{ $producto-> nombre  }}</a></h5>
+							<div class="simpleCart_shelfItem">
+									<!-- precio -->
+								<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
+								<p><a class="item_add" href="#">Agregar al carrito</a></p>
+								<p><a class="item_add" href="#">Apartar Producto</a></p>
 							</div>
 						</div>
-						<h5><a href="single.php">Skirts</a></h5>
-						<div class="simpleCart_shelfItem">
-							<p><span>$320</span> <i class="item_price">$250</i></p>
-							<p><a class="item_add" href="#">Añadir al carrito</a></p>
-							<p><a class="item_add" href="#">Apartar Producto</a></p>
-						</div>
-					</div>
+						
 				</div>
-				<div class="col-md-3 agileinfo_new_products_grid">
-					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-						<div class="hs-wrapper hs-wrapper1">
-							<img src="images/31.jpg" alt=" " class="img-responsive" />
-							<img src="images/32.jpg" alt=" " class="img-responsive" />
-							<img src="images/33.jpg" alt=" " class="img-responsive" />
-							<img src="images/34.jpg" alt=" " class="img-responsive" />
-							<img src="images/31.jpg" alt=" " class="img-responsive" />
-							<img src="images/32.jpg" alt=" " class="img-responsive" />
-							<img src="images/33.jpg" alt=" " class="img-responsive" />
-							<img src="images/34.jpg" alt=" " class="img-responsive" />
-							<div class="w3_hs_bottom w3_hs_bottom_sub">
-								<ul>
-									<li>
-										<a href="#" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<h5><a href="single.php">Jackets</a></h5>
-						<div class="simpleCart_shelfItem">
-							<p><span>$320</span> <i class="item_price">$250</i></p>
-							<p><a class="item_add" href="#">Añadir al carrito</a></p>
-							<p><a class="item_add" href="#">Apartar Producto</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 agileinfo_new_products_grid">
-					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-						<div class="hs-wrapper hs-wrapper1">
-							<img src="images/37.jpg" alt=" " class="img-responsive" />
-							<img src="images/30.jpg" alt=" " class="img-responsive" />
-							<img src="images/36.jpg" alt=" " class="img-responsive" />
-							<img src="images/38.jpg" alt=" " class="img-responsive" />
-							<img src="images/37.jpg" alt=" " class="img-responsive" />
-							<img src="images/30.jpg" alt=" " class="img-responsive" />
-							<img src="images/36.jpg" alt=" " class="img-responsive" />
-							<img src="images/38.jpg" alt=" " class="img-responsive" />
-							<div class="w3_hs_bottom w3_hs_bottom_sub">
-								<ul>
-									<li>
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<h5><a href="single.php">Dresses</a></h5>
-						<div class="simpleCart_shelfItem">
-							<p><span>$320</span> <i class="item_price">$250</i></p>
-							<p><a class="item_add" href="#">Añadir al carrito</a></p>
-							<p><a class="item_add" href="#">Apartar Producto</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 agileinfo_new_products_grid">
-					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
-						<div class="hs-wrapper hs-wrapper1">
-							<img src="images/40.jpg" alt=" " class="img-responsive" />
-							<img src="images/41.jpg" alt=" " class="img-responsive" />
-							<img src="images/42.jpg" alt=" " class="img-responsive" />
-							<img src="images/43.jpg" alt=" " class="img-responsive" />
-							<img src="images/40.jpg" alt=" " class="img-responsive" />
-							<img src="images/41.jpg" alt=" " class="img-responsive" />
-							<img src="images/42.jpg" alt=" " class="img-responsive" />
-							<img src="images/43.jpg" alt=" " class="img-responsive" />
-							<div class="w3_hs_bottom w3_hs_bottom_sub">
-								<ul>
-									<li>
-										<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<h5><a href="single.php">Jeans</a></h5>
-						<div class="simpleCart_shelfItem">
-							<p><span>$320</span> <i class="item_price">$250</i></p>
-							<p><a class="item_add" href="#">Añadir al carrito</a></p>
-							<p><a class="item_add" href="#">Apartar Producto</a></p>
-						</div>
-					</div>
-				</div>
+				@endforeach
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -392,44 +327,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //top-brands -->
 
 <!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="w3_footer_grids">
-				<div class="col-md-3 w3_footer_grid">
-					<h3>CONTACTO</h3>
-					<p>Puedes contactarnos a través de los siguientes medios.</p>
-					<ul class="address">
-						<li><img src="../images/pin.png">Av. Xalapa #1 <span>Xalapa,Veracruz.</span></li>
-						<li><img src="../images/email.png"><a href="mailto:info@example.com">  chein@support.com</a></li>
-						<li><img src="../images/call.png">+52 228 123 4564</li> 
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>MI PERFIL</h3>
-					<ul class="info"> 
-						<li><a href="checkout.php">Mi carrito</a></li>
-					</ul>
-					<h4>Siguenos</h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="footer-copy">
-			<div class="footer-copy1">
-				<div class="footer-copy-pos">
-					<a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive" /></a>
-				</div>
-			</div>
-		</div>
-	</div>
+@include('footer')
 <!-- //footer -->
 </body>
 </html>

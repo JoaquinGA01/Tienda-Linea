@@ -11,8 +11,8 @@ class Producto extends Controller
     }   
 
     public function addProducto(Request $request){
-        //$conn = mysqli_connect("localhost", "root", "", "chein");
-        $conn = mysqli_connect("localhost", "root", "", "tienda_linea");
+        $conn = mysqli_connect("localhost", "root", "", "chein");
+        //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
 
         $nombre = $_POST['nombre'];
         $descripcion = $_POST['descripcion'];
