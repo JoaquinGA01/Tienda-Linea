@@ -85,9 +85,11 @@ class ProductoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
+    public function edit($id){
+
+        $producto = Producto::findOrFail($id);
+        return view ('actualizar',compact('producto'));
+
     }
 
     /**
@@ -97,9 +99,24 @@ class ProductoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
+    public function update(Request $request, $id){
+
+        $entrada = $request->all();
+        if($archivo=$request->file('imagen')){
+            $nombreA = $archivo->getClientOriginalName();
+            $archivo->move('images',$nombreA);
+            $entrada['ruta']=$nombreA;
+        }
+
+        $producto = Producto::findOrFail($id);
+        $producto->nombre= $request->input('nombre');
+        $producto->categoria= $request->input('categoria');
+        $producto->descripcion= $request->input('descripcion');
+        $producto->precio= $request->input('precio');
+        $producto->stock= $request->input('stock');
+        $producto->ruta=$nombreA;
+        $producto->save();
+        return redirect()->route('inventario.index');
     }
 
     /**

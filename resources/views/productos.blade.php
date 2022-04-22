@@ -59,7 +59,7 @@
                         @else
                         @foreach($productos as $producto)
                            <tr>
-                               <td>Editar | Eliminar</td>
+                               <td> <a href="{{route('inventario.edit',$producto->id)}}" class="btn btn-warning btn-sm"> Editar </a> | Eliminar</td>
                                <td>{{$producto->id}}</td>
                                <td>{{$producto->nombre}}</td>
                                <td>{{$producto->categoria}}</td>
