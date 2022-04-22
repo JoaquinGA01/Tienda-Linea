@@ -13,6 +13,17 @@ class Producto extends Model
      *
      * @var array<int, string>
      */
+/*     protected $fillable = [ 
+        'nombre',
+        'categoria',
+        'descripcion',
+        'precio',
+        'stock',
+        'ruta',
+    ]; */
+
+    protected $table = "producto";
+    protected $primaryKey = "id";
     protected $fillable = [ 
         'nombre',
         'categoria',
@@ -22,4 +33,7 @@ class Producto extends Model
         'ruta',
     ];
 
-}
+    public $timestamps = false;
+
+
+}   

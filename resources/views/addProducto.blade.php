@@ -1,47 +1,70 @@
 <!DOCTYPE html>
-<html>
-<!-- head -->
-@extends('head')
-@section('title', 'Agregar Producto')
-<!-- //head -->
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Añadir producto</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+</head>
 <body>
-<!-- header -->
-@include('header')
-<!-- //header -->
 
-<main>
+	<div class="container">
+		<h4>Añadir producto</h4>
+		<div class="row">
+			<div class="col-xl-12">
 
-		<div class="facts">
-			
-			<div class="register">
-
-				<form action="/addProducto" method="post" enctype="multipart/form-data">			
-					@csrf
-					<input placeholder="Nombre del producto" name="nombre" type="text" required="">
-					<label>Selecciona la categoria de la prenda</label>
-					<select name="categoria" class="select_item">
-						<option selected="selected">Selecciona la categoría</option>
-						<option>Camisa</option>
-						<option>Playera</option>
-						<option>Pantalon</option>
-					</select>					
-					<input placeholder="Descripción del producto" name="descripcion" type="text" required="">
-					<input placeholder="Precio" name="precio" type="text" required="">	
-					<input placeholder="Stock" name="stock" type="text" required="">	
-					<input type="file" name="imagen" accept="image/png">
-
-					<div class="sign-up">
-						<input type="submit" value="Guardar producto"/>
+				<form action="{{route('inventario.store')}}" method="post" enctype="multipart/form-data">
+				@csrf
+					<div class="form-group">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control" name="nombre" required>
 					</div>
+					
+					<div class="form-group">
+						<label>Selecciona la categoria de la prenda</label>
+						<select name="categoria" class="select_item">
+							<option selected="selected">Selecciona la categoría</option>
+							<option>Camisa</option>
+							<option>Playera</option>
+							<option>Pantalon</option>
+						</select>	
+					</div>
+					
+					<div class="form-group">
+						<label for="descripcion">Descripción</label>
+						<input type="text" class="form-control" name="descripcion" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="precio">Precio</label>
+						<input type="text" class="form-control" name="precio" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="stock">Stock</label>
+						<input type="text" class="form-control" name="stock" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="imagen">Imagen</label>
+						<input type="file" name="imagen" accept="image/png">
+					</div>
+
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary" value="Guardar">
+						<input type="reset" class="btn btn-default" value="Cancelar">
+						<a href="javascript:history.back()">Ir al listado</a>
+					</div>
+
 				</form>
+				
 			</div>
 		</div>
+	</div>
 
-</main>
 
-<!-- footer -->
-@include('footer')
-<!-- //footer -->
+
 </body>
 </html>

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
-
+//https://www.youtube.com/c/jcarlosad7/videos
 class Inicio extends Controller
 {
     //
@@ -33,4 +33,5 @@ class Inicio extends Controller
         }
         return view('index');
     }
+    
 }

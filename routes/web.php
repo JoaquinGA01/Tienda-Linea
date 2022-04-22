@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ProductoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/','App\Http\Controllers\Inicio@iniciar');
+/* Route::get('/','App\Http\Controllers\Inicio@iniciar');
 
 Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
 
@@ -24,6 +25,7 @@ Route::get("/carrito",function(){
 });
 
 Route::get('/pantalones','App\Http\Controllers\Pantalones@iniciar');
+
 
 Route::get('/about',function(){
     return view('about');    
@@ -43,4 +45,7 @@ Route::get('header',function(){
 
 
 Route::get('/addProducto','App\Http\Controllers\Producto@iniciar');
-Route::post('/addProducto','App\Http\Controllers\Producto@addProducto');
+Route::post('/addProducto','App\Http\Controllers\Producto@addProducto'); */
+
+/* Prueba*/
+Route::resource('/inventario',ProductoController::class);
