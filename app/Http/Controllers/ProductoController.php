@@ -125,9 +125,12 @@ class ProductoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($id){
+
+        $producto = Producto::findOrFail($id);
+        $producto->delete();
+        return redirect()->route('inventario.index');
+        
     }
 
 
