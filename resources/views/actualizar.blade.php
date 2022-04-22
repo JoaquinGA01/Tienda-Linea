@@ -11,7 +11,7 @@
 <body>
 
 	<div class="container">
-		<h4>Añadir producto</h4>
+		<h4>Editar producto</h4>
 		<div class="row">
 			<div class="col-xl-12">
 

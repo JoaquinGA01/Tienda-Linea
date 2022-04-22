@@ -14,7 +14,7 @@ use App\Http\Controllers\ProductoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/* Route::get('/','App\Http\Controllers\Inicio@iniciar');
+Route::get('/','App\Http\Controllers\Inicio@iniciar');
 
 Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
 
@@ -44,8 +44,8 @@ Route::get('header',function(){
 });
 
 
+/* 
 Route::get('/addProducto','App\Http\Controllers\Producto@iniciar');
-Route::post('/addProducto','App\Http\Controllers\Producto@addProducto'); */
-
-/* Prueba*/
+Route::post('/addProducto','App\Http\Controllers\Producto@addProducto');
+ */
 Route::resource('/inventario',ProductoController::class);
