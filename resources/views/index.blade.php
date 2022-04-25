@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -47,7 +49,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- header -->
 <!-- header -->
-<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+	<div class="modal fade" id="myModal882" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div>
+					<input type="submit"  value="Cerrar Sesion" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 		aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
@@ -70,7 +82,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="facts">
 											<div class="register">
-												<form action="#" method="post">			
+												<form action="/SesionIniciada" method="post">
+													@csrf			
 													<input name="Email" placeholder="Correo electronico" type="text" required="">						
 													<input name="Password" placeholder="Contraseña" type="password" required="">										
 													<div class="sign-up">
@@ -117,14 +130,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+	@empty($nombre)
 	<script>
 		$('#myModal88').modal('show');
 	</script>
+	@endempty
 	<div class="header">
 		<div class="container">
+			@empty($nombre)
 			<div class="w3l_login">
 				<a href="#" data-toggle="modal" data-target="#myModal88"><img src="../images/user.png"/></a>
 			</div>
+			@endempty
+			@isset($nombre)
+			<div class="w3l_login">
+				<a href="#" data-toggle="modal" data-target="#myModal882"><img src="../images/user.png"/></a>
+			</div>
+			<div class='w31_login'>
+				<p>{{$nombre}}</p>
+			</div>
+			@endisset
 			<div class="w3l_logo">
 				<h1><a href="index.php">CHEIN<span>Lo mejor en moda</span></a></h1>
 			</div>
@@ -138,6 +163,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</form>
 				</div>
 			</div>
+			
 			<div class="cart box_1">
 				<a href="/carrito">
 					<div class="total">
@@ -228,6 +254,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3>Nuevos Productos</h3>
 			
 			<div class="agileinfo_new_products_grids">
+			@isset($productos)
 			@foreach($productos as $producto)
 				<div class="col-md-3 agileinfo_new_products_grid">
 				
@@ -259,13 +286,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="simpleCart_shelfItem">
 									<!-- precio -->
 								<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
-								<p><a class="item_add" href="#">Agregar al carrito</a></p>
+								<form action="/index.blade.php" method="POST">
+									<input type="hidden" name="idProducto" value="{{$producto->id}}">
+									<input type="submit" value="Agregar al carrito" class="item_add" name="btnGuardar">
+								</form>
+								<p><a class="item_add" href="/agregarcarrito">Agregar al carrito</a></p>
 								<p><a class="item_add" href="#">Apartar Producto</a></p>
 							</div>
 						</div>
 						
 				</div>
-				@endforeach
+			@endforeach
+			@endisset
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -331,3 +363,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 </body>
 </html>
+
+
+<?php
+    if(isset($_REQUEST["btnGuardar"])){
+        $id = $_POST['idProducto'];
+        $_SESSION['productos']['id'] = $id;
+		echo "<script>alert('Producto $id agregado con exito');</script>";
+    }
+	
+?>

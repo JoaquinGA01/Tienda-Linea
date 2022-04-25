@@ -17,7 +17,8 @@ use App\Http\Controllers\ProductoController;
 Route::get('/','App\Http\Controllers\Inicio@iniciar');
 
 Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
-
+Route::post('/SesionIniciada', 'App\Http\Controllers\Inicio@SesionIniciada');
+Route::post('/agregarCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
 Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
 
 Route::get("/carrito",function(){
