@@ -17,6 +17,9 @@ class Inicio extends Controller
     }
 
 
+    public function cerrarSesion(){
+        return view("index");
+    }
 
     public function guardarUser(){
         //$conn = mysqli_connect("localhost", "root", "", "chein");
