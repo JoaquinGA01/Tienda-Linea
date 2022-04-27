@@ -94,7 +94,7 @@
 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> artículos)</div>
 					<img src="../images/bag.png" alt="" />
 				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Carrito vacío</a></p>
+				<p><a href="javascript:;" class="simpleCart_empty">Vaciar Carrito</a></p>
 				<div class="clearfix"> </div>
 			</div>	
 			<div class="clearfix"> </div>

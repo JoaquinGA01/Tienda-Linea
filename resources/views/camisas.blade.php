@@ -146,11 +146,18 @@
 								<!-- imagen -->
 								<div class="hs-wrapper hs-wrapper2">
 									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+									<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
 
 									<div class="w3_hs_bottom w3_hs_bottom_sub1">
 										<ul>
 											<li>
-												<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												<a href="#" data-toggle="modal" data-target="#myModal{{$producto-> id}}"><span class="glyphicon" aria-hidden="true"><img src="../images/eye-open.png"/></span></a>
 											</li>
 										</ul>
 									</div>								
@@ -162,37 +169,42 @@
 									<p><a class="item_add" href="#">Agregar al carrito</a></p>
 								</div>
 							</div>
-						</div>
-											
-						<div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal6">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-								</div>
-								<section>
-									<div class="modal-body">
-										<div class="col-md-5 modal_body_left">
-											<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
-										</div>
-										<div class="col-md-7 modal_body_right">
-											<h4>{{ $producto-> nombre  }}</h4>
-											<p>
-											{{ $producto-> descripcion  }}
-											</p>
-
-											<div class="modal_body_right_cart simpleCart_shelfItem">
-												<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
-												<p><a class="item_add" href="#">Agregar al carrito</a></p>
-											</div>
-										</div>
-										<div class="clearfix"> </div>
+						</div> 
+						@endforeach
+						@foreach($productos as $producto)
+						<div class="modal video-modal fade" id="myModal{{$producto-> id}}" tabindex="-1" role="dialog" aria-labelledby="myModal6">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
 									</div>
-								</section>
+									<section>
+										<div class="modal-body">
+											<div class="col-md-5 modal_body_left">
+												<img src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
+											</div>
+											<div class="col-md-7 modal_body_right">
+												<h4>{{ $producto-> nombre  }}</h4>
+												<p>
+												{{ $producto-> descripcion  }}
+												</p>
+												
+												<p>
+												Stock disponible: {{ $producto-> stock  }} piezas
+												</p>
+
+												<div class="modal_body_right_cart simpleCart_shelfItem">
+													<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
+													<p><a class="item_add" href="#">Agregar al carrito</a></p>
+												</div>
+											</div>
+											<div class="clearfix"> </div>
+										</div>
+									</section>
+								</div>
+								
 							</div>
-							
-						</div>
-						
+						</div>	
 					</div>
 					@endforeach
 																							
