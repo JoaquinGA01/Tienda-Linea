@@ -54,7 +54,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div>
-					<input type="submit"  value="Cerrar Sesion" />
+					<form action="/cerrarSesion" method="get">
+						<input type="submit"  value="Cerrar Sesion" />
+					</form>
 				</div>
 			</div>
 		</div>
@@ -286,7 +288,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="simpleCart_shelfItem">
 									<!-- precio -->
 								<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
-								<form action="/index.blade.php" method="POST">
+								<form action="index.php" method="POST">
+									@csrf
 									<input type="hidden" name="idProducto" value="{{$producto->id}}">
 									<input type="submit" value="Agregar al carrito" class="item_add" name="btnGuardar">
 								</form>

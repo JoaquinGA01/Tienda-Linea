@@ -15,6 +15,7 @@ use App\Http\Controllers\ProductoController;
 |
 */
 Route::get('/','App\Http\Controllers\Inicio@iniciar');
+Route::get('/cerrarSesion','App\Http\Controllers\Inicio@cerrarSesion');
 
 Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
 Route::post('/SesionIniciada', 'App\Http\Controllers\Inicio@SesionIniciada');
