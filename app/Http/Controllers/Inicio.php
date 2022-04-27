@@ -35,7 +35,7 @@ class Inicio extends Controller
 
     public function SesionIniciada(){
         $conn = mysqli_connect("localhost", "root", "", "chein");
-        //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
+        $conn = mysqli_connect("localhost", "root", "", "tienda_linea");
         $correo = $_POST['Email'];
         $password = $_POST['Password'];
         if($conn){
