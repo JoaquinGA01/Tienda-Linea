@@ -19,8 +19,8 @@ class Inicio extends Controller
 
 
     public function guardarUser(){
-        $conn = mysqli_connect("localhost", "root", "", "chein");
-        //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
+        //$conn = mysqli_connect("localhost", "root", "", "chein");
+        $conn = mysqli_connect("localhost", "root", "", "tienda_linea");
         $nombre = $_POST['Name'];
         $correo = $_POST['Email'];
         $password = $_POST['Password'];
@@ -34,7 +34,7 @@ class Inicio extends Controller
     }
 
     public function SesionIniciada(){
-        $conn = mysqli_connect("localhost", "root", "", "chein");
+        //$conn = mysqli_connect("localhost", "root", "", "chein");
         $conn = mysqli_connect("localhost", "root", "", "tienda_linea");
         $correo = $_POST['Email'];
         $password = $_POST['Password'];
