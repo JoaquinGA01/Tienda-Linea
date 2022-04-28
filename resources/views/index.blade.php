@@ -58,6 +58,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="submit"  value="Cerrar Sesion" />
 					</form>
 				</div>
+				<div>
+					@isset($nombre)
+					<a href="perfil?variable=<?php echo urlencode($nombre);?>">Ver mi Perfil</a>
+					<?php echo $nombre; ?>
+					@endisset
+				</div>				
 			</div>
 		</div>
 	</div>
@@ -133,6 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	@empty($nombre)
+	
 	<script>
 		$('#myModal88').modal('show');
 	</script>
@@ -151,6 +158,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class='w31_login'>
 				<p>{{$nombre}}</p>
 			</div>
+			 
 			@endisset
 			<div class="w3l_logo">
 				<h1><a href="index.php">CHEIN<span>Lo mejor en moda</span></a></h1>

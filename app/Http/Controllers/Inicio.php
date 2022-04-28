@@ -22,8 +22,8 @@ class Inicio extends Controller
     }
 
     public function guardarUser(){
-        $conn = mysqli_connect("localhost", "root", "", "chein");
-        //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
+        //$conn = mysqli_connect("localhost", "root", "", "chein");
+        $conn = mysqli_connect("localhost", "root", "", "tienda_linea");
         $nombre = $_POST['Name'];
         $correo = $_POST['Email'];
         $password = $_POST['Password'];
@@ -37,8 +37,8 @@ class Inicio extends Controller
     }
 
     public function SesionIniciada(){
-        $conn = mysqli_connect("localhost", "root", "", "chein");
-        //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
+        //$conn = mysqli_connect("localhost", "root", "", "chein");
+        $conn = mysqli_connect("localhost", "root", "", "tienda_linea");
         $correo = $_POST['Email'];
         $password = $_POST['Password'];
         if($conn){
@@ -57,6 +57,24 @@ class Inicio extends Controller
         return view('index');
     }
     
+    public function eliminar(){
+        //$conn = mysqli_connect("localhost", "root", "", "chein");
+        $conn = mysqli_connect("localhost", "root", "", "tienda_linea");
+        $nombreU = $_POST['nombreUser'];
+        //$correo = $_POST['Email'];
+        //$password = $_POST['Password'];
+        if($conn){
+            $sql = "DELETE FROM users WHERE name= '$nombreU' ";
+            if (mysqli_query($conn, $sql)) {
+                //return view('index')->with('nombre', $nombre);
+                return view('index');
+            }else{
+                echo "Ha ocurrido un error";
+            }
+        }
+        return view('index');
+    }
+
 }
 
 function buscarproductos(){
@@ -66,3 +84,4 @@ function buscarproductos(){
                 ->get();
     return $productos;
 }
+
