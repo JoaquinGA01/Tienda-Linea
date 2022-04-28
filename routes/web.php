@@ -20,6 +20,7 @@ Route::get('/cerrarSesion','App\Http\Controllers\Inicio@cerrarSesion');
 Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
 Route::post('/SesionIniciada', 'App\Http\Controllers\Inicio@SesionIniciada');
 Route::post('/agregarCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
+Route::post('/guardarProductoCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
 Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
 
 Route::get("/carrito",function(){
