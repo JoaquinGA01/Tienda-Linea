@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductoController;
@@ -15,10 +15,8 @@ use App\Http\Controllers\ProductoController;
 |
 */
 Route::get('/','App\Http\Controllers\Inicio@iniciar');
-Route::get('/cerrarSesion','App\Http\Controllers\Inicio@cerrarSesion');
+Route::post('/','App\Http\Controllers\Inicio@iniciar');
 
-Route::post('/guardarUser', 'App\Http\Controllers\Inicio@guardarUser');
-Route::post('/SesionIniciada', 'App\Http\Controllers\Inicio@SesionIniciada');
 Route::post('/eliminar', 'App\Http\Controllers\Inicio@eliminar');
 Route::post('/agregarCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
 Route::post('/guardarProductoCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');

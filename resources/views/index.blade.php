@@ -41,6 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	});
 </script>
+
 <!-- //end-smooth-scrolling -->
 </head>
 <!-- //head -->
@@ -54,7 +55,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div>
-					<form action="/cerrarSesion" method="get">
+					<form action="/" method="get">
 						<input type="submit"  value="Cerrar Sesion" />
 					</form>
 				</div>
@@ -90,7 +91,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="facts">
 											<div class="register">
-												<form action="/SesionIniciada" method="post">
+												<form action="/" method="post">
 													@csrf			
 													<input name="Email" placeholder="Correo electronico" type="text" required="">						
 													<input name="Password" placeholder="Contraseña" type="password" required="">										
@@ -107,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											
 											<div class="register">
 
-												<form action="/guardarUser" method="post">			
+												<form action="/" method="post">			
 													@csrf
 													<input placeholder="Nombre" name="Name" type="text" required="">
 													<input placeholder="Email" name="Email" type="email" required="">	
@@ -143,6 +144,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script>
 		$('#myModal88').modal('show');
 	</script>
+	<script type="text/javascript">  
+	window.enviar = function(id){
+    console.log( "Ejecutando función test()" );
+    
+	}
+	
+	</script>
 	@endempty
 	<div class="header">
 		<div class="container">
@@ -176,7 +184,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 			<div class="cart box_1">
 				<a href="/carrito">
-					<div class="total">
+					<div class="total"></div>
 					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> artículos)</div>
 					<img src="../images/bag.png" alt="" />
 				</a>
@@ -296,7 +304,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="simpleCart_shelfItem">
 									<!-- precio -->
 								<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
-								<p><a class="item_add" href="/index.php?addCarrito&id={{$producto->id}}">Agregar al carrito</a></p>
+								<p><a class="item_add" onclick="return enviar({{$producto-> id}})">Agregar al carrito</a></p>
+								<!-- <p><a class="item_add" onclick="return enviar({{$producto-> id}})">Agregar al carrito</a></p> -->
 								<p><a class="item_add" href="#">Apartar Producto</a></p>
 							</div>
 						</div>
@@ -359,7 +368,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 							});
 					</script>
+					<script type="text/javascript" src="../js/enviar.js"></script>
 					<script type="text/javascript" src="../js/jquery.flexisel.js"></script>
+					
 		</div>
 	</div>
 <!-- //top-brands -->
@@ -371,11 +382,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </html>
 
 
-<?php
-if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
-	if($_REQUEST['action'] == 'addToCart' && !empty($_REQUEST['id'])){
-		$productID = $_REQUEST['id'];
-	}
-}
-	
-?>
