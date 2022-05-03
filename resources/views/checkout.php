@@ -1,726 +1,1025 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Women's Fashion a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Checkout :: w3layouts</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Women's Fashion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script src="js/jquery.min.js"></script>
-<!-- //js -->
-<!-- cart -->
-<script src="js/simpleCart.min.js"></script>
-<!-- cart -->
-<!-- for bootstrap working -->
-<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-<!-- //for bootstrap working -->
-<link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- start-smooth-scrolling -->
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- //end-smooth-scrolling -->
-</head>
-	
-<body>
-<!-- header -->
-	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-						&times;</button>
-					<h4 class="modal-title" id="myModalLabel">
-						Don't Wait, Login now!</h4>
-				</div>
-				<div class="modal-body modal-body-sub">
-					<div class="row">
-						<div class="col-md-8 modal_body_left modal_body_left1" style="border-right: 1px dotted #C2C2C2;padding-right:3em;">
-							<div class="sap_tabs">	
-								<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-									<ul>
-										<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Sign in</span></li>
-										<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Sign up</span></li>
-									</ul>		
-									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-										<div class="facts">
-											<div class="register">
-												<form action="#" method="post">			
-													<input name="Email" placeholder="Email Address" type="text" required="">						
-													<input name="Password" placeholder="Password" type="password" required="">										
-													<div class="sign-up">
-														<input type="submit" value="Sign in"/>
-													</div>
-												</form>
-											</div>
-										</div> 
-									</div>	
-
-									<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
-										<div class="facts">
-											<div class="register">
-												<form action="#" method="post">			
-													<input placeholder="Name" name="Name" type="text" required="">
-													<input placeholder="Email Address" name="Email" type="email" required="">	
-													<input placeholder="Password" name="Password" type="password" required="">	
-													<input placeholder="Confirm Password" name="Password" type="password" required="">
-													<div class="sign-up">
-														<input type="submit" value="Create Account"/>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div> 			        					            	      
-								</div>	
-							</div>
-							<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-							<script type="text/javascript">
-								$(document).ready(function () {
-									$('#horizontalTab').easyResponsiveTabs({
-										type: 'default', //Types: default, vertical, accordion           
-										width: 'auto', //auto or any width like 600px
-										fit: true   // 100% fit in a container
-									});
-								});
-							</script>
-							<div id="OR" class="hidden-xs">
-								OR</div>
-						</div>
-						<div class="col-md-4 modal_body_right modal_body_right1">
-							<div class="row text-center sign-with">
-								<div class="col-md-12">
-									<h3 class="other-nw">
-										Sign in with</h3>
-								</div>
-								<div class="col-md-12">
-									<ul class="social">
-										<li class="social_facebook"><a href="#" class="entypo-facebook"></a></li>
-										<li class="social_dribbble"><a href="#" class="entypo-dribbble"></a></li>
-										<li class="social_twitter"><a href="#" class="entypo-twitter"></a></li>
-										<li class="social_behance"><a href="#" class="entypo-behance"></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="header">
-		<div class="container">
-			<div class="w3l_login">
-				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
-			</div>
-			<div class="w3l_logo">
-				<h1><a href="index.html">Women's Fashion<span>For Fashion Lovers</span></a></h1>
-			</div>
-			<div class="search">
-				<input class="search_box" type="checkbox" id="search_box">
-				<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
-				<div class="search_form">
-					<form action="#" method="post">
-						<input type="text" name="Search" placeholder="Search...">
-						<input type="submit" value="Send">
-					</form>
-				</div>
-			</div>
-			<div class="cart box_1">
-				<a href="checkout.html">
-					<div class="total">
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-					<img src="images/bag.png" alt="" />
-				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-				<div class="clearfix"> </div>
-			</div>	
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<div class="navigation">
-		<div class="container">
-			<nav class="navbar navbar-default">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header nav_2">
-					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div> 
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>	
-						<!-- Mega Menu -->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-							<ul class="dropdown-menu multi-column columns-3">
-								<div class="row">
-									<div class="col-sm-3">
-										<ul class="multi-column-dropdown">
-											<h6>Clothing</h6>
-											<li><a href="dresses.html">Dresses<span>New</span></a></li>
-											<li><a href="sweaters.html">Sweaters</a></li>
-											<li><a href="skirts.html">Shorts & Skirts</a></li>
-											<li><a href="jeans.html">Jeans</a></li>
-											<li><a href="shirts.html">Shirts & Tops<span>New</span></a></li>
-										</ul>
-									</div>
-									<div class="col-sm-3">
-										<ul class="multi-column-dropdown">
-											<h6>Ethnic Wear</h6>
-											<li><a href="salwars.html">Salwars</a></li>
-											<li><a href="sarees.html">Sarees<span>New</span></a></li>
-											<li><a href="products.html"><i>Summer Store</i></a></li>
-										</ul>
-									</div>
-									<div class="col-sm-2">
-										<ul class="multi-column-dropdown">
-											<h6>Foot Wear</h6>
-											<li><a href="sandals.html">Flats</a></li>
-											<li><a href="sandals.html">Sandals</a></li>
-											<li><a href="sandals.html">Boots</a></li>
-											<li><a href="sandals.html">Heels</a></li>
-										</ul>
-									</div>
-									<div class="col-sm-4">
-										<div class="w3ls_products_pos">
-											<h4>50%<i>Off/-</i></h4>
-											<img src="images/1.jpg" alt=" " class="img-responsive" />
-										</div>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</ul>
-						</li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
-						<li><a href="mail.html">Mail Us</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</div>
-<!-- //header -->
+<?php
+include("header.blade.php")
+?>
 <!-- banner -->
-	<div class="banner10" id="home1">
-		<div class="container">
-			<h2>Checkout</h2>
-		</div>
+<div class="banner10" id="home1">
+	<div class="container">
+		<h2>Checkout</h2>
 	</div>
+</div>
 <!-- //banner -->
 
 <!-- breadcrumbs -->
-	<div class="breadcrumb_dress">
-		<div class="container">
-			<ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-				<li>Checkout</li>
-			</ul>
-		</div>
+<div class="breadcrumb_dress">
+	<div class="container">
+		<ul>
+			<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
+			<li>Checkout</li>
+		</ul>
 	</div>
+</div>
 <!-- //breadcrumbs -->
 
 <!-- checkout -->
-	<div class="checkout">
-		<div class="container">
-			<h3>Your shopping cart contains: <span>3 Products</span></h3>
+<div class="checkout">
+	<div class="container">
+		<h3>SU CARRITO DE COMPRAS TIENE: <span>3 Productos</span></h3>
 
-			<div class="checkout-right">
-				<table class="timetable_sub">
-					<thead>
-						<tr>
-							<th>SL No.</th>	
-							<th>Product</th>
-							<th>Quality</th>
-							<th>Product Name</th>
-							<th>Service Charges</th>
-							<th>Price</th>
-							<th>Remove</th>
-						</tr>
-					</thead>
-					<tr class="rem1">
-						<td class="invert">1</td>
-						<td class="invert-image"><a href="single.html"><img src="images/j3.jpg" alt=" " class="img-responsive" /></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
+		<div class="checkout-right">
+			<table class="timetable_sub">
+				<thead>
+					<tr>
+						<th>SL No.</th>
+						<th>Producto</th>
+						<th>Cantidad</th>
+						<th>Nombre del producto</th>
+						<th>Cargos de Servicio</th>
+						<th>Precio</th>
+						<th>Eliminar</th>
+					</tr>
+				</thead>
+				<tr class="rem1">
+					<td class="invert">1</td>
+					<td class="invert-image"><a href="single.html"><img src="images/j3.jpg" alt=" " class="img-responsive" /></a></td>
+					<td class="invert">
+						<div class="quantity">
+							<div class="quantity-select">
+								<div class="entry value-minus">&nbsp;</div>
+								<div class="entry value"><span>1</span></div>
+								<div class="entry value-plus active">&nbsp;</div>
 							</div>
-						</td>
-						<td class="invert">Beige solid Chinos</td>
-						<td class="invert">$5.00</td>
-						<td class="invert">$200.00</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close1"> </div>
-							</div>
-							<script>$(document).ready(function(c) {
-								$('.close1').on('click', function(c){
-									$('.rem1').fadeOut('slow', function(c){
+						</div>
+					</td>
+					<td class="invert">Beige solid Chinos</td>
+					<td class="invert">$5.00</td>
+					<td class="invert">$200.00</td>
+					<td class="invert">
+						<div class="rem">
+							<div class="close1"> </div>
+						</div>
+						<script>
+							$(document).ready(function(c) {
+								$('.close1').on('click', function(c) {
+									$('.rem1').fadeOut('slow', function(c) {
 										$('.rem1').remove();
 									});
-									});	  
 								});
-						   </script>
-						</td>
-					</tr>
-					<tr class="rem2">
-						<td class="invert">2</td>
-						<td class="invert-image"><a href="single.html"><img src="images/ss5.jpg" alt=" " class="img-responsive" /></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
+							});
+						</script>
+					</td>
+				</tr>
+				<tr class="rem2">
+					<td class="invert">2</td>
+					<td class="invert-image"><a href="single.html"><img src="images/ss5.jpg" alt=" " class="img-responsive" /></a></td>
+					<td class="invert">
+						<div class="quantity">
+							<div class="quantity-select">
+								<div class="entry value-minus">&nbsp;</div>
+								<div class="entry value"><span>1</span></div>
+								<div class="entry value-plus active">&nbsp;</div>
 							</div>
-						</td>
-						<td class="invert">Floral Border Skirt</td>
-						<td class="invert">$5.00</td>
-						<td class="invert">$270.00</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close2"> </div>
-							</div>
-							<script>$(document).ready(function(c) {
-								$('.close2').on('click', function(c){
-									$('.rem2').fadeOut('slow', function(c){
+						</div>
+					</td>
+					<td class="invert">Floral Border Skirt</td>
+					<td class="invert">$5.00</td>
+					<td class="invert">$270.00</td>
+					<td class="invert">
+						<div class="rem">
+							<div class="close2"> </div>
+						</div>
+						<script>
+							$(document).ready(function(c) {
+								$('.close2').on('click', function(c) {
+									$('.rem2').fadeOut('slow', function(c) {
 										$('.rem2').remove();
 									});
-									});	  
 								});
-						   </script>
-						</td>
-					</tr>
-					<tr class="rem3">
-						<td class="invert">3</td>
-						<td class="invert-image"><a href="single.html"><img src="images/c7.jpg" alt=" " class="img-responsive" /></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
+							});
+						</script>
+					</td>
+				</tr>
+				<tr class="rem3">
+					<td class="invert">3</td>
+					<td class="invert-image"><a href="single.html"><img src="images/c7.jpg" alt=" " class="img-responsive" /></a></td>
+					<td class="invert">
+						<div class="quantity">
+							<div class="quantity-select">
+								<div class="entry value-minus">&nbsp;</div>
+								<div class="entry value"><span>1</span></div>
+								<div class="entry value-plus active">&nbsp;</div>
 							</div>
-						</td>
-						<td class="invert">Beige Sandals</td>
-						<td class="invert">$5.00</td>
-						<td class="invert">$212.00</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close3"> </div>
-							</div>
-							<script>$(document).ready(function(c) {
-								$('.close3').on('click', function(c){
-									$('.rem3').fadeOut('slow', function(c){
+						</div>
+					</td>
+					<td class="invert">Beige Sandals</td>
+					<td class="invert">$5.00</td>
+					<td class="invert">$212.00</td>
+					<td class="invert">
+						<div class="rem">
+							<div class="close3"> </div>
+						</div>
+						<script>
+							$(document).ready(function(c) {
+								$('.close3').on('click', function(c) {
+									$('.rem3').fadeOut('slow', function(c) {
 										$('.rem3').remove();
 									});
-									});	  
 								});
-						   </script>
-						</td>
-					</tr>
-								<!--quantity-->
-									<script>
-									$('.value-plus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
-										divUpd.text(newVal);
-									});
+							});
+						</script>
+					</td>
+				</tr>
+				<!--quantity-->
+				<script>
+					$('.value-plus').on('click', function() {
+						var divUpd = $(this).parent().find('.value'),
+							newVal = parseInt(divUpd.text(), 10) + 1;
+						divUpd.text(newVal);
+					});
 
-									$('.value-minus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
-										if(newVal>=1) divUpd.text(newVal);
-									});
-									</script>
-								<!--quantity-->
-				</table>
-			</div>
-
-
-			<h3>Productos Apartados <span>1 Products</span></h3>
-
-			<div class="checkout-right">
-				<table class="timetable_sub">
-					<thead>
-						<tr>
-							<th>SL No.</th>	
-							<th>Product</th>
-							<th>Quality</th>
-							<th>Product Name</th>
-							<th>Service Charges</th>
-							<th>Price</th>
-							<th>Remove</th>
-						</tr>
-					</thead>
-					<tr class="rem1">
-						<td class="invert">1</td>
-						<td class="invert-image"><a href="single.html"><img src="images/j3.jpg" alt=" " class="img-responsive" /></a></td>
-						<td class="invert">
-							 <div class="quantity"> 
-								<div class="quantity-select">                           
-									<div class="entry value-minus">&nbsp;</div>
-									<div class="entry value"><span>1</span></div>
-									<div class="entry value-plus active">&nbsp;</div>
-								</div>
-							</div>
-						</td>
-						<td class="invert">Beige solid Chinos</td>
-						<td class="invert">$5.00</td>
-						<td class="invert">$200.00</td>
-						<td class="invert">
-							<div class="rem">
-								<div class="close1"> </div>
-							</div>
-							<script>$(document).ready(function(c) {
-								$('.close1').on('click', function(c){
-									$('.rem1').fadeOut('slow', function(c){
-										$('.rem1').remove();
-									});
-									});	  
-								});
-						   </script>
-						</td>
-					</tr>
-								<!--quantity-->
-									<script>
-									$('.value-plus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
-										divUpd.text(newVal);
-									});
-
-									$('.value-minus').on('click', function(){
-										var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
-										if(newVal>=1) divUpd.text(newVal);
-									});
-									</script>
-								<!--quantity-->
-				</table>
-			</div>
-
-			<div class="checkout-left">	
-				<div class="checkout-left-basket">
-					<h4>Continue to basket</h4>
-					<ul>
-						<li>Product1 <i>-</i> <span>$200.00 </span></li>
-						<li>Product2 <i>-</i> <span>$270.00 </span></li>
-						<li>Product3 <i>-</i> <span>$212.00 </span></li>
-						<li>Total Service Charges <i>-</i> <span>$15.00</span></li>
-						<li>Total <i>-</i> <span>$697.00</span></li>
-					</ul>
-				</div>
-				<div class="checkout-right-basket">
-					<a href="products.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue Shopping</a>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<div class="w3l_related_products">
-		<div class="container">
-			<h3>Related Products</h3>
-			<ul id="flexiselDemo2">			
-				<li>
-					<div class="w3l_related_products_grid">
-						<div class="agile_ecommerce_tab_left dresses_grid">
-							<div class="hs-wrapper hs-wrapper3">
-								<img src="images/ss1.jpg" alt=" " class="img-responsive">
-								<img src="images/ss2.jpg" alt=" " class="img-responsive">
-								<img src="images/ss3.jpg" alt=" " class="img-responsive">
-								<img src="images/ss4.jpg" alt=" " class="img-responsive">
-								<img src="images/ss5.jpg" alt=" " class="img-responsive">
-								<img src="images/ss6.jpg" alt=" " class="img-responsive">
-								<img src="images/ss7.jpg" alt=" " class="img-responsive">
-								<img src="images/ss8.jpg" alt=" " class="img-responsive">
-								<div class="w3_hs_bottom">
-									<div class="flex_ecommerce">
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-							<h5><a href="single.html">Pink Flared Skirt</a></h5>
-							<div class="simpleCart_shelfItem">
-								<p class="flexisel_ecommerce_cart"><span>$312</span> <i class="item_price">$212</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3l_related_products_grid">
-						<div class="agile_ecommerce_tab_left dresses_grid">
-							<div class="hs-wrapper hs-wrapper3">
-								<img src="images/ss2.jpg" alt=" " class="img-responsive">
-								<img src="images/ss3.jpg" alt=" " class="img-responsive">
-								<img src="images/ss4.jpg" alt=" " class="img-responsive">
-								<img src="images/ss5.jpg" alt=" " class="img-responsive">
-								<img src="images/ss6.jpg" alt=" " class="img-responsive">
-								<img src="images/ss9.jpg" alt=" " class="img-responsive">
-								<img src="images/ss7.jpg" alt=" " class="img-responsive">
-								<img src="images/ss8.jpg" alt=" " class="img-responsive">
-								<div class="w3_hs_bottom">
-									<div class="flex_ecommerce">
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-							<h5><a href="single.html">Red Pencil Skirt</a></h5>
-							<div class="simpleCart_shelfItem">
-								<p class="flexisel_ecommerce_cart"><span>$432</span> <i class="item_price">$323</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3l_related_products_grid">
-						<div class="agile_ecommerce_tab_left dresses_grid">
-							<div class="hs-wrapper hs-wrapper3">
-								<img src="images/ss3.jpg" alt=" " class="img-responsive">
-								<img src="images/ss4.jpg" alt=" " class="img-responsive">
-								<img src="images/ss5.jpg" alt=" " class="img-responsive">
-								<img src="images/ss6.jpg" alt=" " class="img-responsive">
-								<img src="images/ss7.jpg" alt=" " class="img-responsive">
-								<img src="images/ss8.jpg" alt=" " class="img-responsive">
-								<img src="images/ss9.jpg" alt=" " class="img-responsive">
-								<img src="images/ss1.jpg" alt=" " class="img-responsive">
-								<div class="w3_hs_bottom">
-									<div class="flex_ecommerce">
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-							<h5><a href="single.html">Yellow Cotton Skirt</a></h5>
-							<div class="simpleCart_shelfItem">
-								<p class="flexisel_ecommerce_cart"><span>$323</span> <i class="item_price">$310</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3l_related_products_grid">
-						<div class="agile_ecommerce_tab_left dresses_grid">
-							<div class="hs-wrapper hs-wrapper3">
-								<img src="images/ss4.jpg" alt=" " class="img-responsive">
-								<img src="images/ss5.jpg" alt=" " class="img-responsive">
-								<img src="images/ss6.jpg" alt=" " class="img-responsive">
-								<img src="images/ss7.jpg" alt=" " class="img-responsive">
-								<img src="images/ss8.jpg" alt=" " class="img-responsive">
-								<img src="images/ss9.jpg" alt=" " class="img-responsive">
-								<img src="images/ss1.jpg" alt=" " class="img-responsive">
-								<img src="images/ss2.jpg" alt=" " class="img-responsive">
-								<div class="w3_hs_bottom">
-									<div class="flex_ecommerce">
-										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
-									</div>
-								</div>
-							</div>
-							<h5><a href="single.html">Black Short</a></h5>
-							<div class="simpleCart_shelfItem">
-								<p class="flexisel_ecommerce_cart"><span>$256</span> <i class="item_price">$200</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-				<script type="text/javascript">
-					$(window).load(function() {
-						$("#flexiselDemo2").flexisel({
-							visibleItems:4,
-							animationSpeed: 1000,
-							autoPlay: true,
-							autoPlaySpeed: 3000,    		
-							pauseOnHover: true,
-							enableResponsiveBreakpoints: true,
-							responsiveBreakpoints: { 
-								portrait: { 
-									changePoint:480,
-									visibleItems: 1
-								}, 
-								landscape: { 
-									changePoint:640,
-									visibleItems:2
-								},
-								tablet: { 
-									changePoint:768,
-									visibleItems: 3
-								}
-							}
-						});
-						
+					$('.value-minus').on('click', function() {
+						var divUpd = $(this).parent().find('.value'),
+							newVal = parseInt(divUpd.text(), 10) - 1;
+						if (newVal >= 1) divUpd.text(newVal);
 					});
 				</script>
-				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+				<!--quantity-->
+			</table>
 		</div>
-	</div>
-	<div class="modal video-modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModal6">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-				</div>
-				<section>
-					<div class="modal-body">
-						<div class="col-md-5 modal_body_left">
-							<img src="images/39.jpg" alt=" " class="img-responsive" />
-						</div>
-						<div class="col-md-7 modal_body_right">
-							<h4>a good look women's Long Skirt</h4>
-							<p>Ut enim ad minim veniam, quis nostrud 
-								exercitation ullamco laboris nisi ut aliquip ex ea 
-								commodo consequat.Duis aute irure dolor in 
-								reprehenderit in voluptate velit esse cillum dolore 
-								eu fugiat nulla pariatur. Excepteur sint occaecat 
-								cupidatat non proident, sunt in culpa qui officia 
-								deserunt mollit anim id est laborum.</p>
-							<div class="rating">
-								<div class="rating-left">
-									<img src="images/star-.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/star-.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/star-.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/star.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/star.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="modal_body_right_cart simpleCart_shelfItem">
-								<p><span>$320</span> <i class="item_price">$250</i></p>
-								<p><a class="item_add" href="#">Add to cart</a></p>
-							</div>
-							<h5>Color</h5>
-							<div class="color-quality">
-								<ul>
-									<li><a href="#"><span></span>Red</a></li>
-									<li><a href="#" class="brown"><span></span>Yellow</a></li>
-									<li><a href="#" class="purple"><span></span>Purple</a></li>
-									<li><a href="#" class="gray"><span></span>Violet</a></li>
-								</ul>
+
+
+		<h3>Productos Apartados <span>1 Products</span></h3>
+
+		<div class="checkout-right">
+			<table class="timetable_sub">
+				<thead>
+					<tr>
+						<th>SL No.</th>
+						<th>Producto</th>
+						<th>Cantidad</th>
+						<th>Nombre del producto</th>
+						<th>Cargos de Servicio</th>
+						<th>Precio</th>
+						<th>Eliminar</th>
+					</tr>
+				</thead>
+				<tr class="rem1">
+					<td class="invert">1</td>
+					<td class="invert-image"><a href="single.html"><img src="images/j3.jpg" alt=" " class="img-responsive" /></a></td>
+					<td class="invert">
+						<div class="quantity">
+							<div class="quantity-select">
+								<div class="entry value-minus">&nbsp;</div>
+								<div class="entry value"><span>1</span></div>
+								<div class="entry value-plus active">&nbsp;</div>
 							</div>
 						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</section>
-			</div>
+					</td>
+					<td class="invert">Beige solid Chinos</td>
+					<td class="invert">$5.00</td>
+					<td class="invert">$200.00</td>
+					<td class="invert">
+						<div class="rem">
+							<div class="close1"> </div>
+						</div>
+						<script>
+							$(document).ready(function(c) {
+								$('.close1').on('click', function(c) {
+									$('.rem1').fadeOut('slow', function(c) {
+										$('.rem1').remove();
+									});
+								});
+							});
+						</script>
+					</td>
+				</tr>
+				<!--quantity-->
+				<script>
+					$('.value-plus').on('click', function() {
+						var divUpd = $(this).parent().find('.value'),
+							newVal = parseInt(divUpd.text(), 10) + 1;
+						divUpd.text(newVal);
+					});
+
+					$('.value-minus').on('click', function() {
+						var divUpd = $(this).parent().find('.value'),
+							newVal = parseInt(divUpd.text(), 10) - 1;
+						if (newVal >= 1) divUpd.text(newVal);
+					});
+				</script>
+				<!--quantity-->
+			</table>
 		</div>
-	</div>
-<!-- //checkout -->
-<!-- newsletter -->
-	<div class="newsletter">
-		<div class="container">
-			<div class="col-md-6 w3agile_newsletter_left">
-				<h3>Newsletter</h3>
-				<p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
+
+		<div class="checkout-left">
+			<div class="checkout-left-basket">
+				<button type="button" style="cursor: pointer; border: 1px solid  transparent; background-color: transparent;" class="open-modal" data-open="modal1">
+					<h4>Continuar con el pago</h4>
+				</button>
+				<ul>
+					<li>Producto 1 <i>-</i> <span>$200.00 </span></li>
+					<li>Producto 2 <i>-</i> <span>$270.00 </span></li>
+					<li>Producto 3 <i>-</i> <span>$212.00 </span></li>
+					<li>Cargos totales por servicio <i>-</i> <span>$15.00</span></li>
+					<li>Total <i>-</i> <span>$697.00</span></li>
+				</ul>
 			</div>
-			<div class="col-md-6 w3agile_newsletter_right">
-				<form action="#" method="post">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="submit" value="">
-				</form>
+			<div class="checkout-right-basket">
+				<a href="products.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue Shopping</a>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //newsletter -->
-<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="w3_footer_grids">
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Contact</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Information</h3>
-					<ul class="info"> 
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="mail.html">Contact Us</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-						<li><a href="products.html">Special Products</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Category</h3>
-					<ul class="info"> 
-						<li><a href="dresses.html">Dresses</a></li>
-						<li><a href="sweaters.html">Sweaters</a></li>
-						<li><a href="shirts.html">Shirts</a></li>
-						<li><a href="sarees.html">Sarees</a></li>
-						<li><a href="skirts.html">Shorts & Skirts</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Profile</h3>
-					<ul class="info"> 
-						<li><a href="products.html">Summer Store</a></li>
-						<li><a href="checkout.html">My Cart</a></li>
-					</ul>
-					<h4>Follow Us</h4>
-					<div class="agileits_social_button">
-						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
-						</ul>
+</div>
+<div class="w3l_related_products">
+	<div class="container">
+		<h3>Productos Relacionados</h3>
+		<ul id="flexiselDemo2">
+			<li>
+				<div class="w3l_related_products_grid">
+					<div class="agile_ecommerce_tab_left dresses_grid">
+						<div class="hs-wrapper hs-wrapper3">
+							<img src="images/ss1.jpg" alt=" " class="img-responsive">
+							<img src="images/ss2.jpg" alt=" " class="img-responsive">
+							<img src="images/ss3.jpg" alt=" " class="img-responsive">
+							<img src="images/ss4.jpg" alt=" " class="img-responsive">
+							<img src="images/ss5.jpg" alt=" " class="img-responsive">
+							<img src="images/ss6.jpg" alt=" " class="img-responsive">
+							<img src="images/ss7.jpg" alt=" " class="img-responsive">
+							<img src="images/ss8.jpg" alt=" " class="img-responsive">
+							<div class="w3_hs_bottom">
+								<div class="flex_ecommerce">
+									<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+						<h5><a href="single.html">Pink Flared Skirt</a></h5>
+						<div class="simpleCart_shelfItem">
+							<p class="flexisel_ecommerce_cart"><span>$312</span> <i class="item_price">$212</i></p>
+							<p><a class="item_add" href="#">Agregar al carrito</a></p>
+						</div>
 					</div>
 				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="footer-copy">
-			<div class="footer-copy1">
-				<div class="footer-copy-pos">
-					<a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive" /></a>
+			</li>
+			<li>
+				<div class="w3l_related_products_grid">
+					<div class="agile_ecommerce_tab_left dresses_grid">
+						<div class="hs-wrapper hs-wrapper3">
+							<img src="images/ss2.jpg" alt=" " class="img-responsive">
+							<img src="images/ss3.jpg" alt=" " class="img-responsive">
+							<img src="images/ss4.jpg" alt=" " class="img-responsive">
+							<img src="images/ss5.jpg" alt=" " class="img-responsive">
+							<img src="images/ss6.jpg" alt=" " class="img-responsive">
+							<img src="images/ss9.jpg" alt=" " class="img-responsive">
+							<img src="images/ss7.jpg" alt=" " class="img-responsive">
+							<img src="images/ss8.jpg" alt=" " class="img-responsive">
+							<div class="w3_hs_bottom">
+								<div class="flex_ecommerce">
+									<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+						<h5><a href="single.html">Red Pencil Skirt</a></h5>
+						<div class="simpleCart_shelfItem">
+							<p class="flexisel_ecommerce_cart"><span>$432</span> <i class="item_price">$323</i></p>
+							<p><a class="item_add" href="#">Agregar al carrito</a></p>
+						</div>
+					</div>
 				</div>
+			</li>
+			<li>
+				<div class="w3l_related_products_grid">
+					<div class="agile_ecommerce_tab_left dresses_grid">
+						<div class="hs-wrapper hs-wrapper3">
+							<img src="images/ss3.jpg" alt=" " class="img-responsive">
+							<img src="images/ss4.jpg" alt=" " class="img-responsive">
+							<img src="images/ss5.jpg" alt=" " class="img-responsive">
+							<img src="images/ss6.jpg" alt=" " class="img-responsive">
+							<img src="images/ss7.jpg" alt=" " class="img-responsive">
+							<img src="images/ss8.jpg" alt=" " class="img-responsive">
+							<img src="images/ss9.jpg" alt=" " class="img-responsive">
+							<img src="images/ss1.jpg" alt=" " class="img-responsive">
+							<div class="w3_hs_bottom">
+								<div class="flex_ecommerce">
+									<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+						<h5><a href="single.html">Yellow Cotton Skirt</a></h5>
+						<div class="simpleCart_shelfItem">
+							<p class="flexisel_ecommerce_cart"><span>$323</span> <i class="item_price">$310</i></p>
+							<p><a class="item_add" href="#">Agregar al carrito</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="w3l_related_products_grid">
+					<div class="agile_ecommerce_tab_left dresses_grid">
+						<div class="hs-wrapper hs-wrapper3">
+							<img src="images/ss4.jpg" alt=" " class="img-responsive">
+							<img src="images/ss5.jpg" alt=" " class="img-responsive">
+							<img src="images/ss6.jpg" alt=" " class="img-responsive">
+							<img src="images/ss7.jpg" alt=" " class="img-responsive">
+							<img src="images/ss8.jpg" alt=" " class="img-responsive">
+							<img src="images/ss9.jpg" alt=" " class="img-responsive">
+							<img src="images/ss1.jpg" alt=" " class="img-responsive">
+							<img src="images/ss2.jpg" alt=" " class="img-responsive">
+							<div class="w3_hs_bottom">
+								<div class="flex_ecommerce">
+									<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+								</div>
+							</div>
+						</div>
+						<h5><a href="single.html">Black Short</a></h5>
+						<div class="simpleCart_shelfItem">
+							<p class="flexisel_ecommerce_cart"><span>$256</span> <i class="item_price">$200</i></p>
+							<p><a class="item_add" href="#">Agregar al carrito</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$("#flexiselDemo2").flexisel({
+					visibleItems: 4,
+					animationSpeed: 1000,
+					autoPlay: true,
+					autoPlaySpeed: 3000,
+					pauseOnHover: true,
+					enableResponsiveBreakpoints: true,
+					responsiveBreakpoints: {
+						portrait: {
+							changePoint: 480,
+							visibleItems: 1
+						},
+						landscape: {
+							changePoint: 640,
+							visibleItems: 2
+						},
+						tablet: {
+							changePoint: 768,
+							visibleItems: 3
+						}
+					}
+				});
+
+			});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	</div>
+</div>
+<div class="modal video-modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModal6">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
-			<div class="container">
-				<p>&copy; 2016 Women's Fashion. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
+			<section>
+				<div class="modal-body">
+					<div class="col-md-5 modal_body_left">
+						<img src="images/39.jpg" alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-7 modal_body_right">
+						<h4>a good look women's Long Skirt</h4>
+						<p>Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.Duis aute irure dolor in
+							reprehenderit in voluptate velit esse cillum dolore
+							eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia
+							deserunt mollit anim id est laborum.</p>
+						<div class="rating">
+							<div class="rating-left">
+								<img src="images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="images/star-.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="rating-left">
+								<img src="images/star.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="modal_body_right_cart simpleCart_shelfItem">
+							<p><span>$320</span> <i class="item_price">$250</i></p>
+							<p><a class="item_add" href="#">Agregar al carrito</a></p>
+						</div>
+						<h5>Color</h5>
+						<div class="color-quality">
+							<ul>
+								<li><a href="#"><span></span>Red</a></li>
+								<li><a href="#" class="brown"><span></span>Yellow</a></li>
+								<li><a href="#" class="purple"><span></span>Purple</a></li>
+								<li><a href="#" class="gray"><span></span>Violet</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</section>
 		</div>
 	</div>
+</div>
+<!-- //checkout -->
+<!-- newsletter -->
+<div class="newsletter">
+	<div class="container">
+		<div class="col-md-6 w3agile_newsletter_left">
+			<h3>Newsletter</h3>
+			<p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
+		</div>
+		<div class="col-md-6 w3agile_newsletter_right">
+			<form action="#" method="post">
+				<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+				<input type="submit" value="">
+			</form>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<!-- //newsletter -->
+<?php
+include("footer.blade.php")
+?>
 <!-- //footer -->
 </body>
+
 </html>
+<div class="modal" id="modal1">
+	<div class="modal-dialog">
+		<header class="modal-header">
+			Ingresa tus datos de pago
+			<button class="close-modal" aria-label="close modal" data-close>
+				✕
+			</button>
+		</header>
+		<section class="modal-content" style="background: #ff9b05;">
+			<form id="regForm" action="" method="POST">
+
+				<!-- One "tab" for each step in the form: -->
+				<div class="tab">Datos de tarjeta:
+					<div class="card">
+						<img src="https://seeklogo.com/images/V/VISA-logo-62D5B26FE1-seeklogo.com.png" class="logo-card">
+						<label>Numero de tarjeta:</label>
+						<input style="color:#fff" id="user" name="tarjeta" type="text" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" min="1" max="9999999999999999" class="input cardnumber" placeholder="1234 5678 9101 1121">
+						<script>
+							var input = document.getElementById('user');
+							input.addEventListener('input', function() {
+								if (this.value.length > 12)
+									this.value = this.value.slice(0, 16);
+							})
+						</script>
+						<label>Nombre:</label>
+						<input style="color:#fff" name="nombre" class="input name" placeholder="Edgar Pérez">
+						<label class="toleft">CCV:</label>
+						<input style="color:#fff" class="input toleft ccv" placeholder="321">
+					</div>
+				</div>
+				<div class="tab">Datos de facturación:
+					<label id="texto_nav1"></label>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">Dirección</label>
+						<input type="text" class="form-control" id="floatingInput" placeholder="Principal 123...">
+					</div>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">Direccion 2</label>
+						<input type="text" class="form-control" id="floatingInput" placeholder="Secundaria 123...">
+					</div>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">Ciudad</label>
+						<input type="text" class="form-control" id="floatingInput" placeholder="Veracruz">
+					</div>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">Pais</label>
+						<input type="text" class="form-control" id="floatingInput" placeholder="México">
+					</div>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">CP</label>
+						<input type="text" class="form-control" id="floatingInput" placeholder="91000">
+					</div>
+				</div>
+
+
+				<div class="tab">Dirección de envio:
+					<div class="form-floating mb-3">
+						<label for="floatingInput">Dirección</label>
+						<input name="direccion1" type="text" class="form-control" id="floatingInput" placeholder="Principal 123...">
+					</div>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">Direccion 2</label>
+						<input name="direccion2" type="text" class="form-control" id="floatingInput" placeholder="Secundaria 123...">
+					</div>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">Ciudad</label>
+						<input name="ciudad" type="text" class="form-control" id="floatingInput" placeholder="Veracruz">
+					</div>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">Pais</label>
+						<input name="pais" type="text" class="form-control" id="floatingInput" placeholder="México">
+					</div>
+					<div class="form-floating mb-3">
+						<label for="floatingInput">CP</label>
+						<input name="cp" type="text" class="form-control" id="floatingInput" placeholder="91000">
+					</div>
+				</div>
+
+				<div class="tab">Tu pago será procesado en un momento
+					<p></p>
+					<p></p>
+					<p>El monto de tu pago es:</p>
+					<h3>$697.00</h3>
+
+
+				</div>
+
+				<div class="position-relative">
+					<div class="text-center">
+						<br>
+						<br>
+						<button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior </button>
+						<button type="button" id="nextBtn" onclick="nextPrev(1)"> Siguiente</button>
+					</div>
+				</div>
+
+				<!-- Circles which indicates the steps of the form: -->
+				<div style="text-align:center;margin-top:40px;">
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+				</div>
+
+			</form>
+		</section>
+	</div>
+</div>
+<script>
+	var tarjeta0 = document.getElementById('texto_nav1');
+	var nombre0 = document.getElementById('texto_nav1');
+	var direccion10 = document.getElementById('texto_nav1');
+	var direccion20 = document.getElementById('texto_nav1');
+	var ciudad0 = document.getElementById('texto_nav1');
+	var pais0 = document.getElementById('texto_nav1');
+	var cp0 = document.getElementById('texto_nav1');
+	var status = document.getElementById('texto_nav1');
+
+	function nextPrev() {
+		product = document.getElementsByName("tarjeta")[0].value;
+		nombre = document.getElementsByName("nombre")[0].value;
+		direccion1 = document.getElementsByName("direccion1")[0].value;
+		direccion2 = document.getElementsByName("direccion2")[0].value;
+		ciudad = document.getElementsByName("ciudad")[0].value;
+		pais = document.getElementsByName("pais")[0].value;
+		cp = document.getElementsByName("cp")[0].value;
+	};
+
+	function imprimir() {
+		document.write("<div><p>(nombre0)</p></div>");
+
+	}
+</script>
+
+<?php
+
+
+if (isset($_REQUEST["btnGuardar"])) {
+	$id = $_POST['idProducto'];
+	$_SESSION['productos']['id'] = $id;
+	echo "<script>alert('Producto $id agregado con exito');</script>";
+}
+
+?>
+
+<style>
+	/* RESET RULES 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	:root {
+		--lightgray: #efefef;
+		--blue: steelblue;
+		--white: #fff;
+		--black: rgba(0, 0, 0, 0.8);
+		--bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+	}
+
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	button {
+		cursor: pointer;
+		background: transparent;
+		border: none;
+		outline: none;
+		font-size: inherit;
+	}
+
+
+
+	.btn-group {
+		text-align: center;
+	}
+
+	.open-modal {
+		font-weight: bold;
+		background: var(--blue);
+		color: var(--white);
+		padding: 0.75rem 1.75rem;
+		margin-bottom: 1rem;
+		border-radius: 5px;
+	}
+
+
+	/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	.modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		background: var(--black);
+		cursor: pointer;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.35s ease-in;
+	}
+
+	.modal.is-visible {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.modal-dialog {
+		position: relative;
+		max-width: 800px;
+		max-height: 80vh;
+		border-radius: 5px;
+		background: var(--white);
+		overflow: auto;
+		cursor: default;
+	}
+
+	.modal-dialog>* {
+		padding: 1rem;
+	}
+
+	.modal-header,
+	.modal-footer {
+		background: var(--lightgray);
+	}
+
+	.modal-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.modal-header .close-modal {
+		font-size: 1.5rem;
+	}
+
+	.modal p+p {
+		margin-top: 1rem;
+	}
+
+
+	/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	.page-footer {
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
+	}
+
+	.page-footer span {
+		color: #e31b23;
+	}
+
+
+	/* If you like this, please check my blog at codedgar.com.ve */
+	@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+
+	.card {
+		background: #16181a;
+		border-radius: 14px;
+		max-width: 300px;
+		display: block;
+		margin: auto;
+		padding: 60px;
+		padding-left: 20px;
+		padding-right: 20px;
+		box-shadow: 2px 10px 40px black;
+		z-index: 99;
+	}
+
+	.logo-card {
+		max-width: 50px;
+		margin-bottom: 15px;
+		margin-top: -19px;
+	}
+
+	label {
+		display: flex;
+		font-size: 10px;
+		color: white;
+		opacity: .4;
+	}
+
+	input {
+		font-family: 'Work Sans', sans-serif;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid transparent;
+		color: black;
+		transition: border-bottom .4s;
+	}
+
+	input:focus {
+		border-bottom: 1px solid #1abc9c;
+		outline: none;
+	}
+
+	.cardnumber {
+		display: block;
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+
+	.name {
+		display: block;
+		font-size: 15px;
+		max-width: 200px;
+		float: left;
+		margin-bottom: 15px;
+	}
+
+	.toleft {
+		float: left;
+	}
+
+	.ccv {
+		width: 50px;
+		margin-top: -5px;
+		font-size: 15px;
+	}
+
+	.receipt {
+		border-radius: 4px;
+		padding: 5%;
+		padding-top: 200px;
+		max-width: 600px;
+		display: block;
+		margin: auto;
+		margin-top: -180px;
+		z-index: -999;
+		position: relative;
+	}
+
+	.col {
+		width: 50%;
+		float: left;
+	}
+
+	.bought-item {
+		background: #f5f5f5;
+		padding: 2px;
+	}
+
+	.bought-items {
+		margin-top: -3px;
+	}
+
+	.cost {
+		color: #3a7bd5;
+	}
+
+	.seller {
+		color: #3a7bd5;
+	}
+
+	.description {
+		font-size: 13px;
+	}
+
+	.price {
+		font-size: 12px;
+	}
+
+	.comprobe {
+		text-align: center;
+	}
+
+	.proceed {
+		position: absolute;
+		transform: translate(300px, 10px);
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: #1abc9c;
+		border: none;
+		color: white;
+		transition: box-shadow .2s, transform .4s;
+		cursor: pointer;
+	}
+
+	.proceed:active {
+		outline: none;
+	}
+
+	.proceed:focus {
+		outline: none;
+		box-shadow: inset 0px 0px 5px white;
+	}
+
+	.sendicon {
+		filter: invert(100%);
+		padding-top: 2px;
+	}
+
+	@media (max-width: 600px) {
+		.proceed {
+			transform: translate(250px, 10px);
+		}
+
+		.col {
+			display: block;
+			margin: auto;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	/* Style the form */
+	#regForm {
+		margin: 100px auto;
+		width: 70%;
+		min-width: 300px;
+	}
+
+
+	/* Hide all steps by default: */
+	.tab {
+		display: none;
+	}
+
+	/* Make circles that indicate the steps of the form: */
+	.step {
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbbbbb;
+		border: none;
+		border-radius: 50%;
+		display: inline-block;
+		opacity: 0.5;
+	}
+
+	/* Mark the active step: */
+	.step.active {
+		opacity: 1;
+	}
+
+	/* Mark the steps that are finished and valid: */
+	.step.finish {
+		background-color: #04AA6D;
+	}
+</style>
+<script>
+	const openEls = document.querySelectorAll("[data-open]");
+	const closeEls = document.querySelectorAll("[data-close]");
+	const isVisible = "is-visible";
+
+	for (const el of openEls) {
+		el.addEventListener("click", function() {
+			const modalId = this.dataset.open;
+			document.getElementById(modalId).classList.add(isVisible);
+		});
+	}
+
+	for (const el of closeEls) {
+		el.addEventListener("click", function() {
+			this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+		});
+	}
+
+	document.addEventListener("click", e => {
+		if (e.target == document.querySelector(".modal.is-visible")) {
+			document.querySelector(".modal.is-visible").classList.remove(isVisible);
+		}
+	});
+
+	document.addEventListener("keyup", e => {
+		// if we press the ESC
+		if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+			document.querySelector(".modal.is-visible").classList.remove(isVisible);
+		}
+	});
+
+
+
+	var currentTab = 0; // Current tab is set to be the first tab (0)
+	showTab(currentTab); // Display the current tab
+
+	function showTab(n) {
+		// This function will display the specified tab of the form ...
+		var x = document.getElementsByClassName("tab");
+		x[n].style.display = "block";
+		// ... and fix the Previous/Next buttons:
+		if (n == 0) {
+			document.getElementById("prevBtn").style.display = "none";
+		} else {
+			document.getElementById("prevBtn").style.display = "inline";
+		}
+		if (n == (x.length - 1)) {
+			document.getElementById("nextBtn").innerHTML = "Procesar";
+
+		} else {
+			document.getElementById("nextBtn").innerHTML = "Siguiente";
+
+		}
+		// ... and run a function that displays the correct step indicator:
+		fixStepIndicator(n)
+	}
+
+	function nextPrev(n) {
+		// This function will figure out which tab to display
+		var x = document.getElementsByClassName("tab");
+		// Exit the function if any field in the current tab is invalid:
+		if (n == 1 && !validateForm()) return false;
+		// Hide the current tab:
+		x[currentTab].style.display = "none";
+		// Increase or decrease the current tab by 1:
+		currentTab = currentTab + n;
+		// if you have reached the end of the form... :
+		if (currentTab >= x.length) {
+			//.. final del formulario de pago:
+			document.getElementById("regForm").submit();
+			//animacion de envio
+			Swal.fire({
+				icon: 'success',
+				title: 'Tu pago se encuentra en proceso de validación',
+				showConfirmButton: false,
+				timer: 15500
+			})
+			//vaciar carrito
+			document.getElementById("vaciar").click();
+			//redireccionar pagina
+			window.location = "/";
+			return false;
+
+		}
+		// Otherwise, display the correct tab:
+		showTab(currentTab);
+	}
+
+	function validateForm() {
+		// This function deals with validation of the form fields
+		var x, y, i, valid = true;
+		x = document.getElementsByClassName("tab");
+		y = x[currentTab].getElementsByTagName("input");
+		// A loop that checks every input field in the current tab:
+		for (i = 0; i < y.length; i++) {
+			// If a field is empty...
+			if (y[i].value == "") {
+				// add an "invalid" class to the field:
+				y[i].className += " invalid";
+				// and set the current valid status to false:
+				valid = false;
+			}
+		}
+		// If the valid status is true, mark the step as finished and valid:
+		if (valid) {
+			document.getElementsByClassName("step")[currentTab].className += " finish";
+
+		}
+		return valid; // return the valid status
+	}
+
+	function fixStepIndicator(n) {
+		// This function removes the "active" class of all steps...
+		var i, x = document.getElementsByClassName("step");
+		for (i = 0; i < x.length; i++) {
+			x[i].className = x[i].className.replace(" active", "");
+		}
+		//... and adds the "active" class to the current step:
+		x[n].className += " active";
+	}
+</script>
