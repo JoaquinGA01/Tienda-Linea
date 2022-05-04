@@ -1,4 +1,4 @@
-<?php
+<?php 
 include("header.blade.php")
 ?>
 <!-- banner -->
@@ -73,7 +73,7 @@ include("header.blade.php")
 				</tr>
 
 				@endforeach
-
+				@endisset
 				<!--<tr class="rem1">
 					<td class="invert">1</td>
 					<td class="invert-image"><a href="single.html"><img src="images/j3.jpg" alt=" " class="img-responsive" /></a></td>
@@ -172,6 +172,7 @@ include("header.blade.php")
 				</tr>
 
 				@endforeach
+				@endisset
 				<!-- <tr class="rem1">
 					<td class="invert">1</td>
 					<td class="invert-image"><a href="single.html"><img src="images/j3.jpg" alt=" " class="img-responsive" /></a></td>
@@ -596,17 +597,6 @@ include("footer.blade.php")
 
 	}
 </script>
-
-<?php
-
-
-if (isset($_REQUEST["btnGuardar"])) {
-	$id = $_POST['idProducto'];
-	$_SESSION['productos']['id'] = $id;
-	echo "<script>alert('Producto $id agregado con exito');</script>";
-}
-
-?>
 
 <style>
 	/* RESET RULES 
