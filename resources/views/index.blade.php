@@ -7,6 +7,7 @@
 <head>
 <title>CHEIN Tienda en línea | Home</title>
 <!-- for-mobile-apps -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Women's Fashion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -39,6 +40,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
+	});
+</script>
+
+<script>
+	$("#tuboton").click(function(){
+ 	var comentario= $("#tutextarea").val();
+ 		$.post("elnombredetupagina.php?comentario="+escape(comentario), function(){
+			alert("Tu comentario se ha guardado exitosamente...!");    
+  		});
 	});
 </script>
 
@@ -143,13 +153,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 	<script>
 		$('#myModal88').modal('show');
-	</script>
-	<script type="text/javascript">  
-	window.enviar = function(id){
-    console.log( "Ejecutando función test()" );
-    
-	}
-	
 	</script>
 	@endempty
 	<div class="header">
@@ -303,10 +306,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h5><a href="#">{{ $producto-> nombre  }}</a></h5>
 							<div class="simpleCart_shelfItem">
 									<!-- precio -->
-								<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
-								<p><a class="item_add" onclick="return enviar({{$producto-> id}})">Agregar al carrito</a></p>
-								<!-- <p><a class="item_add" onclick="return enviar({{$producto-> id}})">Agregar al carrito</a></p> -->
-								<p><a class="item_add" href="#">Apartar Producto</a></p>
+							<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
+							<p><a class="item_add">Agregar al carrito</a></p>	
+							<!-- "
+							<p><a class="item_add" onclick="return enviar({{$producto-> id}})">Agregar al carrito</a></p> -->
+							<p><a class="item_add" href="#">Apartar Producto</a></p>
+							
+							<script>
+      							function showAlert(event) {
+									var dataString = {"iD":event,"_token": $("meta[name='csrf-token']").attr("content")};
+        							$.ajax({
+    									type: "POST",
+    									url: "{{ url('/agregarCarrito') }}",
+    									data: dataString,
+    									success: function(messaje) {
+											console.log(event);
+										}
+  									});
+      							}
+    						</script>
+							<form onload="initElement();">
+								@csrf
+								<p><a id="addprod" onclick="showAlert({{$producto->id}});">Agregar al carrito</a></p>	
+							</form>
+							
 							</div>
 						</div>
 						
