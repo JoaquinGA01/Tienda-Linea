@@ -13,6 +13,7 @@ class Inicio extends Controller
     {  
         if(isset($_POST['Email']) && isset($_POST['Password'])){
             $_SESSION['idProductosCarrito'] = array();
+            $_SESSION['idProductosApartados'] = array();
             if(isset($_POST['Name'])){
                 $conn = mysqli_connect("localhost", "root", "", "chein");
                 //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
@@ -54,14 +55,43 @@ class Inicio extends Controller
     public function guardarCarrito(){
         if(isset($_POST['iD'])){
             $idProducto = $_POST['iD'];
-            print($_SESSION['idProductosCarrito']);
-            array_push($_SESSION['idProductosCarrito'],$idProducto);
-            echo $_SESSION['idProductosCarrito'];
-            return view('index');
+            if(in_array($idProducto,$_SESSION['idProductosCarrito'])){
+                return "2"; //ya existe el elemento
+            }else{
+                array_push($_SESSION['idProductosCarrito'],$idProducto);
+                return "1"; // se Agrego con exito
+            }
+
+        }else{
+            return "0"; //Error no se reconoce el Id
         }
-        return view('index');
-        echo "Listo";
+        return "";
     }
+
+    public function apartarProd(){
+        if(isset($_POST['iD'])){
+            $idProducto = $_POST['iD'];
+            if(in_array($idProducto,$_SESSION['idProductosCarrito'])){
+                $clave = array_search($_POST['iD'], $_SESSION['idProductosCarrito']);
+                unset($_SESSION['idProductosCarrito'][$clave]);
+                array_push($_SESSION['idProductosApartados'],$idProducto);
+                return "2-1";//ya existe el elemento
+            }else{
+                if(in_array($idProducto,$_SESSION['idProductosApartados'])){
+                    return "2";//ya existe el producto
+                }else{
+                    array_push($_SESSION['idProductosApartados'],$idProducto);
+                    return "1"; // se Agrego con exito
+                }
+            }
+
+        }else{
+            return "0"; //Error no se reconoce el Id
+        }
+        return "";
+    }
+
+    
 
     public function eliminar(){
         //$conn = mysqli_connect("localhost", "root", "", "chein");

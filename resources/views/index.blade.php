@@ -306,28 +306,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h5><a href="#">{{ $producto-> nombre  }}</a></h5>
 							<div class="simpleCart_shelfItem">
 									<!-- precio -->
-							<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
-							<p><a class="item_add">Agregar al carrito</a></p>	
-							<!-- "
-							<p><a class="item_add" onclick="return enviar({{$producto-> id}})">Agregar al carrito</a></p> -->
-							<p><a class="item_add" href="#">Apartar Producto</a></p>
-							
+							<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>							
 							<script>
-      							function showAlert(event) {
+      							function agregarProd(event) {
 									var dataString = {"iD":event,"_token": $("meta[name='csrf-token']").attr("content")};
         							$.ajax({
     									type: "POST",
-    									url: "{{ url('/agregarCarrito') }}",
+    									url: "{{ url('agregarCarrito') }}",
     									data: dataString,
     									success: function(messaje) {
-											console.log(event);
+											if(messaje == "1"){
+												window.alert("Se agrego con exito");
+											}else if(messaje == "2"){
+												window.alert("ya esta agregado");
+											}else if(messaje == "0"){
+												window.alert("No se agrego el producto");
+											}
+										}
+  									});
+      							}
+
+								function apartarProd(event) {
+									var dataString = {"iD":event,"_token": $("meta[name='csrf-token']").attr("content")};
+        							$.ajax({
+    									type: "POST",
+    									url: "{{ url('apartarProd') }}",
+    									data: dataString,
+    									success: function(messaje) {
+											if(messaje == "1"){
+												window.alert("Se aparto con exito");
+											}else if(messaje == "2"){
+												window.alert("ya esta apartado");
+											}else if(messaje == "2-1"){
+												window.alert("ya existe pero se aparto");
+											}else if(messaje == "0"){
+												window.alert("No se aparto el producto");
+											}
 										}
   									});
       							}
     						</script>
-							<form onload="initElement();">
+							<form>
 								@csrf
-								<p><a id="addprod" onclick="showAlert({{$producto->id}});">Agregar al carrito</a></p>	
+								<p><a onclick="agregarProd({{$producto->id}});">Agregar al carrito</a></p>	
+							</form>
+							<form>
+								<p><a onclick="apartarProd({{$producto->id}});">Apartar Producto</a></p>
 							</form>
 							
 							</div>

@@ -38,7 +38,43 @@ include("header.blade.php")
 						<th>Eliminar</th>
 					</tr>
 				</thead>
-				<tr class="rem1">
+
+				@isset($carrito)
+				@foreach($carrito as $prod)
+				<tr class="{{$prod->id}}">
+					<td class="invert">1</td>
+					<td class="invert-image"><a href="single.html"><img src="images/{{ $prod-> ruta }}" alt=" " class="img-responsive" /></a></td>
+					<td class="invert">
+						<div class="quantity">
+							<div class="quantity-select">
+								<div class="entry value-minus">&nbsp;</div>
+								<div class="entry value"><span>1</span></div>
+								<div class="entry value-plus active">&nbsp;</div>
+							</div>
+						</div>
+					</td>
+					<td class="invert">{{$prod->nombre}}</td>
+					<td class="invert">$5.00</td>
+					<td class="invert">{{$prod->precio}}</td>
+					<td class="invert">
+						<div class="rem">
+							<div class="close1"> </div>
+						</div>
+						<script>
+							$(document).ready(function(c) {
+								$('.close1').on('click', function(c) {
+									$('.rem1').fadeOut('slow', function(c) {
+										$('.rem1').remove();
+									});
+								});
+							});
+						</script>
+					</td>
+				</tr>
+
+				@endforeach
+
+				<!--<tr class="rem1">
 					<td class="invert">1</td>
 					<td class="invert-image"><a href="single.html"><img src="images/j3.jpg" alt=" " class="img-responsive" /></a></td>
 					<td class="invert">
@@ -67,67 +103,7 @@ include("header.blade.php")
 							});
 						</script>
 					</td>
-				</tr>
-				<tr class="rem2">
-					<td class="invert">2</td>
-					<td class="invert-image"><a href="single.html"><img src="images/ss5.jpg" alt=" " class="img-responsive" /></a></td>
-					<td class="invert">
-						<div class="quantity">
-							<div class="quantity-select">
-								<div class="entry value-minus">&nbsp;</div>
-								<div class="entry value"><span>1</span></div>
-								<div class="entry value-plus active">&nbsp;</div>
-							</div>
-						</div>
-					</td>
-					<td class="invert">Floral Border Skirt</td>
-					<td class="invert">$5.00</td>
-					<td class="invert">$270.00</td>
-					<td class="invert">
-						<div class="rem">
-							<div class="close2"> </div>
-						</div>
-						<script>
-							$(document).ready(function(c) {
-								$('.close2').on('click', function(c) {
-									$('.rem2').fadeOut('slow', function(c) {
-										$('.rem2').remove();
-									});
-								});
-							});
-						</script>
-					</td>
-				</tr>
-				<tr class="rem3">
-					<td class="invert">3</td>
-					<td class="invert-image"><a href="single.html"><img src="images/c7.jpg" alt=" " class="img-responsive" /></a></td>
-					<td class="invert">
-						<div class="quantity">
-							<div class="quantity-select">
-								<div class="entry value-minus">&nbsp;</div>
-								<div class="entry value"><span>1</span></div>
-								<div class="entry value-plus active">&nbsp;</div>
-							</div>
-						</div>
-					</td>
-					<td class="invert">Beige Sandals</td>
-					<td class="invert">$5.00</td>
-					<td class="invert">$212.00</td>
-					<td class="invert">
-						<div class="rem">
-							<div class="close3"> </div>
-						</div>
-						<script>
-							$(document).ready(function(c) {
-								$('.close3').on('click', function(c) {
-									$('.rem3').fadeOut('slow', function(c) {
-										$('.rem3').remove();
-									});
-								});
-							});
-						</script>
-					</td>
-				</tr>
+				</tr> -->
 				<!--quantity-->
 				<script>
 					$('.value-plus').on('click', function() {
@@ -162,7 +138,41 @@ include("header.blade.php")
 						<th>Eliminar</th>
 					</tr>
 				</thead>
-				<tr class="rem1">
+				@isset($apartados)
+				@foreach($apartados as $prod)
+				<tr class="{{$prod->id}}">
+					<td class="invert">1</td>
+					<td class="invert-image"><a href="single.html"><img src="images/{{ $prod-> ruta }}" alt=" " class="img-responsive" /></a></td>
+					<td class="invert">
+						<div class="quantity">
+							<div class="quantity-select">
+								<div class="entry value-minus">&nbsp;</div>
+								<div class="entry value"><span>1</span></div>
+								<div class="entry value-plus active">&nbsp;</div>
+							</div>
+						</div>
+					</td>
+					<td class="invert">{{$prod->nombre}}</td>
+					<td class="invert">$5.00</td>
+					<td class="invert">{{$prod->precio}}</td>
+					<td class="invert">
+						<div class="rem">
+							<div class="close1"> </div>
+						</div>
+						<script>
+							$(document).ready(function(c) {
+								$('.close1').on('click', function(c) {
+									$('.rem1').fadeOut('slow', function(c) {
+										$('.rem1').remove();
+									});
+								});
+							});
+						</script>
+					</td>
+				</tr>
+
+				@endforeach
+				<!-- <tr class="rem1">
 					<td class="invert">1</td>
 					<td class="invert-image"><a href="single.html"><img src="images/j3.jpg" alt=" " class="img-responsive" /></a></td>
 					<td class="invert">
@@ -192,6 +202,7 @@ include("header.blade.php")
 						</script>
 					</td>
 				</tr>
+						-->
 				<!--quantity-->
 				<script>
 					$('.value-plus').on('click', function() {
