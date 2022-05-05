@@ -1,6 +1,8 @@
 <?php 
-include("header.blade.php")
+//include("header.blade.php")
 ?>
+
+@include('header')
 <!-- banner -->
 <div class="banner10" id="home1">
 	<div class="container">
@@ -39,8 +41,8 @@ include("header.blade.php")
 					</tr>
 				</thead>
 
-				@isset($carrito)
-				@foreach($carrito as $prod)
+				@isset($Carrito)
+				@foreach($Carrito as $prod)
 				<tr class="{{$prod->id}}">
 					<td class="invert">1</td>
 					<td class="invert-image"><a href="single.html"><img src="images/{{ $prod-> ruta }}" alt=" " class="img-responsive" /></a></td>
@@ -138,8 +140,8 @@ include("header.blade.php")
 						<th>Eliminar</th>
 					</tr>
 				</thead>
-				@isset($apartados)
-				@foreach($apartados as $prod)
+				@isset($Apartados)
+				@foreach($Apartados as $prod)
 				<tr class="{{$prod->id}}">
 					<td class="invert">1</td>
 					<td class="invert-image"><a href="single.html"><img src="images/{{ $prod-> ruta }}" alt=" " class="img-responsive" /></a></td>
@@ -458,8 +460,9 @@ include("header.blade.php")
 </div>
 <!-- //newsletter -->
 <?php
-include("footer.blade.php")
+//include("footer.blade.php")
 ?>
+@include('footer')
 <!-- //footer -->
 </body>
 

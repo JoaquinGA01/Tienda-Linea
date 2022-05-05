@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
-class Inicio extends Controller
+class Carrito extends Controller
 {
 
     public function cargarCarrito(){
@@ -15,13 +15,16 @@ class Inicio extends Controller
     function buscarproductos(){
         $_SESSION['prductosCarrito'] = array();
         $_SESSION['prductosApartado'] = array();
+        $apartados = new \Ds\vector(); 
         foreach($_SESSION['idProductosCarrito'] as $prod){
             $productos = \DB::table('producto')
             ->select('producto.*')
             ->where('id', $prod)
             ->get();
-            array_push($_SESSION['prductosCarrito'],$productos);
+
         }
+        return $apartados;
+        return view('checkout')->with('Carrito',$apartados);
         foreach($_SESSION['idProductosApartados'] as $prod){
             $productos = \DB::table('producto')
             ->select('producto.*')
@@ -29,10 +32,9 @@ class Inicio extends Controller
             ->get();
             array_push($_SESSION['prductosApartado'],$productos);
         }
-        $apartados = $_SESSION['prductosApartado'];
-        $carrito = $_SESSION['prductosCarrito'];
 
-        return view('checkout')->with('Carrito',$carrito)->with('Apartados',$apartados);
+        return $apartados;
+        //return view('checkout')->with('Carrito',$_SESSION['prductosApartado'])->with('Apartados',$_SESSION['prductosCarrito']);
     }
 }
 ?>

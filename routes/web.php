@@ -22,11 +22,9 @@ Route::post('/agregarCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
 Route::post('/apartarProd', 'App\Http\Controllers\Inicio@apartarProd');
 Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
 
-Route::get("/carrito",function(){
-    return view("checkout");
-});
+//Route::get("/carrito",function(){     return view("checkout"); });
 
-Route::Post("/carrito", 'App\Http\Controllers\Carrito@cargarCarrito');
+Route::get("/carrito", 'App\Http\Controllers\Carrito@buscarproductos');
 
 Route::get('/pantalones','App\Http\Controllers\Pantalones@iniciar');
 
