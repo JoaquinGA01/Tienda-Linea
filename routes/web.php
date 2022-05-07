@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductoController;
 
+use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,3 +57,11 @@ Route::resource('/inventario',ProductoController::class);
 Route::get('/perfil',function(){
     return view('perfil');    
 });
+
+Route::get('/admin', [AdminController::class, 'create'])
+    ->name('admin.index');
+
+Route::post('/admin', [AdminController::class, 'store'])
+        ->name('admin.store');    
+
+//Route::post('/admin', 'App\Http\Controllers\AdminController@store');
