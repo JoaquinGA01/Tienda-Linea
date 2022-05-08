@@ -13,9 +13,16 @@
 
     <div class="container">
         <h4>Gestión de Inventario</h4>
-        <p class="text-xl align-right">Bienvenido <b>{{ auth()->user()->name }}</b></p>
-        <a href="{{route('admin.destroy')}}" class="btn btn-warning btn-sm "> Cerrar sesión </a>
-        
+
+            <div class="vh-10 row m-0 text-center align-items-end justify-content-end">
+
+                <div class="col-auto">
+                    <p  style="text-align:right">Bienvenido <b>{{ auth()->user()->name }}</b></p>
+                    <a href="{{route('admin.destroy')}}" class="btn btn-warning btn-md"> Cerrar sesión </a>
+                </div>   
+
+            </div>        
+    
         <div class="row">
             
             <!-- BUSQUEDA -->
