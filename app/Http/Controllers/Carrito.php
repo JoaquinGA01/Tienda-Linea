@@ -13,27 +13,20 @@ class Carrito extends Controller
     }
 
     function buscarproductos(){
-        $_SESSION['prductosCarrito'] = array();
-        $_SESSION['prductosApartado'] = array();
-        $apartados = new \Ds\vector(); 
-        foreach($_SESSION['idProductosCarrito'] as $prod){
-            $productos = \DB::table('producto')
-            ->select('producto.*')
-            ->where('id', $prod)
-            ->get();
 
-        }
-        return $apartados;
-        return view('checkout')->with('Carrito',$apartados);
-        foreach($_SESSION['idProductosApartados'] as $prod){
-            $productos = \DB::table('producto')
-            ->select('producto.*')
-            ->where('id', $prod)
-            ->get();
-            array_push($_SESSION['prductosApartado'],$productos);
-        }
+        $idCarrito = \DB::table('usuario_producto')
+                ->select('usuario_producto.*')
+                ->where('emailUsuario', $_SESSION['usuario'])
+                -where('Tipo', '0')
+                ->get();
 
-        return $apartados;
+        
+        $idapartados = \DB::table('usuario_producto')
+                ->select('usuario_producto.*')
+                ->where('emailUsuario', $_SESSION['usuario'])
+                -where('Tipo', '1')
+                ->get();
+        return view('checkout')->with('Carrito',$Carrito)-with('Apartados', $apartados);
         //return view('checkout')->with('Carrito',$_SESSION['prductosApartado'])->with('Apartados',$_SESSION['prductosCarrito']);
     }
 }

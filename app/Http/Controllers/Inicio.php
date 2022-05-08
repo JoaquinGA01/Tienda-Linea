@@ -12,8 +12,7 @@ class Inicio extends Controller
     public function iniciar()
     {  
         if(isset($_POST['Email']) && isset($_POST['Password'])){
-            $_SESSION['idProductosCarrito'] = array();
-            $_SESSION['idProductosApartados'] = array();
+            ;
             if(isset($_POST['Name'])){
                 $conn = mysqli_connect("localhost", "root", "", "chein");
                 //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
@@ -37,8 +36,9 @@ class Inicio extends Controller
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {         
+                        $_SESSION['usuario'] = $row["id"];
                         $productos = buscarproductos();
-                        return view('index')->with('nombre', $row["name"])->with('productos', $productos);
+                        return view('index')->with('nombre', $row["name"])->with('email', $row["id"] )->with('productos', $productos);
                     }
                     
                 }
@@ -51,44 +51,25 @@ class Inicio extends Controller
         }
         
     }
-    
-    public function guardarCarrito(){
-        if(isset($_POST['iD'])){
-            $idProducto = $_POST['iD'];
-            if(in_array($idProducto,$_SESSION['idProductosCarrito'])){
-                return "2"; //ya existe el elemento
-            }else{
-                array_push($_SESSION['idProductosCarrito'],$idProducto);
-                return "1"; // se Agrego con exito
-            }
 
+    public function guardarCarrito(){
+        if(isset($_POST['iD']) ){
+            $idProducto = $_POST['iD'];
+            $emailUsuario = $_SESSION['usuario'] ;
+            return consulta(1,0, $idProducto, $emailUsuario);
         }else{
-            return "0"; //Error no se reconoce el Id
+            return '0';
         }
-        return "";
     }
 
     public function apartarProd(){
-        if(isset($_POST['iD'])){
+        if(isset($_POST['iD']) ){
             $idProducto = $_POST['iD'];
-            if(in_array($idProducto,$_SESSION['idProductosCarrito'])){
-                $clave = array_search($_POST['iD'], $_SESSION['idProductosCarrito']);
-                unset($_SESSION['idProductosCarrito'][$clave]);
-                array_push($_SESSION['idProductosApartados'],$idProducto);
-                return "2-1";//ya existe el elemento
-            }else{
-                if(in_array($idProducto,$_SESSION['idProductosApartados'])){
-                    return "2";//ya existe el producto
-                }else{
-                    array_push($_SESSION['idProductosApartados'],$idProducto);
-                    return "1"; // se Agrego con exito
-                }
-            }
-
+            $emailUsuario = $_SESSION['usuario'] ;
+            return consulta(0,1, $idProducto, $emailUsuario);
         }else{
-            return "0"; //Error no se reconoce el Id
+            return '0';
         }
-        return "";
     }
 
     
@@ -121,3 +102,38 @@ function buscarproductos(){
     return $productos;
 }
 
+function consulta($tipo1, $tipo2, $idProducto, $emailUsuario){
+    $conn = mysqli_connect("localhost", "root", "", "chein");
+        if($conn){
+            $sql1 = $conn->query("SELECT * FROM usuario_producto WHERE idProducto = '$idProducto' AND emailUsuario = '$emailUsuario' AND Tipo = '$tipo1';" );
+            if (mysqli_num_rows($sql1) == 0) {
+                $sql1 = $conn->query("SELECT * FROM usuario_producto WHERE idProducto = '$idProducto' AND emailUsuario = '$emailUsuario' AND Tipo = '$tipo2';" );
+                if (mysqli_num_rows($sql1) == 0) {
+                    $sql = "INSERT INTO usuario_producto(idProducto, emailUsuario, Tipo, Cantidad) VALUES ('$idProducto', '$emailUsuario', '0','1' )";
+                    if (mysqli_query($conn, $sql)) {
+                        return '1';
+                    }else{
+                        return '2';
+                    }
+                }else{
+                    $sql2 = "SELECT Cantidad FROM usuario_producto WHERE idProducto = '$idProducto' AND emailUsuario = '$emailUsuario' AND Tipo = '$tipo2';";
+                    $result = mysqli_query($conn,$sql2);
+                    $row = $result->fetch_assoc();
+                    $cantidad = $row['Cantidad'] +1;
+                    $sql = "UPDATE usuario_producto SET Cantidad = $cantidad WHERE idProducto = '$idProducto' AND emailUsuario = '$emailUsuario' AND Tipo = '$tipo2'";
+                    if (mysqli_query($conn, $sql)) {
+                        return '3';
+                    }else{
+                        return '0';
+                    }
+                }
+            }else{
+                $sql = "UPDATE usuario_producto SET Tipo = '$tipo2' WHERE idProducto = '$idProducto' AND emailUsuario = '$emailUsuario'";
+                if (mysqli_query($conn, $sql)) {
+                    return '3';
+                }else{
+                    return '0';
+                }
+            }
+        }
+}

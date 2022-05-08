@@ -149,6 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+	
 	@empty($nombre)
 	
 	<script>
@@ -308,26 +309,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<!-- precio -->
 							<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>							
 							<script>
-      							function agregarProd(event) {
-									var dataString = {"iD":event,"_token": $("meta[name='csrf-token']").attr("content")};
+      							function agregarProd(id,email) {
+									var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
         							$.ajax({
     									type: "POST",
     									url: "{{ url('agregarCarrito') }}",
     									data: dataString,
     									success: function(messaje) {
+											window.alert(messaje);
 											if(messaje == "1"){
 												window.alert("Se agrego con exito");
 											}else if(messaje == "2"){
 												window.alert("ya esta agregado");
 											}else if(messaje == "0"){
 												window.alert("No se agrego el producto");
+											}else if(messaje == "3"){
+												window.alert("Se agrego 1 mas al producto");
 											}
 										}
   									});
       							}
 
-								function apartarProd(event) {
-									var dataString = {"iD":event,"_token": $("meta[name='csrf-token']").attr("content")};
+								function apartarProd(id,email) {
+									var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
         							$.ajax({
     									type: "POST",
     									url: "{{ url('apartarProd') }}",
@@ -346,6 +350,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   									});
       							}
     						</script>
+
 							<form>
 								@csrf
 								<p><a onclick="agregarProd({{$producto->id}});">Agregar al carrito</a></p>	

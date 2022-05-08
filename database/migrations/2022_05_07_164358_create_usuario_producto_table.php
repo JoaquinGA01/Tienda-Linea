@@ -13,9 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('_usuario__relacion__procuto', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('usuario_producto', function (Blueprint $table) {
+            $table->String('idProducto');
+            $table->String('emailUsuario');
+            $table->boolean('Tipo');
+            $table->Integer('Cantidad');
         });
     }
 
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_usuario__relacion__procuto');
+        Schema::dropIfExists('usuario_producto');
     }
 };

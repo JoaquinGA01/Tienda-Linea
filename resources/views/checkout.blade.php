@@ -123,7 +123,7 @@
 				<!--quantity-->
 			</table>
 		</div>
-
+	
 
 		<h3>Productos Apartados <span>1 Products</span></h3>
 
