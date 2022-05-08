@@ -65,7 +65,7 @@ class Inicio extends Controller
     public function apartarProd(){
         if(isset($_POST['iD']) ){
             $idProducto = $_POST['iD'];
-            $emailUsuario = $_SESSION['usuario'] ;
+            $emailUsuario = $_SESSION['usuario'];
             return consulta(0,1, $idProducto, $emailUsuario);
         }else{
             return '0';
