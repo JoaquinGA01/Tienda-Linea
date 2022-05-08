@@ -19,7 +19,7 @@
     <div class="block mx-auto my-12 p-8 bg-white w-1/3 border border-gray-200 
     rounded-lg shadow-lg">
 
-    <h1 class="text-3xl text-center font-bold">Login</h1>
+    <h1 class="text-3xl text-center font-bold">Inicio de Sesión para Admnistradores</h1>
 
     <form class="mt-4" method="POST" action="">
         @csrf
@@ -33,7 +33,7 @@
         
         @error('message')        
         <p class="border border-red-500 rounded-md bg-red-100 w-full
-        text-red-600 p-2 my-2">* {{ $message }}</p>
+        text-red-600 p-2 my-2">* {{ $message }} *</p>
         @enderror
 
         <button type="submit" class="rounded-md bg-indigo-500 w-full text-lg

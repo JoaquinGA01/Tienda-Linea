@@ -14,11 +14,13 @@ class AdminController extends Controller{
     }
     //HASHEO DE PASSWORD
     //https://phppasswordhash.com/
+    //https://youtu.be/DqWXEiyp22E
+    //pablo@gmail.com/123456789
      public function store() {
         
          if(auth()->attempt(request(['email', 'password'])) == false) {
             return back()->withErrors([
-                'message' => 'The email or password is incorrect, please try again',
+                'message' => 'El correo o contraseña ingresado son incorrectos, por favor intentalo nuevamente. ',
             ]);
 
         } 

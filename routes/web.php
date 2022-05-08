@@ -52,16 +52,20 @@ Route::get('header',function(){
 Route::get('/addProducto','App\Http\Controllers\Producto@iniciar');
 Route::post('/addProducto','App\Http\Controllers\Producto@addProducto');
  */
-Route::resource('/inventario',ProductoController::class);
+Route::resource('/inventario',ProductoController::class)->middleware('auth');
 
 Route::get('/perfil',function(){
     return view('perfil');    
 });
 
 Route::get('/admin', [AdminController::class, 'create'])
+    ->middleware('guest')
     ->name('admin.index');
 
 Route::post('/admin', [AdminController::class, 'store'])
         ->name('admin.store');    
 
-//Route::post('/admin', 'App\Http\Controllers\AdminController@store');
+Route::get('/logout', [AdminController::class, 'destroy'])
+        ->middleware('auth')
+        ->name('admin.destroy');    
+

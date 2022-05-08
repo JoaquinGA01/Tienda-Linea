@@ -9,10 +9,15 @@
 </head>
 <body>
 
+    @if(auth()->check())
+
     <div class="container">
         <h4>Gestión de Inventario</h4>
+        <p class="text-xl align-right">Bienvenido <b>{{ auth()->user()->name }}</b></p>
+        <a href="{{route('admin.destroy')}}" class="btn btn-warning btn-sm "> Cerrar sesión </a>
+        
         <div class="row">
-
+            
             <!-- BUSQUEDA -->
             <div class="col-xl-12">
                 <form action="{{route('inventario.index')}}" method="get" value="{{$texto}}">
@@ -51,43 +56,45 @@
                                 <th>Imagen</th>
                             </tr>
                         </thead>
-                       <tbody>
+                    <tbody>
                         @if(count($productos)<=0)
                             <tr>
                                 <td colspan="8">No se encontraron resultados</td>
                             </tr> 
                         @else
                         @foreach($productos as $producto)
-                           <tr>
-                               <td> <a href="{{route('inventario.edit',$producto->id)}}" class="btn btn-warning btn-sm"> Editar </a>
+                        <tr>
+                            <td> <a href="{{route('inventario.edit',$producto->id)}}" class="btn btn-warning btn-sm"> Editar </a>
 
-                               <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-delete-{{$producto->id}}">
+                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modal-delete-{{$producto->id}}">
                                     Eliminar
                                 </button>                                
 
                                 </td>
 
-                               <td>{{$producto->id}}</td>
-                               <td>{{$producto->nombre}}</td>
-                               <td>{{$producto->categoria}}</td>
-                               <td>{{$producto->descripcion}}</td>
-                               <td>{{$producto->precio}}</td>
-                               <td>{{$producto->stock}}</td>
-                               <td>
+                            <td>{{$producto->id}}</td>
+                            <td>{{$producto->nombre}}</td>
+                            <td>{{$producto->categoria}}</td>
+                            <td>{{$producto->descripcion}}</td>
+                            <td>{{$producto->precio}}</td>
+                            <td>{{$producto->stock}}</td>
+                            <td>
                                     <img width="20%" src="images/{{ $producto-> ruta }}" alt=" " class="img-responsive" />
                                 </td>                               
-                           </tr>
-                           @include('eliminar')
+                        </tr>
+                        @include('eliminar')
                         @endforeach
                         @endif
-                       </tbody> 
+                    </tbody> 
                     </table>
                     {{$productos->links()}}
                 </div>
             </div>
         </div>
     </div>
-
+    @else
+        @include("loginAdmin");
+    @endif
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
