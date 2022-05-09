@@ -24,10 +24,10 @@
 
 <!-- checkout -->
 <div class="checkout">
-	<div class="container">
+	<div class="container" >
 		<h3>SU CARRITO DE COMPRAS TIENE: <span>3 Productos</span></h3>
 
-		<div class="checkout-right">
+		<div class="checkout-right" >
 			<table class="timetable_sub">
 				<thead>
 					<tr>
@@ -43,8 +43,8 @@
 
 				@isset($Carrito)
 				@foreach($Carrito as $prod)
-				<tr class="{{$prod->id}}">
-					<td class="invert">1</td>
+				<tr class="rem1" id="fila{{$prod->id}}">
+					<td class="invert">{{$prod->id}}</td>
 					<td class="invert-image"><a href="single.html"><img src="images/{{ $prod-> ruta }}" alt=" " class="img-responsive" /></a></td>
 					<td class="invert">
 						<div class="quantity">
@@ -60,16 +60,12 @@
 					<td class="invert">{{$prod->precio}}</td>
 					<td class="invert">
 						<div class="rem">
-							<div class="close1"> </div>
+							<div class="close1" onclick="eliminar({{$prod->id}})"> </div>
 						</div>
 						<script>
-							$(document).ready(function(c) {
-								$('.close1').on('click', function(c) {
-									$('.rem1').fadeOut('slow', function(c) {
-										$('.rem1').remove();
-									});
-								});
-							});
+							function eliminar(index){
+								$("#fila" + index).remove();
+							}
 						</script>
 					</td>
 				</tr>
@@ -142,8 +138,8 @@
 				</thead>
 				@isset($Apartados)
 				@foreach($Apartados as $prod)
-				<tr class="{{$prod->id}}">
-					<td class="invert">1</td>
+				<tr class="rem1" id="fila{{$prod->id}}">
+					<td class="invert">{{$prod->id}}</td>
 					<td class="invert-image"><a href="single.html"><img src="images/{{ $prod-> ruta }}" alt=" " class="img-responsive" /></a></td>
 					<td class="invert">
 						<div class="quantity">
@@ -159,16 +155,12 @@
 					<td class="invert">{{$prod->precio}}</td>
 					<td class="invert">
 						<div class="rem">
-							<div class="close1"> </div>
+							<div class="close1" onclick="eliminar({{$prod->id}})"> </div>
 						</div>
 						<script>
-							$(document).ready(function(c) {
-								$('.close1').on('click', function(c) {
-									$('.rem1').fadeOut('slow', function(c) {
-										$('.rem1').remove();
-									});
-								});
-							});
+							function eliminar(index){
+								$("#fila" + index).remove();
+							}
 						</script>
 					</td>
 				</tr>

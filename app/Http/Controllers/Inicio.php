@@ -103,13 +103,14 @@ function buscarproductos(){
 }
 
 function consulta($tipo1, $tipo2, $idProducto, $emailUsuario){
+    $id =$idProducto . $emailUsuario; 
     $conn = mysqli_connect("localhost", "root", "", "chein");
         if($conn){
             $sql1 = $conn->query("SELECT * FROM usuario_producto WHERE idProducto = '$idProducto' AND emailUsuario = '$emailUsuario' AND Tipo = '$tipo1';" );
             if (mysqli_num_rows($sql1) == 0) {
                 $sql1 = $conn->query("SELECT * FROM usuario_producto WHERE idProducto = '$idProducto' AND emailUsuario = '$emailUsuario' AND Tipo = '$tipo2';" );
                 if (mysqli_num_rows($sql1) == 0) {
-                    $sql = "INSERT INTO usuario_producto(idProducto, emailUsuario, Tipo, Cantidad) VALUES ('$idProducto', '$emailUsuario', '0','1' )";
+                    $sql = "INSERT INTO usuario_producto(id,idProducto, emailUsuario, Tipo, Cantidad) VALUES ('$id','$idProducto', '$emailUsuario', '0','1' )";
                     if (mysqli_query($conn, $sql)) {
                         return '1';
                     }else{

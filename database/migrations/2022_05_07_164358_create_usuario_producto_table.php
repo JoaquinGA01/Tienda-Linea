@@ -14,6 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('usuario_producto', function (Blueprint $table) {
+            $table->id('id');
             $table->String('idProducto');
             $table->String('emailUsuario');
             $table->boolean('Tipo');
