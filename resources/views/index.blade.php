@@ -185,17 +185,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</form>
 				</div>
 			</div>
-			
+
 			<div class="cart box_1">
-				<a href="/carrito">
-					<div class="total"></div>
-					<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> artículos)</div>
-					<img src="../images/bag.png" alt="" />
-				</a>
-				<p><a href="javascript:;" class="simpleCart_empty">Carrito vacío</a></p>
-				<div class="clearfix"> </div>
-			</div>	
-			<div class="clearfix"> </div>
+            	<a href="/carrito">
+                	<div class="total">
+                    	<span class="simpleCart_total"></span> (<span id="simpleCart_quantity"
+                        	class="simpleCart_quantity"></span> artículos)
+                	</div>
+                	<img src="../images/bag.png" alt="" />
+            	</a>
+            	<p><a href="javascript:;" id="vaciar" class="simpleCart_empty">Carrito vacío</a></p>
+            	<div class="clearfix"> </div>
+        	</div>
+        	<div class="clearfix"> </div>
 		</div>
 	</div>
 	<div class="navigation">
