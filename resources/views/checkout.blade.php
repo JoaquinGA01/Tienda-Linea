@@ -45,7 +45,7 @@
 				@foreach($Carrito as $prod)
 				<tr class="rem1" id="fila{{$prod->id}}">
 					<td class="invert">{{$prod->id}}</td>
-					<td class="invert-image"><a href="single.html"><img width="100" height="100" src="images/{{ $prod-> ruta }}" alt=" " class="img-responsive" /></a></td>
+					<td class="invert-image"><a href="single.html"><img src="images/{{ $prod-> ruta }}" alt=" " class="img-responsive" /></a></td>
 					<td class="invert">
 						<div class="quantity">
 							<div class="quantity-select">

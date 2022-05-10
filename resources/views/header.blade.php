@@ -127,7 +127,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="#" data-toggle="modal" data-target="#myModal88"><img src="../images/user.png" /></a>
         </div>
         <div class="w3l_logo">
-            <h1><a href="index.php">CHEIN<span>Lo mejor en moda</span></a></h1>
+            <h1><a href="/">CHEIN<span>Lo mejor en moda</span></a></h1>
         </div>
         <div class="search">
             <input class="search_box" type="checkbox" id="search_box">
@@ -147,7 +147,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <img src="../images/bag.png" alt="" />
             </a>
-            <p><a href="javascript:;" id="vaciar" class="simpleCart_empty">Carrito vacío</a></p>
+            <p><a href="javascript:;" id="vaciar" class="simpleCart_empty">Borrar Carrito</a></p>
             <div class="clearfix"> </div>
         </div>
         <div class="clearfix"> </div>
