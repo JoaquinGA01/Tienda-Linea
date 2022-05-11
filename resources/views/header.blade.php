@@ -215,7 +215,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </ul>
                     </li>
                     <li><a href="about">Acerca de nosotros</a></li>
-                    <li><a href="mail.php">Contactanos</a></li>
                 </ul>
             </div>
         </nav>

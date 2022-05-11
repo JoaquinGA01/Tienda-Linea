@@ -225,15 +225,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h6>Caballeros</h6>
 											
 											 <li><a href="camisas">Camisas<span>New</span></a></li> 
- 											<li><a href="sweaters.php">Pantalones</a></li>
-											<li><a href="skirts.php">Playeras</a></li> 
+ 											<li><a href="pantalones">Pantalones</a></li>
+											<li><a href="playeras">Playeras</a></li> 
 										</ul>
 									</div>
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Damas</h6>
-											<li><a href="salwars.php">Vestidos</a></li>
-											<li><a href="sarees.php">Blusas</a></li>
+											<li><a href="vestidos">Vestidos</a></li>
+											<li><a href="blusas">Blusas</a></li>
 											<li><a href="sarees.php">Pantalones</a></li>
 											<!-- <li><a href="products.php"><i>Summer Store</i></a></li> -->									
 										</ul>
@@ -258,7 +258,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</ul>
 						</li>
 						<li><a href="about">Acerca de nosotros</a></li>						
-						<li><a href="mail.php">Contactanos</a></li>
 					</ul>
 				</div>
 			</nav>

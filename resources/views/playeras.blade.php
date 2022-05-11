@@ -2,7 +2,7 @@
 <html>
 <!-- head -->
 <head>
-<title>Camisas</title>
+<title>Playeras</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -211,7 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Damas</h6>
-											<li><a href="salwars.php">Vestidos</a></li>
+											<li><a href="vestidos">Vestidos</a></li>
 											<li><a href="sarees.php">Blusas</a></li>
 											<li><a href="sarees.php">Pantalones</a></li>
 											<!-- <li><a href="products.php"><i>Summer Store</i></a></li> -->									
@@ -257,7 +257,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</a> <i>/</i></li>
-				<li>Camisas</li>
+				<li>Playeras</li>
 			</ul>
 		</div>
 	</div>
