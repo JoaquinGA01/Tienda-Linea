@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Women's Fashion a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Dresses :: w3layouts</title>
+<title>{{$Caregoria}}</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -43,7 +43,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 	
 <body>
-<!-- header -->
+	@include('header')
+<!-- header 
 	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-lg">
@@ -161,7 +162,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="navigation">
 		<div class="container">
 			<nav class="navbar navbar-default">
-				<!-- Brand and toggle get grouped for better mobile display -->
+				
 				<div class="navbar-header nav_2">
 					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
 						<span class="sr-only">Toggle navigation</span>
@@ -173,7 +174,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.html">Home</a></li>	
-						<!-- Mega Menu -->
+						
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle act" data-toggle="dropdown">Products <b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-3">
@@ -223,7 +224,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 	</div>
-<!-- //header -->
+//header -->
 <!-- banner -->
 	<div class="banner1" id="home1">
 		<div class="container">
