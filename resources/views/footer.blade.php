@@ -19,10 +19,7 @@
 					<h4>Siguenos</h4>
 					<div class="agileits_social_button">
 						<ul>
-							<li><a href="#" class="facebook"> </a></li>
-							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
-							<li><a href="#" class="pinterest"> </a></li>
+							<li><a href="https://es-la.facebook.com/SHEINMexico/" class="facebook"><img src="../images/facebook.png" width="100%" /></a>Facebook</li>
 						</ul>
 					</div>
 				</div>

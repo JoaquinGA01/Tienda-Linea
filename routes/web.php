@@ -22,13 +22,22 @@ Route::post('/','App\Http\Controllers\Inicio@iniciar');
 Route::post('/eliminar', 'App\Http\Controllers\Inicio@eliminar');
 Route::post('/agregarCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
 Route::post('/apartarProd', 'App\Http\Controllers\Inicio@apartarProd');
-Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
+
+//Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
+//Route::get('/playeras','App\Http\Controllers\Playeras@iniciar');
+Route::get('/camisas','App\Http\Controllers\Prendas@camisas');
+Route::get('/playeras','App\Http\Controllers\Prendas@playeras');
+
+Route::get('/vestidos','App\Http\Controllers\Vestidos@iniciar');
+Route::get('/blusas','App\Http\Controllers\Blusas@iniciar');
+
 
 //Route::get("/carrito",function(){     return view("checkout"); });
 
 Route::get("/carrito", 'App\Http\Controllers\Carrito@buscarproductos');
 
-Route::get('/pantalones','App\Http\Controllers\Pantalones@iniciar');
+//Route::get('/pantalones','App\Http\Controllers\PantalonesC@iniciar');
+Route::get('/pantalones','App\Http\Controllers\Prendas@pantalonesCaballeros');
 
 
 Route::get('/about',function(){

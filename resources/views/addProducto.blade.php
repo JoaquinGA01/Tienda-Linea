@@ -28,7 +28,10 @@
 							<option selected="selected">Selecciona la categoría</option>
 							<option>Camisa</option>
 							<option>Playera</option>
-							<option>Pantalon</option>
+							<option>PantalonesC</option>
+							<option>Vestidos</option>
+							<option>Blusas</option>
+							<option>PantalonesD</option>
 						</select>	
 					</div>
 					
