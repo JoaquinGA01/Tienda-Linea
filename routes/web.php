@@ -41,11 +41,12 @@ Route::post('/playeras-caballeros','App\Http\Controllers\PlayerasCaballeros@inic
 Route::get('/vestidos-damas','App\Http\Controllers\VestidosDamas@iniciar');
 Route::post('/vestidos-damas','App\Http\Controllers\VestidosDamas@iniciar');
 
-
-
-
-
+//Blusas damas
 Route::get('/blusas','App\Http\Controllers\Blusas@iniciar');
+Route::post('/blusas','App\Http\Controllers\Blusas@iniciar');
+
+
+
 
 
 //Route::get("/carrito",function(){     return view("checkout"); });
