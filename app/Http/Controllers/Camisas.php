@@ -64,7 +64,7 @@ class Camisas extends Controller{
         }else{
             return '0';
         }
-    }    
+    }
 
 }
 

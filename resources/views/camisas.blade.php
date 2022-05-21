@@ -174,7 +174,7 @@
                 	</div>
                 	<img src="../images/bag.png" alt="" />
             	</a>
-            	<p><a href="javascript:;" id="vaciar" class="simpleCart_empty">Carrito vacío</a></p>
+            	<p><a href="javascript:;" id="vaciar" class="simpleCart_empty">Vaciar carrito</a></p>
             	<div class="clearfix"> </div>
         	</div>
         	<div class="clearfix"> </div>
@@ -196,7 +196,7 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.php" class="act">Inicio</a></li>	
 						<!-- Mega Menu -->
-						@include('menuPrendas')						
+						@include('menuPrendas')
 						<!--FIN MEGAMENU-->
 						<li><a href="about">Acerca de nosotros</a></li>						
 					</ul>
