@@ -225,7 +225,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<h6>Caballeros</h6>
 											
 											 <li><a href="camisas">Camisas<span>New</span></a></li> 
- 											<li><a href="pantalones">Pantalones</a></li>
+ 											<li><a href="capantalones">Pantalones</a></li>
 											<li><a href="playeras">Playeras</a></li> 
 										</ul>
 									</div>

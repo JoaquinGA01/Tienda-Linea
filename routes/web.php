@@ -30,7 +30,7 @@ Route::post('/cagregarCarrito', 'App\Http\Controllers\Camisas@guardarCarrito');
 Route::post('/capartarProd', 'App\Http\Controllers\Camisas@apartarProd');
 
 //PANTALONES
-Route::get('/pantalones','App\Http\Controllers\PantalonesC@iniciar');
+Route::get('/capantalones','App\Http\Controllers\PantalonesCaballeros@iniciar');
 
 
 //Route::get('/playeras','App\Http\Controllers\Playeras@iniciar');
