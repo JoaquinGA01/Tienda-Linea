@@ -4,10 +4,10 @@
 <head>
 <title>Camisas</title>
 <!-- for-mobile-apps -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Women's Fashion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
@@ -38,6 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //head -->
 
 <body>
+<!-- header -->
 <!-- header -->
 <div class="modal fade" id="myModal882" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 		aria-hidden="true">
@@ -80,7 +81,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="facts">
 											<div class="register">
-												<form action="/" method="post">
+												<form action="/camisas" method="post">
 													@csrf			
 													<input name="Email" placeholder="Correo electronico" type="text" required="">						
 													<input name="Password" placeholder="Contraseña" type="password" required="">										
@@ -97,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											
 											<div class="register">
 
-												<form action="/" method="post">			
+												<form action="/camisas" method="post">			
 													@csrf
 													<input placeholder="Nombre" name="Name" type="text" required="">
 													<input placeholder="Email" name="Email" type="email" required="">	
@@ -211,8 +212,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Damas</h6>
-											<li><a href="salwars.php">Vestidos</a></li>
-											<li><a href="sarees.php">Blusas</a></li>
+											<li><a href="vestidos">Vestidos</a></li>
+											<li><a href="blusas">Blusas</a></li>
 											<li><a href="sarees.php">Pantalones</a></li>
 											<!-- <li><a href="products.php"><i>Summer Store</i></a></li> -->									
 										</ul>
@@ -241,22 +242,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</nav>
 		</div>
-	</div>
+	</div><!-- //header -->
 <!-- //header -->
-
-<!-- banner -->
-	<div class="banner9" id="home1">
-		<div class="container">
-			<h2>Women Sandals<span>up to</span> Flat 40% <i>Discount</i></h2>
-		</div>
-	</div>
-<!-- //banner -->
 
 <!-- breadcrumbs -->
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</a> <i>/</i></li>
+				<li><a href="index.html"> <img src="images/home.png" width="15%"/> Inicio </a> <i>/</i></li>
 				<li>Camisas</li>
 			</ul>
 		</div>
@@ -267,111 +260,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="dresses">
 		<div class="container">
 			<div class="w3ls_dresses_grids">
-				<div class="col-md-4 w3ls_dresses_grid_left">
-					<div class="w3ls_dresses_grid_left_grid">
-						<h3>Categories</h3>
-						<div class="w3ls_dresses_grid_left_grid_sub">
-							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							  <div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-								  <h4 class="panel-title asd">
-									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>New Arrivals
-									</a>
-								  </h4>
-								</div>
-								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-								  <div class="panel-body panel_text">
-									<ul>
-										<li><a href="dresses.html">Dresses</a></li>
-										<li><a href="sweaters.html">Sweaters</a></li>
-										<li><a href="skirts.html">Shorts & Skirts</a></li>
-										<li><a href="jeans.html">Jeans</a></li>
-										<li><a href="shirts.html">Shirts</a></li>
-									</ul>
-								  </div>
-								</div>
-							  </div>
-							  <div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingTwo">
-								  <h4 class="panel-title asd">
-									<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>Foot Wear
-									</a>
-								  </h4>
-								</div>
-								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-								   <div class="panel-body panel_text">
-									<ul>
-										<li><a href="sandals.html">Flats</a></li>
-										<li><a href="sandals.html">Sandals</a></li>
-										<li><a href="sandals.html">Boots</a></li>
-										<li><a href="sandals.html">Heals</a></li>
-										<li><a href="sandals.html">Shirts</a></li>
-									</ul>
-								  </div>
-								</div>
-							  </div>
-							</div>
-							<ul class="panel_bottom">
-								<li><a href="products.html">Summer Store</a></li>
-								<li><a href="dresses.html">New In Clothing</a></li>
-								<li><a href="sandals.html">New In Shoes</a></li>
-								<li><a href="products.html">Latest Watches</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="w3ls_dresses_grid_left_grid">
-						<h3>Color</h3>
-						<div class="w3ls_dresses_grid_left_grid_sub">
-							<div class="ecommerce_color">
-								<ul>
-									<li><a href="#"><i></i> Red(5)</a></li>
-									<li><a href="#"><i></i> Brown(2)</a></li>
-									<li><a href="#"><i></i> Yellow(3)</a></li>
-									<li><a href="#"><i></i> Violet(6)</a></li>
-									<li><a href="#"><i></i> Orange(2)</a></li>
-									<li><a href="#"><i></i> Blue(1)</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="w3ls_dresses_grid_left_grid">
-						<h3>Size</h3>
-						<div class="w3ls_dresses_grid_left_grid_sub">
-							<div class="ecommerce_color ecommerce_size">
-								<ul>
-									<li><a href="#">Medium</a></li>
-									<li><a href="#">Large</a></li>
-									<li><a href="#">Extra Large</a></li>
-									<li><a href="#">Small</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 				<div class="col-md-8 w3ls_dresses_grid_right">
 
 					<div class="clearfix"> </div>
 
-					<div class="w3ls_dresses_grid_right_grid2">
-						<div class="w3ls_dresses_grid_right_grid2_left">
-							
-							<h3>Resultados:  </h3>
-						</div>
-						<div class="w3ls_dresses_grid_right_grid2_right">
-							<select name="select_item" class="select_item">
-								<option selected="selected">Predeterminado</option>
-								<option>Ordenar por nombre</option>
-								<option>Ordenar por precio Más bajo al más alto</option>
-								<option>Ordenar por precio más alto al más bajo</option>
-							</select>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-
 					<div class="w3ls_dresses_grid_right_grid3">
-						
+						@isset($productos)
 						@foreach($productos as $producto)
 						
 						<div class="col-md-4 agileinfo_new_products_grid agileinfo_new_products_grid_dresses">
@@ -400,11 +295,75 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="simpleCart_shelfItem">
 									<!-- precio -->
 									<p><span>$320</span> <i class="item_price">$ {{$producto-> precio }}</i></p>
-									<p><a class="item_add" href="#">Agregar al carrito</a></p>
+
+									<!-- PRUEBA -->
+									
+								<script>
+									function agregarProd(id,email) {
+										var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
+										$.ajax({
+											type: "POST",
+											url: "{{ url('cagregarCarrito') }}",
+											data: dataString,
+											success: function(messaje) {
+												window.alert(messaje);
+												if(messaje == "1"){
+													window.alert("Se agrego con exito");
+												}else if(messaje == "2"){
+													window.alert("ya esta agregado");
+												}else if(messaje == "0"){
+													window.alert("No se agrego el producto");
+												}else if(messaje == "3"){
+													window.alert("Se agrego 1 mas al producto");
+												}
+											}
+										});
+									}
+
+									function apartarProd(id,email) {
+										var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
+										$.ajax({
+											type: "POST",
+											url: "{{ url('capartarProd') }}",
+											data: dataString,
+											success: function(messaje) {
+												if(messaje == "1"){
+													window.alert("Se aparto con exito");
+												}else if(messaje == "2"){
+													window.alert("ya esta apartado");
+												}else if(messaje == "2-1"){
+													window.alert("ya existe pero se aparto");
+												}else if(messaje == "0"){
+													window.alert("No se aparto el producto");
+												}
+											}
+										});
+									}
+								</script>
+
+
+
+
+
+
+
+									<!-- FINPRUEBA -->
+
+
+									<form>
+									@csrf
+										<p><a onclick="agregarProd({{$producto->id}});">Agregar al carrito</a></p>	
+									</form>
+									<form>
+										<p><a onclick="apartarProd({{$producto->id}});">Apartar Producto</a></p>
+									</form>	
+									
 								</div>
 							</div>
 						</div> 
 						@endforeach
+						@endisset
+
 						@foreach($productos as $producto)
 						<div class="modal video-modal fade" id="myModal{{$producto-> id}}" tabindex="-1" role="dialog" aria-labelledby="myModal6">
 							<div class="modal-dialog" role="document">

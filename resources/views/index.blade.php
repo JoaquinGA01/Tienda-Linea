@@ -303,7 +303,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 											</li>
 										</ul>
-									</div>								
+									</div>
 							</div>
 							<h5><a href="#">{{ $producto-> nombre  }}</a></h5>
 							<div class="simpleCart_shelfItem">
@@ -433,5 +433,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 </body>
 </html>
-
 

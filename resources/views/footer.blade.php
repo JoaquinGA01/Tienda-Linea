@@ -26,12 +26,12 @@
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-		<div class="footer-copy">
+<!-- 		<div class="footer-copy">
 			<div class="footer-copy1">
 				<div class="footer-copy-pos">
 					<a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive" /></a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>	
 <!-- //footer -->
