@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class Camisas extends Controller{
 
-    public function iniciar(){  
+    public function iniciar(){
         if(isset($_POST['Email']) && isset($_POST['Password'])){
             ;
             if(isset($_POST['Name'])){

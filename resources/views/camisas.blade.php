@@ -264,7 +264,7 @@
 										var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
 										$.ajax({
 											type: "POST",
-											url: "{{ url('cagregarCarrito') }}",
+											url: "{{ url('agregarCarrito') }}",
 											data: dataString,
 											success: function(messaje) {
 												window.alert(messaje);
@@ -285,7 +285,7 @@
 										var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
 										$.ajax({
 											type: "POST",
-											url: "{{ url('capartarProd') }}",
+											url: "{{ url('apartarProd') }}",
 											data: dataString,
 											success: function(messaje) {
 												if(messaje == "1"){

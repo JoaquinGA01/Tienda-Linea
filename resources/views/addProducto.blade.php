@@ -27,7 +27,7 @@
 						<select name="categoria" class="select_item">
 							<option selected="selected">Selecciona la categoría</option>
 							<option>Camisa</option>
-							<option>Playera</option>
+							<option>PlayeraC</option>
 							<option>PantalonesC</option>
 							<option>Vestidos</option>
 							<option>Blusas</option>

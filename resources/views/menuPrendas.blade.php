@@ -7,7 +7,7 @@
 											<h6>Caballeros</h6>
 											 <li><a href="camisas">Camisas<span>Nuevo</span></a></li> 
  											<li><a href="pantalones-caballeros">Pantalones</a></li>
-											<li><a href="playeras">Playeras</a></li> 
+											<li><a href="playeras-caballeros">Playeras</a></li> 
 										</ul>
 									</div>
 									<div class="col-sm-3">

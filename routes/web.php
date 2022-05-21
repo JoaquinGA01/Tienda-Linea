@@ -26,15 +26,17 @@ Route::post('/apartarProd', 'App\Http\Controllers\Inicio@apartarProd');
 //CAMISAS
 Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
 Route::post('/camisas','App\Http\Controllers\Camisas@iniciar');
-Route::post('/cagregarCarrito', 'App\Http\Controllers\Camisas@guardarCarrito');
-Route::post('/capartarProd', 'App\Http\Controllers\Camisas@apartarProd');
+/* Route::post('/cagregarCarrito', 'App\Http\Controllers\Camisas@guardarCarrito');
+Route::post('/capartarProd', 'App\Http\Controllers\Camisas@apartarProd'); */
 
 //PANTALONES
 Route::get('/pantalones-caballeros','App\Http\Controllers\PantalonesCaballeros@iniciar');
 Route::post('/pantalones-caballeros','App\Http\Controllers\PantalonesCaballeros@iniciar');
 
+//Playeras
+Route::get('/playeras-caballeros','App\Http\Controllers\PlayerasCaballeros@iniciar');
+Route::post('/playeras-caballeros','App\Http\Controllers\PlayerasCaballeros@iniciar');
 
-//Route::get('/playeras','App\Http\Controllers\Playeras@iniciar');
 
 Route::get('/vestidos','App\Http\Controllers\Vestidos@iniciar');
 Route::get('/blusas','App\Http\Controllers\Blusas@iniciar');
