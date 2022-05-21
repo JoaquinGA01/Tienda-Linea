@@ -13,10 +13,9 @@
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Damas</h6>
-											<li><a href="vestidos">Vestidos</a></li>
+											<li><a href="vestidos-damas">Vestidos</a></li>
 											<li><a href="blusas">Blusas</a></li>
 											<li><a href="sarees.php">Pantalones</a></li>
-											<!-- <li><a href="products.php"><i>Summer Store</i></a></li> -->									
 										</ul>
 									</div>
 									<div class="col-sm-3">

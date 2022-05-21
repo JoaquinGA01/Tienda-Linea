@@ -37,8 +37,14 @@ Route::post('/pantalones-caballeros','App\Http\Controllers\PantalonesCaballeros@
 Route::get('/playeras-caballeros','App\Http\Controllers\PlayerasCaballeros@iniciar');
 Route::post('/playeras-caballeros','App\Http\Controllers\PlayerasCaballeros@iniciar');
 
+//Vestidos damas
+Route::get('/vestidos-damas','App\Http\Controllers\VestidosDamas@iniciar');
+Route::post('/vestidos-damas','App\Http\Controllers\VestidosDamas@iniciar');
 
-Route::get('/vestidos','App\Http\Controllers\Vestidos@iniciar');
+
+
+
+
 Route::get('/blusas','App\Http\Controllers\Blusas@iniciar');
 
 

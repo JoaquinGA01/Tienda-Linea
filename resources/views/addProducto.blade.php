@@ -29,7 +29,7 @@
 							<option>Camisa</option>
 							<option>PlayeraC</option>
 							<option>PantalonesC</option>
-							<option>Vestidos</option>
+							<option>VestidosD</option>
 							<option>Blusas</option>
 							<option>PantalonesD</option>
 						</select>	
