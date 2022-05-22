@@ -27,7 +27,7 @@
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Niñas</h6>
-											<li><a href="sandals.php">Vestidos</a></li>
+											<li><a href="vestidos-girls">Vestidos</a></li>
 										</ul>
 									</div>									
 									<div class="clearfix"></div>

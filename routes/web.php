@@ -53,6 +53,10 @@ Route::post('/pantalones-dama','App\Http\Controllers\PantalonesDamas@iniciar');
 Route::get('/shorts','App\Http\Controllers\shorts@iniciar');
 Route::post('/shorts','App\Http\Controllers\shorts@iniciar');
 
+//Vestidos niñas
+Route::get('/vestidos-girls','App\Http\Controllers\VestidosGirls@iniciar');
+Route::post('/vestidos-girls','App\Http\Controllers\VestidosGirls@iniciar');
+
 
 //Route::get("/carrito",function(){     return view("checkout"); });
 
