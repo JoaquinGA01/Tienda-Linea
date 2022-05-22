@@ -45,8 +45,9 @@ Route::post('/vestidos-damas','App\Http\Controllers\VestidosDamas@iniciar');
 Route::get('/blusas','App\Http\Controllers\Blusas@iniciar');
 Route::post('/blusas','App\Http\Controllers\Blusas@iniciar');
 
-
-
+//Pantalones damas
+Route::get('/pantalones-dama','App\Http\Controllers\PantalonesDamas@iniciar');
+Route::post('/pantalones-dama','App\Http\Controllers\PantalonesDamas@iniciar');
 
 
 //Route::get("/carrito",function(){     return view("checkout"); });
