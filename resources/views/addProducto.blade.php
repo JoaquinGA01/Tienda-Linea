@@ -32,6 +32,8 @@
 							<option>VestidosD</option>
 							<option>Blusas</option>
 							<option>PantalonesD</option>
+							<option>Shorts</option>
+							<option>VestidosN</option>
 						</select>	
 					</div>
 					

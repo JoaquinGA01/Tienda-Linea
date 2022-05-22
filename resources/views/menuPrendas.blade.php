@@ -21,10 +21,7 @@
 									<div class="col-sm-3">
 										<ul class="multi-column-dropdown">
 											<h6>Niños</h6>
-											<li><a href="sandals.php">Camisas</a></li>
-											<li><a href="sandals.php">Pantalones</a></li>
-											<li><a href="sandals.php">Playeras</a></li>
-											<li><a href="sandals.php">Shorts</a></li>
+											<li><a href="shorts">Shorts</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3">
