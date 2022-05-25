@@ -216,7 +216,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.php" class="act">Inicio</a></li>	
 						<!-- Mega Menu -->
-						
+						@include('menuPrendas')
 						<!--FIN MEGAMENU-->
 						<li><a href="about">Acerca de nosotros</a></li>						
 					</ul>
@@ -393,3 +393,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 </body>
 </html>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 812b91ced12ab95bfb966ab4a902f0bf297254dd

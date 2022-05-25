@@ -25,21 +25,44 @@ Route::post('/eliminar', 'App\Http\Controllers\Inicio@eliminar');
 Route::post('/agregarCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
 Route::post('/apartarProd', 'App\Http\Controllers\Inicio@apartarProd');
 
-//Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
-//Route::get('/playeras','App\Http\Controllers\Playeras@iniciar');
-Route::get('/camisas','App\Http\Controllers\Prendas@camisas');
-Route::get('/playeras','App\Http\Controllers\Prendas@playeras');
+//CAMISAS
+Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
+Route::post('/camisas','App\Http\Controllers\Camisas@iniciar');
+/* Route::post('/cagregarCarrito', 'App\Http\Controllers\Camisas@guardarCarrito');
+Route::post('/capartarProd', 'App\Http\Controllers\Camisas@apartarProd'); */
 
-Route::get('/vestidos','App\Http\Controllers\Vestidos@iniciar');
+//PANTALONES
+Route::get('/pantalones-caballeros','App\Http\Controllers\PantalonesCaballeros@iniciar');
+Route::post('/pantalones-caballeros','App\Http\Controllers\PantalonesCaballeros@iniciar');
+
+//Playeras
+Route::get('/playeras-caballeros','App\Http\Controllers\PlayerasCaballeros@iniciar');
+Route::post('/playeras-caballeros','App\Http\Controllers\PlayerasCaballeros@iniciar');
+
+//Vestidos damas
+Route::get('/vestidos-damas','App\Http\Controllers\VestidosDamas@iniciar');
+Route::post('/vestidos-damas','App\Http\Controllers\VestidosDamas@iniciar');
+
+//Blusas damas
 Route::get('/blusas','App\Http\Controllers\Blusas@iniciar');
+Route::post('/blusas','App\Http\Controllers\Blusas@iniciar');
+
+//Pantalones damas
+Route::get('/pantalones-dama','App\Http\Controllers\PantalonesDamas@iniciar');
+Route::post('/pantalones-dama','App\Http\Controllers\PantalonesDamas@iniciar');
+
+//SHORTS PARA NIÑOS
+Route::get('/shorts','App\Http\Controllers\shorts@iniciar');
+Route::post('/shorts','App\Http\Controllers\shorts@iniciar');
+
+//Vestidos niñas
+Route::get('/vestidos-girls','App\Http\Controllers\VestidosGirls@iniciar');
+Route::post('/vestidos-girls','App\Http\Controllers\VestidosGirls@iniciar');
 
 
 //Route::get("/carrito",function(){     return view("checkout"); });
 
 Route::get("/carrito", 'App\Http\Controllers\Carrito@buscarproductos');
-
-//Route::get('/pantalones','App\Http\Controllers\PantalonesC@iniciar');
-Route::get('/pantalones','App\Http\Controllers\Prendas@pantalonesCaballeros');
 
 
 Route::get('/about',function(){

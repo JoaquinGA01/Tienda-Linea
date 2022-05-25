@@ -2,7 +2,7 @@
 <html>
 <!-- head -->
 <head>
-<title>Camisas</title>
+<title>Vestidos de Dama</title>
 <!-- for-mobile-apps -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,10 +81,10 @@
 									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 										<div class="facts">
 											<div class="register">
-												<form action="/camisas" method="post">
+												<form action="/vestidos-damas" method="post">
 													@csrf			
-													<input name="Email" placeholder="Correo electronico" type="text" required="">						
-													<input name="Password" placeholder="Contraseña" type="password" required="">										
+													<input name="Email" placeholder="Correo electronico" type="text" required="">
+													<input name="Password" placeholder="Contraseña" type="password" required="">
 													<div class="sign-up">
 														<input type="submit"  value="Iniciar sesión" />
 													</div>
@@ -98,7 +98,7 @@
 											
 											<div class="register">
 
-												<form action="/camisas" method="post">			
+												<form action="/vestidos-damas" method="post">
 													@csrf
 													<input placeholder="Nombre" name="Name" type="text" required="">
 													<input placeholder="Email" name="Email" type="email" required="">	
@@ -211,7 +211,7 @@
 		<div class="container">
 			<ul>
 				<li><a href="index.html"> <img src="images/home.png" width="15%"/> Inicio </a> <i>/</i></li>
-				<li>Camisas</li>
+				<li>Vestidos de Damas</li>
 			</ul>
 		</div>
 	</div>
