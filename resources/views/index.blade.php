@@ -71,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div>
 					@isset($nombre)
-					<a href="perfil?variable=<?php echo urlencode($nombre);?>">Ver mi Perfil</a>
+					<a href="usuario?variable=<?php echo urlencode($nombre);?>">Ver mi Perfil</a>
 					<?php echo $nombre; ?>
 					@endisset
 				</div>				
@@ -194,7 +194,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 	</div>
                 	<img src="../images/bag.png" alt="" />
             	</a>
-            	<p><a href="javascript:;" id="vaciar" class="simpleCart_empty">Carrito vacío</a></p>
+            	<p><a href="javascript:;" id="vaciar" class="simpleCart_empty">Vaciar carrito</a></p>
             	<div class="clearfix"> </div>
         	</div>
         	<div class="clearfix"> </div>
@@ -216,47 +216,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.php" class="act">Inicio</a></li>	
 						<!-- Mega Menu -->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
-							<ul class="dropdown-menu multi-column columns-3">
-								<div class="row">
-									<div class="col-sm-3">
-										<ul class="multi-column-dropdown">
-											<h6>Caballeros</h6>
-											
-											 <li><a href="camisas">Camisas<span>New</span></a></li> 
- 											<li><a href="pantalones">Pantalones</a></li>
-											<li><a href="playeras">Playeras</a></li> 
-										</ul>
-									</div>
-									<div class="col-sm-3">
-										<ul class="multi-column-dropdown">
-											<h6>Damas</h6>
-											<li><a href="vestidos">Vestidos</a></li>
-											<li><a href="blusas">Blusas</a></li>
-											<li><a href="sarees.php">Pantalones</a></li>
-											<!-- <li><a href="products.php"><i>Summer Store</i></a></li> -->									
-										</ul>
-									</div>
-									<div class="col-sm-3">
-										<ul class="multi-column-dropdown">
-											<h6>Niños</h6>
-											<li><a href="sandals.php">Camisas</a></li>
-											<li><a href="sandals.php">Pantalones</a></li>
-											<li><a href="sandals.php">Playeras</a></li>
-											<li><a href="sandals.php">Shorts</a></li>
-										</ul>
-									</div>
-									<div class="col-sm-3">
-										<ul class="multi-column-dropdown">
-											<h6>Niñas</h6>
-											<li><a href="sandals.php">Vestidos</a></li>
-										</ul>
-									</div>									
-									<div class="clearfix"></div>
-								</div>
-							</ul>
-						</li>
+						
+						<!--FIN MEGAMENU-->
 						<li><a href="about">Acerca de nosotros</a></li>						
 					</ul>
 				</div>
@@ -303,7 +264,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
 											</li>
 										</ul>
-									</div>								
+									</div>
 							</div>
 							<h5><a href="#">{{ $producto-> nombre  }}</a></h5>
 							<div class="simpleCart_shelfItem">
@@ -330,7 +291,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										}
   									});
       							}
-
 								function apartarProd(id,email) {
 									var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
         							$.ajax({
@@ -433,5 +393,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 </body>
 </html>
-
-

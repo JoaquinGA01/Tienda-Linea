@@ -6,6 +6,8 @@ use App\Http\Controllers\ProductoController;
 
 use App\Http\Controllers\AdminController;
 
+use App\Http\Controllers\UsuarioController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -62,6 +64,8 @@ Route::get('/addProducto','App\Http\Controllers\Producto@iniciar');
 Route::post('/addProducto','App\Http\Controllers\Producto@addProducto');
  */
 Route::resource('/inventario',ProductoController::class)->middleware('auth');
+
+Route::resource('/usuario',UsuarioController::class);
 
 Route::get('/perfil',function(){
     return view('perfil');    
