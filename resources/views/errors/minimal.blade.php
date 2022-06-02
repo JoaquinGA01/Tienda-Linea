@@ -1,3 +1,4 @@
+<!-- https://laravel.com/docs/9.x/errors#custom-http-error-pages -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
