@@ -18,17 +18,17 @@
                 @method('PUT')
                     <div class="form-group">
                         <label for="name">Nombre</label>
-                        <input type="text" class="form-control" name="name" require maxlength="50" value={{$usuario->name}}>
+                        <input type="text" class="form-control" name="name" require maxlength="50" required value={{$usuario->name}}>
                     </div>
                     <div class="form-group">
                         <br>
                         <label for="email">Correo</label>
-                        <input type="text" class="form-control" name="email" require maxlength="50" value={{$usuario->email}}>
+                        <input type="text" class="form-control" name="email" require maxlength="50" required value={{$usuario->email}}>
                     </div>
                     <div class="form-group">
                         <br>
                         <label for="password">Contraseña</label>
-                        <input type="password" class="form-control" name="password" require maxlength="15" value={{$usuario->password}}>
+                        <input type="password" class="form-control" name="password" require maxlength="15" required value={{$usuario->password}}>
                     </div>
                     <div class="form-group">
                         <br>
