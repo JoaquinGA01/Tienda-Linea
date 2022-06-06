@@ -54,12 +54,11 @@
 					
 					<div class="form-group">
 						<label for="imagen">Imagen</label>
-						<input type="file" name="imagen" accept="image/png">
+						<input type="file" name="imagen" accept="image/png" required>
 					</div>
 
 					<div class="form-group">
 						<input type="submit" class="btn btn-primary" value="Guardar">
-						<input type="reset" class="btn btn-default" value="Cancelar">
 						<a href="javascript:history.back()">Ir al listado</a>
 					</div>
 
