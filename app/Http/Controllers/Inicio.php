@@ -57,7 +57,11 @@ class Inicio extends Controller
         if(isset($_GET['iD']) ){
             $idProducto = $_GET['iD'];
             $emailUsuario = $_SESSION['usuario'] ;
-            return consulta(1,0, $idProducto, $emailUsuario);
+            if(isset($emailUsuario)){
+                return consulta(1,0, $idProducto, $emailUsuario);
+            }else{
+                return '0';
+            }
         }else{
             return '0';
         }
@@ -68,7 +72,11 @@ class Inicio extends Controller
         if(isset($_GET['iD']) ){
             $idProducto = $_GET['iD'];
             $emailUsuario = $_SESSION['usuario'];
-            return consulta(0,1, $idProducto, $emailUsuario);
+            if(isset($emailUsuario)){
+                return consulta(0,1, $idProducto, $emailUsuario);
+            }else{
+                return '0';    
+            }
         }else{
             return '0';
         }
@@ -100,6 +108,7 @@ function buscarproductos(){
     $conn = mysqli_connect("localhost", "root", "", "chein");
     if(!$conn){
         throw new Exception('División por cero.');
+        return;
     }
     $productos = \DB::table('producto')
                 ->select('producto.*')
@@ -143,6 +152,6 @@ function consulta($tipo1, $tipo2, $idProducto, $emailUsuario){
                 }
             }
         }else{
-            throw new Exception('División por cero.');
+            return "3306";
         }
 }
