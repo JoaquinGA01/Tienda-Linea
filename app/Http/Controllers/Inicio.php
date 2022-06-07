@@ -2,8 +2,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-
 //https://www.youtube.com/c/jcarlosad7/videos
 class Inicio extends Controller
 {
@@ -13,7 +11,6 @@ class Inicio extends Controller
     {  
         
         if(isset($_POST['Email']) && isset($_POST['Password'])){
-            ;
             if(isset($_POST['Name'])){
                 $conn = mysqli_connect("localhost", "root", "", "chein");
                 //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
@@ -29,6 +26,9 @@ class Inicio extends Controller
             return view('index');
             }else{
             $conn = mysqli_connect("localhost", "root", "", "chein");
+            if(!$conn){
+                throw new Exception('División por cero.');
+            }
             //$conn = mysqli_connect("localhost", "root", "", "tienda_linea");
             $correo = $_POST['Email'];
             $password = $_POST['Password'];
@@ -97,6 +97,10 @@ class Inicio extends Controller
 }
 
 function buscarproductos(){
+    $conn = mysqli_connect("localhost", "root", "", "chein");
+    if(!$conn){
+        throw new Exception('División por cero.');
+    }
     $productos = \DB::table('producto')
                 ->select('producto.*')
                 ->orderBy('id','DESC')
@@ -139,6 +143,6 @@ function consulta($tipo1, $tipo2, $idProducto, $emailUsuario){
                 }
             }
         }else{
-            return '3306';
+            throw new Exception('División por cero.');
         }
 }
