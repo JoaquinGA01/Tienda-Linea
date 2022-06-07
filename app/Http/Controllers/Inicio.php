@@ -11,10 +11,7 @@ class Inicio extends Controller
     
     public function iniciar()
     {  
-        $mysqli = new mysqli("localhost", "root", "", "chein");
-    if($mysqli -> connect_error){
-        return "3306";
-    }
+        
         if(isset($_POST['Email']) && isset($_POST['Password'])){
             ;
             if(isset($_POST['Name'])){
@@ -80,10 +77,6 @@ class Inicio extends Controller
     
 
     public function eliminar(){
-        $mysqli = new mysqli("localhost", "root", "", "chein");
-    if($mysqli -> connect_error){
-        return "3306";
-    }
         //$conn = mysqli_connect("localhost", "root", "", "chein");
         $conn = mysqli_connect("localhost", "root", "", "tienda_linea");
         $nombreU = $_POST['nombreUser'];
@@ -104,10 +97,6 @@ class Inicio extends Controller
 }
 
 function buscarproductos(){
-    $mysqli = new mysqli("localhost", "root", "", "chein");
-    if($mysqli -> connect_error){
-        return "3306";
-    }
     $productos = \DB::table('producto')
                 ->select('producto.*')
                 ->orderBy('id','DESC')
@@ -117,10 +106,6 @@ function buscarproductos(){
 
 function consulta($tipo1, $tipo2, $idProducto, $emailUsuario){
     $id =$idProducto . $emailUsuario; 
-    $mysqli = new mysqli("localhost", "root", "", "chein");
-    if($mysqli -> connect_error){
-        return "3306";
-    }
     $conn = mysqli_connect("localhost", "root", "", "chein");
         if($conn){
             $sql1 = $conn->query("SELECT * FROM usuario_producto WHERE idProducto = '$idProducto' AND emailUsuario = '$emailUsuario' AND Tipo = '$tipo1';" );
