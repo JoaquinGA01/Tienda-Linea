@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 
+
 class Carrito extends Controller
 {
 
@@ -17,10 +18,14 @@ class Carrito extends Controller
         
         $emailUsuario = $_SESSION['usuario'];
 
-        $sql1 = "SELECT T1.*, T2.Cantidad FROM producto=T1, usuario_producto=T2 WHERE T1.id = T2.idProducto AND T2.emailUsuario='$emailUsuario' AND T2.Tipo='0'";
-        $sql2 = "SELECT T1.*, T2.Cantidad FROM producto=T1, usuario_producto=T2 WHERE T1.id = T2.idProducto AND T2.emailUsuario='$emailUsuario' AND T2.Tipo='1'";
-        $Carrito = DB::select($sql1);
-        $apartados = DB::select($sql2);
+        try{
+        $Carrito = DB::select("SELECT T1.*, T2.Cantidad FROM producto=T1, usuario_producto=T2 WHERE T1.id = T2.idProducto AND T2.emailUsuario='$emailUsuario' AND T2.Tipo='0'");
+        $apartados = DB::select("SELECT T1.*, T2.Cantidad FROM producto=T1, usuario_producto=T2 WHERE T1.id = T2.idProducto AND T2.emailUsuario='$emailUsuario' AND T2.Tipo='1'");
+        }catch(\Exception $e){
+            echo $e->getMessage();
+            return ;
+        }
+
 
 
         $tablaunion1 = DB::table('usuario_producto')

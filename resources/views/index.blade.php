@@ -274,11 +274,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       							function agregarProd(id,email) {
 									var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
         							$.ajax({
-    									type: "POST",
+    									type: "GET",
     									url: "{{ url('agregarCarrito') }}",
     									data: dataString,
     									success: function(messaje) {
-											window.alert(messaje);
 											if(messaje == "1"){
 												window.alert("Se agrego con exito");
 											}else if(messaje == "2"){
@@ -287,6 +286,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												window.alert("No se agrego el producto");
 											}else if(messaje == "3"){
 												window.alert("Se agrego 1 mas al producto");
+											}else if(messaje == "3306"){
+												window.alert("No se puede conectar a la BD");
 											}
 										}
   									});
@@ -294,7 +295,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								function apartarProd(id,email) {
 									var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
         							$.ajax({
-    									type: "POST",
+    									type: "GET",
     									url: "{{ url('apartarProd') }}",
     									data: dataString,
     									success: function(messaje) {
@@ -306,6 +307,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												window.alert("ya existe pero se aparto");
 											}else if(messaje == "0"){
 												window.alert("No se aparto el producto");
+											}else if(messaje == "3306"){
+												window.alert("No se puede conectar a la BD");
 											}
 										}
   									});

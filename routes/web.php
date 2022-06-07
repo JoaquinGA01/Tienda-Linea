@@ -22,8 +22,8 @@ Route::get('/','App\Http\Controllers\Inicio@iniciar');
 Route::post('/','App\Http\Controllers\Inicio@iniciar');
 
 Route::post('/eliminar', 'App\Http\Controllers\Inicio@eliminar');
-Route::post('/agregarCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
-Route::post('/apartarProd', 'App\Http\Controllers\Inicio@apartarProd');
+Route::get('/agregarCarrito', 'App\Http\Controllers\Inicio@guardarCarrito');
+Route::get('/apartarProd', 'App\Http\Controllers\Inicio@apartarProd');
 
 //CAMISAS
 Route::get('/camisas','App\Http\Controllers\Camisas@iniciar');
