@@ -46,6 +46,19 @@
                 </form>
             </div>
 
+            <!-- PROMOS -->
+            <div class="col-xl-12">
+                <form action="{{route('promociones.index')}}" method="get">
+                    <div class="form-row">
+
+                        <div class="col-auto my-4">
+                            <a href="{{route('promociones.index')}}" class="btn btn-info">Promociones</a>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
 
             <!-- LISTADO DE PRODUCTOS -->
             <div class="col-xl-12">                
