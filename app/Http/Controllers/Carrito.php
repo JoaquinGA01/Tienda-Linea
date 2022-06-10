@@ -18,13 +18,9 @@ class Carrito extends Controller
         
         $emailUsuario = $_SESSION['usuario'];
 
-        try{
-        $Carrito = DB::select("SELECT T1.*, T2.Cantidad FROM producto=T1, usuario_producto=T2 WHERE T1.id = T2.idProducto AND T2.emailUsuario='$emailUsuario' AND T2.Tipo='0'");
+        
         $apartados = DB::select("SELECT T1.*, T2.Cantidad FROM producto=T1, usuario_producto=T2 WHERE T1.id = T2.idProducto AND T2.emailUsuario='$emailUsuario' AND T2.Tipo='1'");
-        }catch(\Exception $e){
-            echo $e->getMessage();
-            return ;
-        }
+        $Carrito = DB::select("SELECT T1.*, T2.Cantidad FROM producto=T1, usuario_producto=T2 WHERE T1.id = T2.idProducto AND T2.emailUsuario='$emailUsuario' AND T2.Tipo='0'");
 
 
 

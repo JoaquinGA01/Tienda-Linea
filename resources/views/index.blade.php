@@ -274,7 +274,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       							function agregarProd(id,email) {
 									var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
         							$.ajax({
-    									type: "GET",
+    									type: "POST",
     									url: "{{ url('agregarCarrito') }}",
     									data: dataString,
     									success: function(messaje) {
@@ -295,7 +295,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								function apartarProd(id,email) {
 									var dataString = {"iD":id,"_token": $("meta[name='csrf-token']").attr("content")};
         							$.ajax({
-    									type: "GET",
+    									type: "POST",
     									url: "{{ url('apartarProd') }}",
     									data: dataString,
     									success: function(messaje) {
