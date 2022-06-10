@@ -8,6 +8,8 @@ use App\Http\Controllers\AdminController;
 
 use App\Http\Controllers\UsuarioController;
 
+use App\Http\Controllers\PromoController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -105,3 +107,4 @@ Route::get('/logout', [AdminController::class, 'destroy'])
         ->middleware('auth')
         ->name('admin.destroy');    
 
+Route::resource('/promociones', PromoController::class);
