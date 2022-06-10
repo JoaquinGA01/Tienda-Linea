@@ -61,6 +61,10 @@ Route::post('/shorts','App\Http\Controllers\shorts@iniciar');
 Route::get('/vestidos-girls','App\Http\Controllers\VestidosGirls@iniciar');
 Route::post('/vestidos-girls','App\Http\Controllers\VestidosGirls@iniciar');
 
+//Vestidos promociones
+Route::get('/promo','App\Http\Controllers\PromocionController@iniciar');
+Route::post('/promo','App\Http\Controllers\PromocionController@iniciar');
+
 
 //Route::get("/carrito",function(){     return view("checkout"); });
 
@@ -108,3 +112,5 @@ Route::get('/logout', [AdminController::class, 'destroy'])
         ->name('admin.destroy');    
 
 Route::resource('/promociones', PromoController::class);
+
+
