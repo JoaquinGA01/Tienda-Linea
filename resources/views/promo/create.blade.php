@@ -21,24 +21,51 @@
                     </div>
                     <div class="form-group">
                         <label for="stock">Stock</label>
-                        <input type="text" class="form-control" name="stock" required maxlength="255">
+                        <input type="number" class="form-control" name="stock" required maxlength="255">
                     </div>
                     <div class="form-group">
-                        <label for="categoria">Categoria</label>
-                        <input type="text" class="form-control" name="categoria" required maxlength="255">
-                    </div>
+						<label>Selecciona la categoria de la prenda</label>
+						<select name="categoria" class="select_item">
+							<option selected="selected">Selecciona la categoría</option>
+							<option>Camisa</option>
+							<option>PlayeraC</option>
+							<option>PantalonesC</option>
+							<option>VestidosD</option>
+							<option>Blusas</option>
+							<option>PantalonesD</option>
+							<option>Shorts</option>
+							<option>VestidosN</option>
+						</select>	
+					</div>
                     <div class="form-group">
                         <label for="descripcion">Descripcion</label>
                         <input type="text" class="form-control" name="descripcion" required maxlength="255">
                     </div>
                     <div class="form-group">
                         <label for="precio">Precio</label>
-                        <input type="text" class="form-control" name="precio" required maxlength="255">
+                        <!--<input placeholder="%" type="number" class="form-control" name="promocion" required maxlength="255">-->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" name="precio" required maxlength="255">
+                        <div class="input-group-append">
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="promocion">Promocion</label>
-                        <input type="text" class="form-control" name="promocion" required maxlength="255">
+                        <!--<input placeholder="%" type="number" class="form-control" name="promocion" required maxlength="255">-->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">%</span>
+                        </div>
+                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" name="promocion" required maxlength="255">
+                        <div class="input-group-append">
+                            </div>
+                        </div>
                     </div>
+
                     <div class="form-group">
                         <label for="ruta">Imágen</label>
                         <input type="text" class="form-control" name="ruta" required maxlength="255">
