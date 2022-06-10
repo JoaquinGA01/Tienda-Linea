@@ -117,6 +117,8 @@ function buscarproductos(){
     return $productos;
 }
 
+
+
 function consulta($tipo1, $tipo2, $idProducto, $emailUsuario){
     $id =$idProducto . $emailUsuario; 
     $conn = mysqli_connect("localhost", "root", "", "chein");
