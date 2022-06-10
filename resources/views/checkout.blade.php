@@ -56,8 +56,9 @@
 						</div>
 					</td>
 					<td class="invert">{{$prod->nombre}}</td>
+					
+					<td class="invert">${{$prod->precio}}</td>
 					<td class="invert">$5.00</td>
-					<td class="invert">{{$prod->precio}}</td>
 					<td class="invert">
 						<div class="rem">
 							<div class="close1" onclick="eliminar({{$prod->id}})"> </div>
@@ -109,7 +110,6 @@
 							newVal = parseInt(divUpd.text(), 10) + 1;
 						divUpd.text(newVal);
 					});
-
 					$('.value-minus').on('click', function() {
 						var divUpd = $(this).parent().find('.value'),
 							newVal = parseInt(divUpd.text(), 10) - 1;
@@ -144,15 +144,16 @@
 					<td class="invert">
 						<div class="quantity">
 							<div class="quantity-select">
-								<div class="entry value-minus">&nbsp;</div>
+								<div class="entry value-minus1">&nbsp;</div>
 								<div class="entry value"><span>1</span></div>
-								<div class="entry value-plus active">&nbsp;</div>
+								<div class="entry value-plus1 active">&nbsp;</div>
 							</div>
 						</div>
 					</td>
 					<td class="invert">{{$prod->nombre}}</td>
+					
+					<td class="invert">${{$prod->precio}}</td>
 					<td class="invert">$5.00</td>
-					<td class="invert">{{$prod->precio}}</td>
 					<td class="invert">
 						<div class="rem">
 							<div class="close1" onclick="eliminar({{$prod->id}})"> </div>
@@ -200,13 +201,13 @@
 						-->
 				<!--quantity-->
 				<script>
-					$('.value-plus').on('click', function() {
+					$('.value-plus1').on('click', function() {
 						var divUpd = $(this).parent().find('.value'),
 							newVal = parseInt(divUpd.text(), 10) + 1;
 						divUpd.text(newVal);
 					});
 
-					$('.value-minus').on('click', function() {
+					$('.value-minus1').on('click', function() {
 						var divUpd = $(this).parent().find('.value'),
 							newVal = parseInt(divUpd.text(), 10) - 1;
 						if (newVal >= 1) divUpd.text(newVal);

@@ -22,7 +22,7 @@ class Inicio extends Controller
                     if (mysqli_query($conn, $sql)) {
                         return view('index')->with('nombre', $nombre);
                     }
-            }
+                }
             return view('index');
             }else{
             $conn = mysqli_connect("localhost", "root", "", "chein");
@@ -54,8 +54,8 @@ class Inicio extends Controller
     }
 
     public function guardarCarrito(){
-        if(isset($_GET['iD']) ){
-            $idProducto = $_GET['iD'];
+        if(isset($_POST['iD']) ){
+            $idProducto = $_POST['iD'];
             $emailUsuario = $_SESSION['usuario'] ;
             if(isset($emailUsuario)){
                 return consulta(1,0, $idProducto, $emailUsuario);
@@ -69,8 +69,8 @@ class Inicio extends Controller
 
     public function apartarProd(){
         
-        if(isset($_GET['iD']) ){
-            $idProducto = $_GET['iD'];
+        if(isset($_POST['iD']) ){
+            $idProducto = $_POST['iD'];
             $emailUsuario = $_SESSION['usuario'];
             if(isset($emailUsuario)){
                 return consulta(0,1, $idProducto, $emailUsuario);
